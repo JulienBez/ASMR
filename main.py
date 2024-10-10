@@ -63,7 +63,7 @@ if __name__ == "__main__":
     parser.add_argument("-m", "--measure", action="store_true", help="Measure a similarity score between each sentence and their seed.")
     parser.add_argument("-r", "--rank", action="store_true", help="Rank each and every candidates in each seed category.")
     
-    parser.add_argument("-A", "--all", action="store_true", help="Execut all scripts.")
+    parser.add_argument("-A", "--all", action="store_true", help="Execute all scripts.")
     parser.add_argument("-R", "--results", action="store_true", help="Some results functions.")
     parser.add_argument("-M", "--metadata", action="store_true", help="Some metadata.")
     

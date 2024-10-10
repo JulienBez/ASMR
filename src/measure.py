@@ -1,13 +1,3 @@
-###########################################################
-#                                                         #
-# measure.py :                                            #
-#                                                         #
-#   - calculate a similarity score for each layer         #
-#   - indicate for each sent if it contains a MWE         #
-#   - get mean cosine similarity mean of each layer       #
-#                                                         #
-###########################################################
-
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 

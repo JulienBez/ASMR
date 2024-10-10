@@ -1,11 +1,3 @@
-###########################################################
-#                                                         #
-# manageFile.py :                                         #
-#                                                         #
-#   - various functions to ease the processes             #
-#                                                         #
-###########################################################
-
 import os
 import json
 import glob
@@ -13,8 +5,6 @@ import shutil
 
 import pandas as pd
 from tqdm import tqdm
-
-# Json management --- # --- # --- # --- # --- # --- # --- # --- # --- #
 
 def openJson(path):
     "open a json file"
@@ -28,8 +18,6 @@ def writeJson(path,data):
     with open(path,"w",encoding='utf-8') as f:
         json.dump(data,f,indent=4,ensure_ascii=False)
 
-
-# Folder management --- # --- # --- # --- # --- # --- # --- # --- # --- #
 
 def createFolder(path):
     "create an empty folder"

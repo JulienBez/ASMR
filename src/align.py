@@ -1,11 +1,3 @@
-###########################################################
-#                                                         #
-# align.py :                                              #
-#                                                         #
-#   - align each sent with its seed                       #
-#                                                         #
-###########################################################
-
 from Bio.Seq import Seq
 from Bio import pairwise2
 

@@ -1,11 +1,3 @@
-###########################################################
-#                                                         #
-# process.py :                                            #
-#                                                         #
-#   - sort sentences by seed according to cosine sim      #
-#                                                         #
-###########################################################
-
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 

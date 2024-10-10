@@ -1,12 +1,3 @@
-###########################################################
-#                                                         #
-# segment.py :                                            #
-#                                                         #
-#   - isolate a common segment between a sent and a seed  #
-#   - indicate where we had to fill the segment           #
-#                                                         #
-###########################################################
-
 import parameters
 from .utils import *
 

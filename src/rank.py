@@ -1,13 +1,3 @@
-###########################################################
-#                                                         #
-# rank.py :                                               #
-#                                                         #
-#   - create a ranking of every sent in each category     #
-#   - rank using the similarities scores for each layer   #
-#   - save those ranking in csv files                     #
-#                                                         #
-###########################################################
-
 import parameters
 from .utils import *
 
