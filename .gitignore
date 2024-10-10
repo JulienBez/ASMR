@@ -1,0 +1,7 @@
+data/*
+output/sorted/*
+output/ranking/*
+
+!data/.gitkeep 
+!output/sorted/.gitkeep 
+!output/ranking/.gitkeep
