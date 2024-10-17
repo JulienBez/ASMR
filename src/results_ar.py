@@ -7,6 +7,9 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 from sklearn.metrics.pairwise import cosine_similarity
 
+import arabic_reshaper
+from bidi.algorithm import get_display
+
 from . import parameters
 from .utils import *
 
@@ -116,7 +119,7 @@ def plotCoherenceProgression(studied_seeds):
         seeds.append(seed)
 
     # FIGURE #
-    plt.figure(figsize=(12, 6))
+    plt.figure(figsize=(12, 4))
     
     colors = plt.colormaps['Dark2'].colors
     colors_count = 0
@@ -126,7 +129,7 @@ def plotCoherenceProgression(studied_seeds):
         thresh = [thresholds[i] for i in range(len(scores)) if scores[i] != "NA"]
         scores = [i for i in scores if i != "NA"]
         if seeds[i] in studied_seeds:
-            plt.plot(thresh, scores, linestyle='--', color=colors[colors_count], alpha=0.8, label=seeds[i])
+            plt.plot(thresh, scores, linestyle='--', color=colors[colors_count], alpha=0.8, label=get_display(arabic_reshaper.reshape(seeds[i])))
             colors_count += 1
         else:
             plt.plot(thresh, scores, linestyle='-', color="lightgray", alpha=0.4, label='_nolegend_')
@@ -166,7 +169,7 @@ def clusterByThreshold(studied_seeds):
     nlines = 3
     ncols = math.ceil(total/nlines) #round up to next integer
     if total < nlines:
-        nlines = total
+        nlines = total + 1
         ncols = 1
 
     fig, axs = plt.subplots(ncols, nlines, figsize=(15, 5*ncols), sharex=True, sharey=True) #to have number of col and lines
@@ -195,14 +198,14 @@ def clusterByThreshold(studied_seeds):
         X_reduced = reducer.fit_transform(X.toarray())
 
         #jitter to allow to see overlapping points
-        jitter_strength = 0.05
+        jitter_strength = 0.07
         X_jittered = X_reduced + np.random.normal(0, jitter_strength, X_reduced.shape)
 
         cmap = plt.get_cmap('coolwarm')
         colors = list(cmap(scores)) + ["black"]
         
         ax.scatter(X_jittered[:, 0], X_jittered[:, 1], c=colors, alpha=1, s=100)
-        ax.set_title(f'{seed}')
+        ax.set_title(f'{get_display(arabic_reshaper.reshape(seed))}')
         ax.grid(True)
 
     plt.savefig(f"logs/{parameters.NAMEPATH}/images/clusterByThreshold.png")
@@ -212,10 +215,21 @@ def clusterByThreshold(studied_seeds):
 def results():
     """"""
     createFolders(f"logs/{parameters.NAMEPATH}/images")
-    plotCoherenceProgression(["Travailler plus pour gagner plus","Que la force soit avec toi","c'est le deuxième effet Kisscool"])
-    #plotCoherenceProgression(["غضب غضبا شديد ","قلب الضيا بعينه ظلام ","فلما سمع فلان من فلان ذلك الكلام "])
+    #plotCoherenceProgression(["Travailler plus pour gagner plus","Que la force soit avec toi","c'est le deuxième effet Kisscool"])
+    plotCoherenceProgression(["غضب غضبا شديد ","قلب الضيا بعينه ظلام ","فلما سمع فلان من فلان ذلك الكلام "])
     plotScores()
     plotScores(uniques=True)
-    #clusterByThreshold(["غضب غضبا شديد ","قلب الضيا بعينه ظلام ","فلما سمع فلان من فلان ذلك الكلام "])
-    clusterByThreshold(list(openJson(f"data/{parameters.NAMEPATH}.json").keys()))
+    clusterByThreshold(["فز واثب على الاقدام ","بات ذلك الليله ","وعند فراغه من ذلك الكلام "])
+    
+    """
+    unwanted = 'فلما سمع فلان من فلان ذلك الكلام '
+    l = list(openJson(f"data/{parameters.NAMEPATH}.json").keys())
+    print(l)
+    print(len(l))
+    l = [i for i in l if i == unwanted]
+    print(len(l))
+    clusterByThreshold(l)
+    """
+
+    #clusterByThreshold(list(openJson(f"data/{parameters.NAMEPATH}.json").keys()))
     #clusterByThreshold(["Travailler plus pour gagner plus","Que la force soit avec toi","c'est le deuxième effet Kisscool"])

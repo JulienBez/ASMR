@@ -1,7 +1,6 @@
 from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import CountVectorizer
 
-import parameters
+from . import parameters
 from .utils import *
 
 def getDistances():
@@ -10,7 +9,7 @@ def getDistances():
     ids = []
     sentences = []
 
-    for path in glob.glob("data/*.json"):
+    for path in glob.glob(f"data/{parameters.NAMEPATH}/*.json"):
         data = openJson(path)
 
         for i in data:
@@ -18,14 +17,9 @@ def getDistances():
             ids.append(i["metadata"]["id"])
 
     dict_seq = {}
-    vectorizer = CountVectorizer(ngram_range=parameters.ngram_range,
-                                 encoding=parameters.encoding,
-                                 lowercase=parameters.lowercase,
-                                 stop_words=parameters.stop_words,
-                                 analyzer=parameters.analyzer
-                                )
+    vectorizer = parameters.vectorizer
     
-    sequences = list(openJson("logs/seeds.json").keys())
+    sequences = list(openJson(f"data/{parameters.NAMEPATH}.json").keys())
     
     for seq in tqdm(sequences):
         vectorizer.fit([seq] + sentences)
@@ -51,7 +45,7 @@ def sortByDistances():
     for seq,sent in dict_seq.items():
         new_data = [] 
 
-        for path in glob.glob("data/*.json"):
+        for path in glob.glob(f"data/{parameters.NAMEPATH}/*.json"):
             data = openJson(path)
 
             for i in range(len(data)):
@@ -64,11 +58,11 @@ def sortByDistances():
                     new_data.append(data[i])
 
         if len(new_data) > 0:
-            writeJson(f"output/sorted/{''.join(x for x in seq.replace(' ','_') if x.isalnum() or x == '_')}.json",new_data)
+            writeJson(f"output/{parameters.NAMEPATH}/sorted/{''.join(x for x in seq.replace(' ','_') if x.isalnum() or x == '_')}.json",new_data)
 
 
 def process():
     """process process on every file in 'data/' folder"""
-    createFolders("output/sorted")
+    createFolders(f"output/{parameters.NAMEPATH}/sorted")
     sortByDistances()
     print("")

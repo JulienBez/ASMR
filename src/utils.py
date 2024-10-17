@@ -6,6 +6,8 @@ import shutil
 import pandas as pd
 from tqdm import tqdm
 
+from . import parameters
+
 def openJson(path):
     "open a json file"
     with open(path,'r',encoding='utf-8') as f:
@@ -17,12 +19,6 @@ def writeJson(path,data):
     "create a json file"
     with open(path,"w",encoding='utf-8') as f:
         json.dump(data,f,indent=4,ensure_ascii=False)
-
-
-def createFolder(path):
-    "create an empty folder"
-    if not os.path.exists(path):
-        os.mkdir(path)
 
 
 def createFolders(path):
@@ -40,3 +36,8 @@ def deleteFolderContent(path):
                 shutil.rmtree(p)
                 os.remove(p)
 
+
+def debug(error_message,debug=parameters.debug):
+    """allow debug mod"""
+    if debug:
+        print(error_message)

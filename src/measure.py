@@ -1,16 +1,11 @@
 from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import CountVectorizer
 
-import parameters
+from . import parameters
 from .utils import *
 
 def vectorizer(seed,sent):
     """vectorize in unigrams and bigrams the seed and the sent"""
-    vectorizer = CountVectorizer(ngram_range=parameters.ngram_range,
-                                 stop_words=parameters.stop_words,
-                                 lowercase=parameters.lowercase,
-                                 analyzer=parameters.analyzer
-                                )
+    vectorizer = parameters.vectorizer
     return vectorizer.fit_transform([" ".join(seed)," ".join(sent)])
 
 
@@ -25,7 +20,7 @@ def meanLayers(data):
         meanLayer = []
         for i in range(len(entry["alignments"])):
             total_layers = 0
-            for layer in entry["similarities"].keys():
+            for layer in parameters.layers.keys():
                total_layers = total_layers + entry["similarities"][layer][i]
             meanLayer.append(total_layers/len(entry["similarities"].keys()))
         entry["similarities"]["meanLayer"] = meanLayer
@@ -36,17 +31,18 @@ def fasterMeasure(data):
     """help run this script faster by not recalculating similarities measures of already seen common segments"""
     dicSimilarities = {} 
     for entry in data:
-        for layer in entry["parsing"].keys():
+        for layer in parameters.layers.keys():
             if layer not in dicSimilarities:
                 dicSimilarities[layer] = {}
             for i,segment in enumerate(entry["commonSegments"][layer]):
                 if " ".join(str(segment)) not in dicSimilarities[layer]:
-                    seed = openJson("logs/seeds.json")[data[0]["paired_with"]["seed"]][layer]
+                    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]][layer]
                     sent = entry["commonSegments"][layer][i]
                     try:
                         X = vectorizer(seed,sent)
                         dicSimilarities[layer][" ".join(segment)] = distCosinus(X)
                     except:
+                        debug(f"[ERROR 03] Vectorization wasn't possible, -1 returned instead !\nproblematic sent ID: {entry['metadata']['id']}")
                         dicSimilarities[layer][" ".join(segment)] = -1 #vectorization was not possible
     return dicSimilarities
 
@@ -57,7 +53,7 @@ def measure(path):
     dicSimilarities = fasterMeasure(data)
     for entry in data:
         entry["similarities"] = {}
-        for layer in entry["parsing"].keys():
+        for layer in parameters.layers.keys():
             entry["similarities"][layer] = []
             for segment in entry["commonSegments"][layer]:
                 entry["similarities"][layer].append(dicSimilarities[layer][" ".join(segment)])
@@ -66,7 +62,7 @@ def measure(path):
 
 def measureAll():
     """process similarities function on every file in 'sorted/' folder"""
-    for path in tqdm(glob.glob("output/sorted/*.json")):
+    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
         measure(path)
     print("")
 

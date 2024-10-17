@@ -1,11 +1,11 @@
-import parameters
+from . import parameters
 from .utils import *
 
 def commonSegment(seed,sent):
     """common segment isolation between a seed and a sent using list comprehension"""
 
     tags = [] #NC = not common, NF = not found, C = common
-    for i,w in enumerate(seed):
+    for i,_ in enumerate(seed):
         if sent[i] != "-" and seed[i] == "-": #tokens from the sent that are not in the seed
             tags.append("NC")
         if sent[i] == "-" and seed[i] != "-": #tokens from the seed not found in the sent
@@ -13,7 +13,7 @@ def commonSegment(seed,sent):
         if sent[i] != "-" and seed[i] != "-": #common tokens between the sent and the seed
             tags.append("C")  
         if sent[i] == "-" and seed[i] == "-": #this case should not be possible
-            print("error",seed,sent)
+            debug(f"[ERROR 01] '-' shouldn't be aligned with '-' !\nseed: {seed}\nsent: {sent}")
     
     common = [i for i,w in enumerate(tags) if w=="C"]
     NF_head = [i for i,w in enumerate(tags) if w=="NF" and i<common[0]] #not found BEFORE the first common token
@@ -27,7 +27,7 @@ def commonSegment(seed,sent):
     body = list(range(segment_first_word,segment_last_word))
     tail = [segment_last_word+i for i in range(len(NF_tail)) if segment_last_word+i < len(tags)-len(NF_tail+NF_body+NF_head)]
     
-    return sorted(head + body + tail)
+    return sorted(head + body + tail) #sorted just in case
 
 
 def segment(path):
@@ -45,12 +45,12 @@ def segment(path):
             for alignment in entry["alignments"]:
 
                 commonSeg = commonSegment(alignment[1],alignment[0])
-                if len(commonSeg) > len(entry["parsing"][layer]):
+                if len(commonSeg) > len(entry["parsing"][parameters.main_layer]):
                     commonSeg = [i for i in range(len(entry["parsing"][parameters.main_layer]))] #if the sentence is shorter than the seed
 
                 entry["commonSegmentsIndexes"].append(commonSeg)
                     
-                for layer in entry["parsing"].keys():
+                for layer in parameters.layers.keys():
                     if layer not in entry["commonSegments"]:
                         entry["commonSegments"][layer] = []
                     
@@ -60,13 +60,13 @@ def segment(path):
             new_data.append(entry)
 
         except IndexError: #if there is no common elements between a sentence and a seed
-            pass
+            debug(f"[ERROR 02] There should be at least one common element between a sent and a seed !\nproblematic sent ID: {entry['metadata']['id']}")
 
     writeJson(path,new_data)
 
 
 def segmentAll():
     """process segment function on every file in 'sorted/' folder"""
-    for path in tqdm(glob.glob("output/sorted/*.json")):
+    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
         segment(path)
     print("")

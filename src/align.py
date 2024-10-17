@@ -1,7 +1,7 @@
 from Bio.Seq import Seq
 from Bio import pairwise2
 
-import parameters
+from . import parameters
 from .utils import *
 
 def deleteBadAlignments(path):
@@ -29,7 +29,7 @@ def alignment(seed,sent):
 def align(path,main_layer=parameters.main_layer):
     """for each sent in json (path), tokenize this sent and align it with its seed"""
     data = openJson(path)
-    seed = openJson("logs/seeds.json")[data[0]["paired_with"]["seed"]]
+    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
     for entry in data:
         entry["alignments"] = alignment(seed[main_layer],entry["parsing"][main_layer])
     writeJson(path,data)
@@ -37,7 +37,7 @@ def align(path,main_layer=parameters.main_layer):
 
 def alignAll():
     """process align function on every file in 'sorted/' folder"""
-    for path in tqdm(glob.glob("output/sorted/*.json")):
+    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
         align(path)
-    deleteBadAlignments(path)
+        deleteBadAlignments(path)
     print("")

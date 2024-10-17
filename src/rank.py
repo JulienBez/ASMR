@@ -1,4 +1,4 @@
-import parameters
+from . import parameters
 from .utils import *
 
 def filterByRules(data):
@@ -43,8 +43,8 @@ def rank(path):
     data = filterByRules(openJson(path))
     
     if len(data) > 0:
-        new_data_path = "output/ranking/" + "".join(x for x in data[0]["paired_with"]["seed"].replace(" ","_") if x.isalnum() or x == "_") #seed
-        createFolder(new_data_path)
+        new_data_path = f"output/{parameters.NAMEPATH}/ranking/" + "".join(x for x in data[0]["paired_with"]["seed"].replace(" ","_") if x.isalnum() or x == "_") #seed
+        createFolders(new_data_path)
         
     lines = []
     for entry in data:
@@ -97,7 +97,7 @@ def rank(path):
 
 def rankAll():
     """process rankSegments function on every file in 'sorted/' folder"""
-    createFolder("output/ranking")
-    for path in tqdm(glob.glob("output/sorted/*.json")):
+    createFolders(f"output/{parameters.NAMEPATH}/ranking")
+    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
         rank(path)
     print("")
