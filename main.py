@@ -7,7 +7,7 @@ from src.segment import *
 from src.measure import *
 from src.rank import *
 from src.metadata import *
-from src.results_ar import *
+from src.results import *
 
 def proceed(args):
     

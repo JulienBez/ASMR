@@ -24,12 +24,13 @@ def filterLines(lines):
     return new_lines
 
 
-def createTexTable(lines,path,kept=["shown","meanLayer","frequence"]):
+def createTexTable(lines,path,kept=["shown","meanLayer","frequence"],RtoL=parameters.RtoL):
     """write a latex table from a dict of lines"""
     tex_lines = []
     for line in lines:
         line["meanLayer"] = round(line["meanLayer"],2)
-        line["shown"] = f"\\<{line['shown']}>"
+        if RtoL:
+            line["shown"] = f"\\<{line['shown']}>"
         tex_lines.append([str(v) for k,v in line.items() if k in kept])
     tex_lines.insert(0,kept)
     tex_lines_write = "\n".join([" & ".join(tl)+"\\\\" for tl in tex_lines])
