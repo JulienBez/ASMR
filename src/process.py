@@ -32,6 +32,8 @@ def getDistances():
 
         for i,_ in enumerate(sentences):
             similarity_score = cosine_sim[i][0]
+            if ids[i] == 'http://hdl.handle.net/11234/1-3105 UD_French-GSD/fr_gsd-ud-test.conllu fr-ud-dev_01489' and similarity_score >= 0.1:
+                print(f"{seq}\t{similarity_score}")
             dict_seq[seq][ids[i]] = {"seed":seq,"distance":1-similarity_score}
 
     return dict_seq
@@ -49,9 +51,11 @@ def sortByDistances():
             data = openJson(path)
 
             for i in range(len(data)):
-                identifier = data[i]["metadata"]["id"]
 
-                if sent[identifier]["distance"] < 0.9:
+                identifier = data[i]["metadata"]["id"]
+                data[i]["paired_with"] = {}
+
+                if sent[identifier]["distance"] < 0.8:
                     data[i]["paired_with"]["seed"] = sent[identifier]["seed"]
                     data[i]["paired_with"]["distance"] = sent[identifier]["distance"]
 

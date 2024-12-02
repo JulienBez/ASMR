@@ -33,7 +33,7 @@ def plotScores(uniques=False):
 
             max_score = max(entry["similarities"]["meanLayer"])
             maxScoreIndex = entry["similarities"]["meanLayer"].index(max_score)
-            segment = " ".join(entry["commonSegments"]["TOK"][maxScoreIndex])
+            segment = " ".join(entry["commonSegments"][parameters.main_layer][maxScoreIndex])
             
             if segment not in seen:
                 ids.append(entry["metadata"]["id"])
@@ -86,7 +86,7 @@ def plotCoherenceProgression(studied_seeds):
         for entry in data:
             maxScore = max(entry["similarities"]["meanLayer"])
             maxScoreIndex = entry["similarities"]["meanLayer"].index(maxScore)
-            results[seed][" ".join(entry["commonSegments"]["TOK"][maxScoreIndex])] = maxScore
+            results[seed][" ".join(entry["commonSegments"][parameters.main_layer][maxScoreIndex])] = maxScore
 
     # GET INTRA CLUSTER SCORES #
     thresholds = [1] + np.arange(0.99,-0.01,-0.01).tolist() #[1,0.99,0.98,...0.02,0.01,0]
@@ -192,7 +192,7 @@ def clusterByThreshold(studied_seeds):
         for entry in data:
             maxScore = max(entry["similarities"]["meanLayer"])
             maxScoreIndex = entry["similarities"]["meanLayer"].index(maxScore)
-            entries.append(" ".join(entry["commonSegments"]["TOK"][maxScoreIndex]))
+            entries.append(" ".join(entry["commonSegments"][parameters.main_layer][maxScoreIndex]))
             scores.append(maxScore)
 
         # VECTORS #

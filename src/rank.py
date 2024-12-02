@@ -53,7 +53,7 @@ def rank(path):
             
             line = {
 				"compare":{
-					"shown":" ".join(entry["commonSegments"]["TOK"][i]),
+					"shown":" ".join(entry["commonSegments"][parameters.main_layer][i]),
 					"meanLayer":entry["similarities"]["meanLayer"][i], 
 				},
 				"add":{

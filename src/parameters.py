@@ -1,10 +1,14 @@
 # PATH #
-NAMEPATH = "catchphrase"
+NAMEPATH = "parseme_1-2_FR"
+
+
+# VERSION #
+VERSION = "exact" #exact, fuzzy, combined
 
 
 # MISC #
 debug = False       #if True, return error messages when needed, else ignore
-language = "en"     #does nothing at the moment
+language = ""     #does nothing at the moment
 
 
 # VECTORS #
@@ -16,17 +20,17 @@ vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,s
 
 
 # LAYERS #
-main_layer = "TOK"  #layer we base our study on
+main_layer = "lemma"  #layer we base our study on
 layers = {          #main_layer + other layers we take into account
-    "TOK" : {
+    "form" : {
         "min":0,    #minimum TOK similarity required to be in the ranking
         "max":2     #maximum TOK similarity requited to be in the ranking
     },
-    "POS" : {
+    "upos" : {
         "min":0,    #minimum POS similarity required to be in the ranking
         "max":2     #maximum POS similarity requited to be in the ranking
     },
-    "LEM" : {
+    "lemma" : {
         "min":0,    #minimum LEM similarity required to be in the ranking
         "max":2     #maximum LEM similarity requited to be in the ranking
     }

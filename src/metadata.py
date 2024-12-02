@@ -9,7 +9,7 @@ def tokenProportions():
     for path in glob.glob(f"data/{parameters.NAMEPATH}/*.json"):
         data = openJson(path)
         for entry in data:
-            list_tok = entry["parsing"]["TOK"]
+            list_tok = entry["parsing"][parameters.main_layer]
             num_token += len(list_tok)
             num_sentences += 1
             vocabulary.update(list_tok)
