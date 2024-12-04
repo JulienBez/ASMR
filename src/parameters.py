@@ -2,13 +2,13 @@
 NAMEPATH = "parseme_1-2_FR"
 
 
-# VERSION #
+# PARAMETERS #
+processType = "sortByCommons" #sortByDistances, sortByCommons
 VERSION = "exact" #exact, fuzzy, combined
 
-
 # MISC #
-debug = False       #if True, return error messages when needed, else ignore
-language = ""     #does nothing at the moment
+debug = False #if True, return error messages when needed, else ignore
+language = "" #does nothing at the moment
 
 
 # VECTORS #
@@ -20,7 +20,7 @@ vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,s
 
 
 # LAYERS #
-main_layer = "lemma"  #layer we base our study on
+main_layer = "lemma" #layer we base our study on
 layers = {          #main_layer + other layers we take into account
     "form" : {
         "min":0,    #minimum TOK similarity required to be in the ranking
@@ -46,7 +46,7 @@ latex = True        #create ranking in the form of a simple latex table
 
 
 # RESULTS #
-RtoL = False        #for languages written from right to left, only used by results.py and rank.py
+RtoL = False #for languages written from right to left, only used by results.py and rank.py
 studied_sequences = []
 
 # studied_sequences list examples:

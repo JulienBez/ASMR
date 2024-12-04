@@ -1,53 +1,80 @@
 from . import parameters
 from .utils import *
 
-def commonSegmentExact(seed,sent):
+def exactSegment(seed_align):
+    """we ignore misalignment lists"""
+    return sorted([i for i in seed_align if type(i) == int])
+
+
+def fuzzySegment(seed_align):
+    """we take everything between first and last common elements"""
+    """if the Xth and Yth first and last elements from seed are missing,"""
+    """we take X and Y elements at the begining and the end of the sentence to compensate"""
+    if type(seed_align[0]) == list:
+        seed_align[0] = seed_align[1] - len(seed_align[0])
+    if type(seed_align[-1]) == list:
+        seed_align[-1] = seed_align[-2] + len(seed_align[-1])
+    return [i for i in range(seed_align[0],seed_align[-1]+1)]
+
+
+def combinedSegment(seed_align,sent_align,entry):
+    """"""
+    return "not implemented yet"
+
+
+def commonSegment(seed,sent,entry):
     """common segment isolation between a seed and a sent using list comprehension"""
 
-    tags = [] #NC = not common, NF = not found, C = common
-    for i,_ in enumerate(seed):
-        if sent[i] != "-" and seed[i] == "-": #tokens from the sent that are not in the seed
-            tags.append("NC")
-        if sent[i] == "-" and seed[i] != "-": #tokens from the seed not found in the sent
-            tags.append("NF")
-        if sent[i] != "-" and seed[i] != "-": #common tokens between the sent and the seed
-            tags.append("C")  
-        if sent[i] == "-" and seed[i] == "-": #this case should not be possible
-            debug(f"[ERROR 01] '-' shouldn't be aligned with '-' !\nseed: {seed}\nsent: {sent}")
-    
-    common = [i for i,w in enumerate(tags) if w=="C"]
-    return sorted(common) #sorted just in case
+    #to vizualise multiple tokens substitution (example with "Max a cassé sa pipe" and "Max a bien dégommé sa pipe")
+    seed_align = [] #[0, 1, ['casser'], 4, 5]
+    sent_align = [] #[0, 1, ['bien', 'dégommer'], 4, 5]
+    #we see that 'casser' is replaced by either 'bien' or 'dégommer' if we only take into account our alignments
 
+    #to create the sublists ["casser"] and ["bien","dégommer"]
+    seed_subalign = []
+    sent_subalign = []
+    
+    index_counter = 0 #we want to retrieve the indexes of the original sentence, so we increment this variable when needed only
+    for i in range(len(seed)): #for each element in our alignments...
 
-def commonSegmentFuzzy(seed,sent):
-    """common segment isolation between a seed and a sent using list comprehension"""
+        if sent[i] == seed[i]: #if its a match
 
-    tags = [] #NC = not common, NF = not found, C = common
-    for i,_ in enumerate(seed):
-        if sent[i] != "-" and seed[i] == "-": #tokens from the sent that are not in the seed
-            tags.append("NC")
-        if sent[i] == "-" and seed[i] != "-": #tokens from the seed not found in the sent
-            tags.append("NF")
-        if sent[i] != "-" and seed[i] != "-": #common tokens between the sent and the seed
-            tags.append("C")  
-        if sent[i] == "-" and seed[i] == "-": #this case should not be possible
-            debug(f"[ERROR 01] '-' shouldn't be aligned with '-' !\nseed: {seed}\nsent: {sent}")
-    
-    common = [i for i,w in enumerate(tags) if w=="C"]
-    NF_head = [i for i,w in enumerate(tags) if w=="NF" and i<common[0]] #not found BEFORE the first common token
-    NF_body = [i for i,w in enumerate(tags) if w=="NF" and i>common[0] and i<common[-1]] #not found BETWEEN the first and the last common token
-    NF_tail = [i for i,w in enumerate(tags) if w=="NF" and i>common[-1]] #not found AFTER the last common token
-    
-    print(common)
+            #we add the sublists if there are misaligned elements
+            if seed_subalign and sent_subalign:
+                seed_align.append(seed_subalign)
+                sent_align.append(sent_subalign)
 
-    segment_first_word = common[0]-len(NF_head) #we have to take into account not founds to find good ids of tokens
-    segment_last_word = common[-1]-len(NF_head)-len(NF_body)+1 #+1 to include last word
+            #we note the index of the match for both lists
+            seed_align.append(index_counter)
+            sent_align.append(index_counter)
+
+            #we reset our sublists in case of match, to get ready to create others sublists
+            seed_subalign = []
+            sent_subalign = []
+
+            index_counter += 1 #we take a step
+
+        if sent[i] == "-" and seed[i] != "-": #if there is an element of the seed we can't find in the sent
+            seed_subalign.append(seed[i])
+
+        if sent[i] != "-" and seed[i] == "-": #if there is an element of the sent we can't find in the seed
+            sent_subalign.append(sent[i])
+            index_counter += 1
+
+    if parameters.VERSION == "exact":
+        commonSeg = exactSegment(seed_align)
+
+    elif parameters.VERSION == "fuzzy":
+        commonSeg = fuzzySegment(seed_align)
+
+    elif parameters.VERSION == "combined":
+        commonSeg = combinedSegment(seed_align,sent_align,entry)
+
+    else:
+        print("parameters.py : VERSION does not match any know version, aborting...")
+        return 0
     
-    head = [segment_first_word-1-i for i in range(len(NF_head))] 
-    body = list(range(segment_first_word,segment_last_word))
-    tail = [segment_last_word+i for i in range(len(NF_tail)) if segment_last_word+i < len(tags)-len(NF_tail+NF_body+NF_head)]
-    
-    return sorted(head + body + tail) #sorted just in case
+    return commonSeg
 
 
 def segment(path):
@@ -64,15 +91,7 @@ def segment(path):
                 
             for alignment in entry["alignments"]:
 
-                if parameters.VERSION == "exact":
-                    commonSeg = commonSegmentExact(alignment[1],alignment[0])
-
-                elif parameters.VERSION == "fuzzy":
-                    commonSeg = commonSegmentFuzzy(alignment[1],alignment[0])
-
-                else:
-                    print("parameters.py : VERSION does not match any know version, aborting...")
-                    break
+                commonSeg = commonSegment(alignment[1],alignment[0],entry)
 
                 if len(commonSeg) > len(entry["parsing"][parameters.main_layer]):
                     commonSeg = [i for i in range(len(entry["parsing"][parameters.main_layer]))] #if the sentence is shorter than the seed
