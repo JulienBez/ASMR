@@ -20,8 +20,9 @@ def meanLayers(data,ponderWithLength=True):
             nb_layers = 0
             for layer in parameters.layers.keys():
                if ponderWithLength:
-                   size_difference = max([1,len(seed[layer])-len(entry["commonSegments"][layer][i])+1])
-                   entry["similarities"][layer][i] = entry["similarities"][layer][i]/size_difference#if candidate is shorter than seed, reduces the score
+                    size_difference = len(seed[layer])-len(entry["commonSegments"][layer][i])
+                    if size_difference > 0:
+                        entry["similarities"][layer][i] = (entry["similarities"][layer][i]*(len(seed[layer])-size_difference))/len(seed[layer])
                total_layers += entry["similarities"][layer][i]
                nb_layers += 1
             meanLayer.append(total_layers/nb_layers)
