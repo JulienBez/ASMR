@@ -1,62 +1,61 @@
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import pairwise_kernels
 
 from . import parameters
 from .utils import *
 
-def vectorizer(seed,sent):
+def vectorizer(V,seed,sents,metric="cosine"):
     """vectorize in unigrams and bigrams the seed and the sent"""
-    vectorizer = parameters.vectorizer
-    return vectorizer.fit_transform([" ".join(seed)," ".join(sent)])
+    X = V.fit_transform([" ".join(sent) for sent in sents]) #to ensure there odds items don't ruin the process
+    Y = V.transform([" ".join(seed)])
+    return pairwise_kernels(Y,X,metric=metric)[0]
 
 
-def distCosinus(X):
-    """calculate cosine similarity score"""
-    return cosine_similarity(X[1],X[0])[0].tolist()[0]
-
-
-def meanLayers(data):
+def meanLayers(data,ponderWithLength=True):
     """return mean of a single similarity score on each layer"""
+    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
     for entry in data:
         meanLayer = []
         for i in range(len(entry["alignments"])):
             total_layers = 0
+            nb_layers = 0
             for layer in parameters.layers.keys():
-               total_layers = total_layers + entry["similarities"][layer][i]
-            meanLayer.append(total_layers/len(entry["similarities"].keys()))
+               if ponderWithLength:
+                   size_difference = max([1,len(seed[layer])-len(entry["commonSegments"][layer][i])+1])
+                   entry["similarities"][layer][i] = entry["similarities"][layer][i]/size_difference#if candidate is shorter than seed, reduces the score
+               total_layers += entry["similarities"][layer][i]
+               nb_layers += 1
+            meanLayer.append(total_layers/nb_layers)
         entry["similarities"]["meanLayer"] = meanLayer
     return data
 
 
-def fasterMeasure(data):
-    """help run this script faster by not recalculating similarities measures of already seen common segments"""
-    dicSimilarities = {} 
-    for entry in data:
-        for layer in parameters.layers.keys():
-            if layer not in dicSimilarities:
-                dicSimilarities[layer] = {}
-            for i,segment in enumerate(entry["commonSegments"][layer]):
-                if " ".join(str(segment)) not in dicSimilarities[layer]:
-                    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]][layer]
-                    sent = entry["commonSegments"][layer][i]
-                    try:
-                        X = vectorizer(seed,sent)
-                        dicSimilarities[layer][" ".join(segment)] = distCosinus(X)
-                    except:
-                        debug(f"[ERROR 03] Vectorization wasn't possible, -1 returned instead !\nproblematic sent ID: {entry['metadata']['id']}")
-                        dicSimilarities[layer][" ".join(segment)] = -1 #vectorization was not possible
-    return dicSimilarities
+def handleMultiplesAlignments(data,layer):
+    """handle entries with multiple alignments"""
+    ids = []
+    sents = []
+    for i in range(len(data)):
+        if "similarities" not in data[i]:
+            data[i]["similarities"] = {}
+        data[i]["similarities"][layer] = []
+        for j in range(len(data[i]["alignments"])):
+            ids.append({"entry":i,"alignment":j})
+            sents.append(data[i]["commonSegments"][layer][j])
+            data[i]["similarities"][layer].append(0)
+    return ids,sents
 
 
 def measure(path):
-    """for each sent in a json file (path), get its similarity for each layer"""
+    """get similarity of all entries with the seed for a file for each layer"""
     data = openJson(path)
-    dicSimilarities = fasterMeasure(data)
-    for entry in data:
-        entry["similarities"] = {}
-        for layer in parameters.layers.keys():
-            entry["similarities"][layer] = []
-            for segment in entry["commonSegments"][layer]:
-                entry["similarities"][layer].append(dicSimilarities[layer][" ".join(segment)])
+    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
+    for layer in parameters.layers.keys():
+        sents_ids,sents = handleMultiplesAlignments(data,layer)
+        V = parameters.vectorizer
+        if layer == parameters.POS_layer:
+            V = parameters.POS_vectorizer #vectorizer with words, aka pos tags
+        pairwise_sim = vectorizer(V,seed[layer],sents)
+        for i,ids in enumerate(sents_ids):
+            data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
     writeJson(path,meanLayers(data))
 
 
@@ -65,4 +64,3 @@ def measureAll():
     for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
         measure(path)
     print("")
-

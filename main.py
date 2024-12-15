@@ -9,6 +9,17 @@ from src.rank import *
 from src.metadata import *
 from src.results import *
 
+for path in glob.glob("output/catchphrase/sorted/*.json"):
+    data = openJson(path)
+    for entry in data:
+        #if len(entry["alignments"]) > 1 and entry["metadata"]["snowclone_label"] == 1:
+        #    print(entry["metadata"]["id"], entry["paired_with"]["seed"])
+        if entry["metadata"]["id"] == 722:
+            for i in entry["alignments"]:
+                for j in i:
+                    print(" ".join(j))
+
+
 def proceed(args):
     
     start = time.time()
