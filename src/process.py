@@ -59,7 +59,7 @@ def sortByCommons(common_elements = 3):
         dict_seq[seq] = {}
         seq_set = set(seq.split(" "))
 
-        commonElems = min([common_elements,len(seq_set)])
+        commonElems = max([min([common_elements,len(seq_set)-1]),1]) #minimum between common_elements and seed size, then 1 if this minimum is 0
 
         for i,_ in enumerate(sentences):
             if len(seq_set & set(sentences[i])) >= commonElems:
@@ -71,9 +71,9 @@ def sortByCommons(common_elements = 3):
 def sortBySeeds():
     """for each sentence, sort it in each seed that it is close to"""
 
-    if parameters.processType == "sortByDistances":
+    if parameters.PROCESS_VERSION  == "sortByDistances":
         dict_seq = sortByDistances()
-    elif parameters.processType == "sortByCommons":
+    elif parameters.PROCESS_VERSION  == "sortByCommons":
         dict_seq = sortByCommons()
     else:
         print("process.py : processType does not match any know process type, aborting...")
@@ -103,6 +103,5 @@ def sortBySeeds():
 def process():
     """process process on every file in 'data/' folder"""
     createFolders(f"output/{parameters.NAMEPATH}/sorted")
-    if len(glob.glob(f"output/{parameters.NAMEPATH}/sorted")) == 0:
-        sortBySeeds()
+    sortBySeeds()
     print("")

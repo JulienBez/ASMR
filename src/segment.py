@@ -62,10 +62,12 @@ def combinedSegment(seed_align,sent_align,entry,seeds):
                     if candidates_pos:
                         substitute = candidates_pos[0]
                         combined.append(substitute)
+                        sent_align[i].remove(substitute)
 
                     elif candidates_sim:    
                         substitute = sorted([[v,k] for k,v in candidates_sim.items()],reverse=True)[0][1]
                         combined.append(substitute)
+                        sent_align[i].remove(substitute)
     
     #if len(seeds[entry["paired_with"]["seed"]]["lemma"]) != len([entry["parsing"]["lemma"][i] for i in combined]):
     #    print([entry["parsing"]["lemma"][i] for i in combined])

@@ -4,7 +4,7 @@ NAMEPATH = "catchphrase"
 
 # PARAMETERS #
 PROCESS_VERSION = "sortByCommons" #sortByDistances, sortByCommons
-SEGMENT_VERSION = "combined" #exact, fuzzy, combined
+SEGMENT_VERSION = "exact" #exact, fuzzy, combined
 
 
 # MISC #

@@ -51,12 +51,16 @@ def measure(path):
     seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
     for layer in parameters.layers.keys():
         sents_ids,sents = handleMultiplesAlignments(data,layer)
-        V = parameters.vectorizer
-        if layer == parameters.POS_layer:
-            V = parameters.POS_vectorizer #vectorizer with words, aka pos tags
-        pairwise_sim = vectorizer(V,seed[layer],sents)
-        for i,ids in enumerate(sents_ids):
-            data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
+        try:
+            V = parameters.vectorizer
+            if layer == parameters.POS_layer:
+                V = parameters.POS_vectorizer #vectorizer with words, aka pos tags
+            pairwise_sim = vectorizer(V,seed[layer],sents)
+            for i,ids in enumerate(sents_ids):
+                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
+        except:
+            for ids in sents_ids:
+                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = -1 #if error with vectorizer
     writeJson(path,meanLayers(data))
 
 
