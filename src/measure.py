@@ -60,7 +60,7 @@ def measure(path):
                 data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
         except:
             for ids in sents_ids:
-                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = -1 #if error with vectorizer
+                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = -1 #if empty vocabulary
     writeJson(path,meanLayers(data))
 
 

@@ -1,10 +1,10 @@
 # RUN ASMR ON <NAMEPATH> #
-NAMEPATH = "catchphrase"
+NAMEPATH = "FR"
 
 
 # PARAMETERS #
 PROCESS_VERSION = "sortByCommons" #sortByDistances, sortByCommons
-SEGMENT_VERSION = "exact" #exact, fuzzy, combined
+SEGMENT_VERSION = "combined" #exact, fuzzy, combined
 
 
 # MISC #
@@ -21,22 +21,22 @@ vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,s
 POS_vectorizer = TfidfVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")
 
 # LAYERS #
-main_layer = "LEM" #layer we base our study on
+main_layer = "lemma" #layer we base our study on
 
-TOK_layer = "TOK" #token layer
-POS_layer = "POS" #pos tags layer
-LEM_layer = "LEM" #lemma layer
+TOK_layer = "form" #token layer
+POS_layer = "upos" #pos tags layer
+LEM_layer = "lemma" #lemma layer
 
 layers = {          #main_layer + other layers we take into account
-    "TOK" : {
+    "form" : {
         "min":0,    #minimum TOK similarity required to be in the ranking
         "max":2     #maximum TOK similarity requited to be in the ranking
     },
-    "POS" : {
+    "upos" : {
         "min":0,    #minimum POS similarity required to be in the ranking
         "max":2     #maximum POS similarity requited to be in the ranking
     },
-    "LEM" : {
+    "lemma" : {
         "min":0,    #minimum LEM similarity required to be in the ranking
         "max":2     #maximum LEM similarity requited to be in the ranking
     }
