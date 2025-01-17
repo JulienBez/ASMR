@@ -1,10 +1,10 @@
 # RUN ASMR ON <NAMEPATH> #
-NAMEPATH = "FR"
+NAMEPATH = "Baybars"
 
 
 # PARAMETERS #
 PROCESS_VERSION = "sortByCommons" #sortByDistances, sortByCommons
-SEGMENT_VERSION = "combined" #exact, fuzzy, combined
+SEGMENT_VERSION = "fuzzy" #exact, fuzzy, combined
 
 
 # MISC #
@@ -15,28 +15,28 @@ debug = False #if True, return error messages when needed, else ignore
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 #vectorizer = TfidfVectorizer(ngram_range=(1,2),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word") #for FrUIT
-#vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" ")) #for Baybars
+vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" ")) #for Baybars
 #vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word") #for catchphrase
-vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,stop_words=None,analyzer="char_wb")
+#vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,stop_words=None,analyzer="char")
 POS_vectorizer = TfidfVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")
 
 # LAYERS #
-main_layer = "lemma" #layer we base our study on
+main_layer = "LEM" #layer we base our study on
 
-TOK_layer = "form" #token layer
-POS_layer = "upos" #pos tags layer
-LEM_layer = "lemma" #lemma layer
+TOK_layer = "TOK" #token layer
+POS_layer = "POS" #pos tags layer
+LEM_layer = "LEM" #lemma layer
 
 layers = {          #main_layer + other layers we take into account
-    "form" : {
+    "TOK" : {
         "min":0,    #minimum TOK similarity required to be in the ranking
         "max":2     #maximum TOK similarity requited to be in the ranking
     },
-    "upos" : {
+    "POS" : {
         "min":0,    #minimum POS similarity required to be in the ranking
         "max":2     #maximum POS similarity requited to be in the ranking
     },
-    "lemma" : {
+    "LEM" : {
         "min":0,    #minimum LEM similarity required to be in the ranking
         "max":2     #maximum LEM similarity requited to be in the ranking
     }

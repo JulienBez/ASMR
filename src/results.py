@@ -52,11 +52,13 @@ def plotScores(uniques=False):
     ax2 = ax1.twinx()
     cumulative_counts = np.cumsum(counts)
     ax2.plot(edges[:-1] + 0.05, cumulative_counts, color='red', marker='o', linestyle='-', linewidth=2) #cumulative Number of sequences found
+    ax2.set_ylabel('Cumulative number of sequences')
 
     filename = f"logs/{parameters.NAMEPATH}/images/plotscores.png"
     if uniques:
         filename = filename.replace(".png","_uniques.png")
 
+    #fig.set_size_inches(16,9)
     plt.savefig(filename)
     plt.close()
 
