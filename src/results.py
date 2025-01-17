@@ -46,17 +46,18 @@ def plotScores(uniques=False):
     fig, ax1 = plt.subplots()
 
     counts, edges, _ = ax1.hist(scores, bins=bins, edgecolor='black')
-    ax1.set_xlabel('Scores')
-    ax1.set_ylabel('Number of sequences')
+    ax1.set_xlabel('Scores')#,fontsize=20)
+    ax1.set_ylabel('Number of sequences')#,fontsize=20)
 
     ax2 = ax1.twinx()
     cumulative_counts = np.cumsum(counts)
     ax2.plot(edges[:-1] + 0.05, cumulative_counts, color='red', marker='o', linestyle='-', linewidth=2) #cumulative Number of sequences found
-    ax2.set_ylabel('Cumulative number of sequences')
+    ax2.set_ylabel('Cumulative number of sequences')#,fontsize=20)
 
     filename = f"logs/{parameters.NAMEPATH}/images/plotscores.png"
     if uniques:
         filename = filename.replace(".png","_uniques.png")
+
 
     #fig.set_size_inches(16,9)
     plt.savefig(filename)
@@ -225,6 +226,6 @@ def results():
     """"""
     createFolders(f"logs/{parameters.NAMEPATH}/images")
     plotScores()
-    plotScores(uniques=True)
-    clusterByThreshold(parameters.studied_sequences)
-    plotCoherenceProgression(parameters.studied_sequences)
+    #plotScores(uniques=True)
+    #clusterByThreshold(parameters.studied_sequences)
+    #plotCoherenceProgression(parameters.studied_sequences)
