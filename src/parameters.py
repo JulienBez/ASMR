@@ -1,10 +1,10 @@
 # RUN ASMR ON <NAMEPATH> #
-NAMEPATH = "Baybars"
+NAMEPATH = "catchphrase"
 
 
 # PARAMETERS #
 PROCESS_VERSION = "sortByCommons" #sortByDistances, sortByCommons
-SEGMENT_VERSION = "fuzzy" #exact, fuzzy, combined
+SEGMENT_VERSION = "exact" #exact, fuzzy, combined
 
 
 # MISC #
@@ -15,9 +15,9 @@ debug = False #if True, return error messages when needed, else ignore
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 #vectorizer = TfidfVectorizer(ngram_range=(1,2),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word") #for FrUIT
-vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" ")) #for Baybars
+#vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" ")) #for Baybars
 #vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word") #for catchphrase
-#vectorizer = TfidfVectorizer(ngram_range=(2,3),encoding="utf-8",lowercase=True,stop_words=None,analyzer="char")
+vectorizer = TfidfVectorizer(ngram_range=(3,4),encoding="utf-8",lowercase=True,stop_words=None,analyzer="char")
 POS_vectorizer = TfidfVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")
 
 # LAYERS #
