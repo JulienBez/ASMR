@@ -65,7 +65,7 @@ def combinedSegment(seed_align,sent_align,entry,seeds):
                         sent_align[i].remove(substitute)
 
                     elif candidates_sim:    
-                        substitute = sorted([[v,k] for k,v in candidates_sim.items()])[0][1]
+                        substitute = sorted([[v,k] for k,v in candidates_sim.items()],reverse=True)[0][1]
                         combined.append(substitute)
                         sent_align[i].remove(substitute)
     
