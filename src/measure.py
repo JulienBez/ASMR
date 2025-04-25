@@ -1,11 +1,12 @@
 from sklearn.metrics import pairwise_kernels
+from Levenshtein import ratio
 
 from . import parameters
 from .utils import *
 
 def vectorizer(V,seed,sents,metric="cosine"):
     """vectorize in unigrams and bigrams the seed and the sent"""
-    X = V.fit_transform([" ".join(sent) for sent in sents]) #to ensure there odds items don't ruin the process
+    X = V.fit_transform([" ".join(sent) for sent in sents]) # to ensure there odds items don't ruin the process
     Y = V.transform([" ".join(seed)])
     return pairwise_kernels(Y,X,metric=metric)[0]
 
@@ -54,13 +55,28 @@ def measure(path):
         try:
             V = parameters.vectorizer
             if layer == parameters.POS_layer:
-                V = parameters.POS_vectorizer #vectorizer with words, aka pos tags
+                V = parameters.POS_vectorizer # vectorizer with words, aka pos tags
             pairwise_sim = vectorizer(V,seed[layer],sents)
             for i,ids in enumerate(sents_ids):
                 data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
         except:
             for ids in sents_ids:
-                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = -1 #if empty vocabulary
+                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = -1 # if empty vocabulary
+    writeJson(path,meanLayers(data))
+
+
+def measureLEVEN(path):
+    """small test we made replacing cosine similarity with levenshtein distance"""
+    data = openJson(path)
+    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
+    for layer in parameters.layers.keys():
+        sents_ids,sents = handleMultiplesAlignments(data,layer)
+        pairwise_sim = []
+        for s in sents:
+            p = ratio(" ".join(seed)," ".join(s))
+            pairwise_sim.append(p)
+        for i,ids in enumerate(sents_ids):
+            data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
     writeJson(path,meanLayers(data))
 
 

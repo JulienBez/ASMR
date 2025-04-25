@@ -48,7 +48,7 @@ def sortByCommons(common_elements = 3):
         data = openJson(path)
 
         for i in data:
-            sentences.append(i["parsing"]["lemma"])
+            sentences.append(i["parsing"][parameters.main_layer])
             ids.append(i["metadata"]["id"])
 
     sequences = list(openJson(f"data/{parameters.NAMEPATH}.json").keys())
@@ -68,15 +68,15 @@ def sortByCommons(common_elements = 3):
     return dict_seq
 
 
-def sortBySeeds():
+def pairing():
     """for each sentence, sort it in each seed that it is close to"""
 
-    if parameters.PROCESS_VERSION  == "sortByDistances":
+    if parameters.PAIRING_VERSION  == "sortByDistances":
         dict_seq = sortByDistances()
-    elif parameters.PROCESS_VERSION  == "sortByCommons":
+    elif parameters.PAIRING_VERSION  == "sortByCommons":
         dict_seq = sortByCommons()
     else:
-        print("process.py : processType does not match any know process type, aborting...")
+        print("pairing.py : pairing_version does not match any know pairing type, aborting...")
 
     for seq,sent in tqdm(dict_seq.items()):
         new_data = [] 
@@ -100,8 +100,8 @@ def sortBySeeds():
             writeJson(f"output/{parameters.NAMEPATH}/sorted/{''.join(x for x in seq.replace(' ','_') if x.isalnum() or x == '_')}.json",new_data)
 
 
-def process():
-    """process process on every file in 'data/' folder"""
+def pairingAll():
+    """process pairing on every file in 'data/' folder"""
     createFolders(f"output/{parameters.NAMEPATH}/sorted")
-    sortBySeeds()
+    pairing()
     print("")

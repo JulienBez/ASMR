@@ -2,7 +2,7 @@ from . import parameters
 from .utils import *
 
 def filterByRules(data):
-    """"""
+    """apply filters according to the parameters specified in parameters.py for each layer"""
     new_data = []
     for entry in data:
         filtered = False
@@ -17,20 +17,20 @@ def filterByRules(data):
 
 
 def filterLines(lines):
-    """"""
+    """apply filters according to the parameters specified in parameters.py for mean score and freq"""
     new_lines = [line for line in lines if line["meanLayer"] >= parameters.minSim and line["meanLayer"] <= parameters.maxSim and line["frequence"] >= parameters.minFreq]
     if parameters.nrow != 0:
         new_lines = new_lines[:parameters.nrow]
     return new_lines
 
 
-def createTexTable(lines,path,kept=["shown","meanLayer","frequence"],RtoL=parameters.RtoL):
+def createTexTable(lines,path,kept=["candidate","meanLayer","frequence"],RtoL=parameters.RtoL):
     """write a latex table from a dict of lines"""
     tex_lines = []
     for line in lines:
         line["meanLayer"] = round(line["meanLayer"],2)
         if RtoL:
-            line["shown"] = f"\\<{line['shown']}>"
+            line["candidate"] = f"\\<{line['candidate']}>"
         tex_lines.append([str(v) for k,v in line.items() if k in kept])
     tex_lines.insert(0,kept)
     tex_lines_write = "\n".join([" & ".join(tl)+"\\\\" for tl in tex_lines])
@@ -53,7 +53,7 @@ def rank(path):
             
             line = {
 				"compare":{
-					"shown":" ".join(entry["commonSegments"][parameters.main_layer][i]),
+					"candidate":" ".join(entry["commonSegments"]["TOK"][i]),#[parameters.main_layer][i]),
 					"meanLayer":entry["similarities"]["meanLayer"][i], 
 				},
 				"add":{

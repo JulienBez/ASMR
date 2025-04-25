@@ -1,7 +1,7 @@
+from Levenshtein import ratio
+
 from . import parameters
 from .utils import *
-
-from Levenshtein import ratio
 
 def exactSegment(seed_align):
     """we ignore misalignment lists"""
@@ -19,7 +19,7 @@ def fuzzySegment(seed_align,sent_align):
     return [i for i in range(seed_align[0],seed_align[-1]+1)]
 
 
-def combinedSegment(seed_align,sent_align,entry,seeds):
+def combinedSegment(seed_align,sent_align,entry,seeds,discont=parameters.discont):
     """for each misalignment list, we try to find a substitue for each missing words using rules"""
     """rule 1: we take the first word in misalignment list with the same POS tag (takes distance and POS sim into account)"""
     """rule 2: if no common POS tag, we look for the word with the biggest number of similarities for each misaligned word"""
@@ -44,12 +44,14 @@ def combinedSegment(seed_align,sent_align,entry,seeds):
                     candidates_sim = {}
 
                     tok_not_found = seeds[entry["paired_with"]["seed"]][parameters.TOK_layer][not_found]
-                    pos_not_found = seeds[entry["paired_with"]["seed"]][parameters.POS_layer][not_found]
+                    if parameters.POS_layer in parameters.layers.keys():
+                        pos_not_found = seeds[entry["paired_with"]["seed"]][parameters.POS_layer][not_found]
 
-                    for candidate in sent_align[i]: #for each word in the misalignment list (i.e. for each substitute candidate)
+                    for candidate in sent_align[i][:discont]: #for each word in the misalignment list (i.e. for each substitute candidate)
 
                         tok_candidate = entry["parsing"][parameters.TOK_layer][candidate]
-                        pos_candidate = entry["parsing"][parameters.POS_layer][candidate]
+                        if parameters.POS_layer in parameters.layers.keys():
+                            pos_candidate = entry["parsing"][parameters.POS_layer][candidate]
 
                         if parameters.POS_layer in parameters.layers.keys() and pos_candidate == pos_not_found: #if they have the same pos tags
                             candidates_pos.append(candidate)
@@ -74,9 +76,7 @@ def combinedSegment(seed_align,sent_align,entry,seeds):
     #    print(seeds[entry["paired_with"]["seed"]]["lemma"])
     #    print()
 
-    return combined
-
-            
+    return combined          
 
 
 def commonSegment(seed,sent,entry,seeds):

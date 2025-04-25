@@ -167,7 +167,7 @@ def plotCoherenceProgression(studied_seeds):
 
 
 def clusterByThreshold(studied_seeds):
-    """"""
+    """cluster candidates around the seed"""
 
     if len(studied_seeds) == 0:
         studied_seeds = list(openJson(f"data/{parameters.NAMEPATH}.json").keys()) #if no specified studied_seeds, takes all
@@ -226,6 +226,6 @@ def results():
     """"""
     createFolders(f"logs/{parameters.NAMEPATH}/images")
     plotScores()
-    #plotScores(uniques=True)
-    #clusterByThreshold(parameters.studied_sequences)
-    #plotCoherenceProgression(parameters.studied_sequences)
+    plotScores(uniques=True)
+    clusterByThreshold(parameters.studied_sequences)
+    plotCoherenceProgression(parameters.studied_sequences)

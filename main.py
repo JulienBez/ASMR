@@ -1,7 +1,7 @@
 import time
 
 from src.utils import *
-from src.process import *
+from src.pairing import *
 from src.align import *
 from src.segment import *
 from src.measure import *
@@ -9,16 +9,13 @@ from src.rank import *
 from src.metadata import *
 from src.results import *
 
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import CountVectorizer
-
 def proceed(args):
     
     start = time.time()
     
-    if args.process:
-        print("Processing data...")
-        process()
+    if args.pairing:
+        print("Creating pairs...")
+        pairingAll()
       
     if args.align:
         print("Creating alignments...")
@@ -53,7 +50,7 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("-p", "--process", action="store_true", help="Clean and sort input data.")
+    parser.add_argument("-p", "--pairing", action="store_true", help="Create pairs between sentences and seeds.")
     parser.add_argument("-a", "--align", action="store_true", help="Create alignments between each sentence and their seed.")
     parser.add_argument("-s", "--segment", action="store_true", help="Search for common segments to isolate using the alignments.")
     parser.add_argument("-m", "--measure", action="store_true", help="Measure a similarity score between each sentence and their seed.")
