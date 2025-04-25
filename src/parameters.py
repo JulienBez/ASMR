@@ -1,5 +1,5 @@
 # RUN ASMR ON <NAMEPATH> #
-NAMEPATH = "FrUIT"            # corpus we work on (must have a folder and a json file with this name)
+NAMEPATH = "FrUIT"                  # corpus we work on (must have a folder and a json file with this name)
 
 
 # PARAMETERS #
