@@ -1,6 +1,6 @@
 # ASMR
 
-ASMR (Align, Segment, Match and Rank) is an empirical, alignment-based algorithm whose goal is the extraction and the identification of Puns in Multiword Expressions (PMWEs). PMWES are characterized by the creation of a pun or a wordplay from a source multiword expression in order to recontextualize it or give it a humorous touch (e.g: "may the force be with you" becoming "may the beer be with you"). This algorithm was made during my PhD thesis. Here is a list of all the publications I made on it:
+ASMR (Align, Segment, Match and Rank) is an empirical, alignment-based algorithm whose goal is the extraction and the identification of Puns in Multiword Expressions (PMWEs). PMWES are characterized by the creation of a pun or a wordplay from a source multiword expression in order to recontextualize it or give it a humorous touch (e.g: "may the force be with you" becoming "may the beer be with you"). This algorithm was made during my PhD thesis. Here is a list of all the publications I made while using it:
 
 - Reconnaissance de défigements dans des tweets en français par des mesures de similarité sur des alignements textuels (Bezançon & Lejeune, JEP/TALN/RECITAL 2023)
 - Lost in Variation: An Unsupervised Methodology for Mining Lexico-syntactic Patterns in Middle Arabic Texts (Bezançon et al., WACL 2025)
