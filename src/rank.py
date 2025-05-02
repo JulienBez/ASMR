@@ -5,14 +5,17 @@ def filterByRules(data):
     """apply filters according to the parameters specified in parameters.py for each layer"""
     new_data = []
     for entry in data:
-        filtered = False
-        for layer, rules in parameters.layers.items():
-            if max(entry["similarities"][layer]) >= rules["min"] and max(entry["similarities"][layer]) <= rules["max"]:
-                pass
-            else:
-                filtered = True
-        if filtered == False:
-            new_data.append(entry)
+        try:
+            filtered = False
+            for layer, rules in parameters.layers.items():
+                if max(entry["similarities"][layer]) >= rules["min"] and max(entry["similarities"][layer]) <= rules["max"]:
+                    pass
+                else:
+                    filtered = True
+            if filtered == False:
+                new_data.append(entry)
+        except:
+            continue
     return new_data
 
 
