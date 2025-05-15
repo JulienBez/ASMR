@@ -1,19 +1,19 @@
 # RUN ASMR ON <NAMEPATH> #
-NAMEPATH = "IMDB_fr"                  # corpus we work on (must have a folder and a json file with this name)
+NAMEPATH = "baybars"            # corpus we work on (must have a folder and a json file with this name)
 
 
 # PARAMETERS #
 PAIRING_VERSION = "sortByCommons"   # sortByDistances, sortByCommons
-SEGMENT_VERSION = "combined"        # exact, fuzzy, combined
+SEGMENT_VERSION = "fuzzy"           # exact, fuzzy, combined
 debug = False                       # if True, return error messages when needed, else ignore
 
 
 # VECTORS #
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
-vectorizer = TfidfVectorizer(ngram_range=(1,2),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")                     # for catchphrase
+#vectorizer = TfidfVectorizer(ngram_range=(1,2),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")                     # for catchphrase
 #vectorizer = TfidfVectorizer(ngram_range=(3,4),encoding="utf-8",lowercase=True,stop_words=None,analyzer="char")                    # for FrUIT
-#vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" "))    # for Baybars
+vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" "))    # for Baybars
 POS_vectorizer = TfidfVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")
 
 

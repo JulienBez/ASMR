@@ -178,8 +178,11 @@ def segment(path):
             for layer in parameters.layers.keys():
                 if layer not in entry["commonSegments"]:
                     entry["commonSegments"][layer] = []
-                    
-                seg = [entry["parsing"][layer][i] for i in commonSeg] 
+
+                try:
+                    seg = [entry["parsing"][layer][i] for i in commonSeg]
+                except:
+                    seg = entry["parsing"][layer]
                 entry["commonSegments"][layer].append(seg)
 
         new_data.append(entry)
