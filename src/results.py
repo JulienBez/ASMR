@@ -23,6 +23,8 @@ def silhouette(X, clusters):
 def plotScores(uniques=False):
     """plot the number of isolated segments for each decimal score between 0 and 1"""
 
+    createFolders(f"logs/{parameters.NAMEPATH}/images")
+
     ids = []
     scores = []
     seen = set()
@@ -46,20 +48,20 @@ def plotScores(uniques=False):
     fig, ax1 = plt.subplots()
 
     counts, edges, _ = ax1.hist(scores, bins=bins, edgecolor='black')
-    ax1.set_xlabel('Scores')#,fontsize=20)
-    ax1.set_ylabel('Number of sequences')#,fontsize=20)
+    ax1.set_xlabel('Scores',fontsize=20)
+    ax1.set_ylabel('Number of sequences',fontsize=20)
 
     ax2 = ax1.twinx()
     cumulative_counts = np.cumsum(counts)
     ax2.plot(edges[:-1] + 0.05, cumulative_counts, color='red', marker='o', linestyle='-', linewidth=2) #cumulative Number of sequences found
-    ax2.set_ylabel('Cumulative number of sequences')#,fontsize=20)
+    ax2.set_ylabel('Cumulative number of sequences',fontsize=20)
 
     filename = f"logs/{parameters.NAMEPATH}/images/plotscores.png"
     if uniques:
         filename = filename.replace(".png","_uniques.png")
 
 
-    #fig.set_size_inches(16,9)
+    fig.set_size_inches(16,9)
     plt.savefig(filename)
     plt.close()
 
@@ -96,7 +98,7 @@ def plotCoherenceProgression(studied_seeds):
     coherences_all = []
     seeds = []
 
-    for seed,segments in results.items():
+    for seed,segments in tqdm(results.items()):
         coherences = []
         sequences_old = []
         coherence_old = "NA"
@@ -121,11 +123,14 @@ def plotCoherenceProgression(studied_seeds):
         coherences_all.append(coherences)
         seeds.append(seed)
 
+
+    print("ok")
     # FIGURE #
-    plt.figure(figsize=(12, 4))
+    plt.figure(figsize=(12, 4)) #figsize=(12, 4)
     
     colors = plt.colormaps['Dark2'].colors
     colors_count = 0
+    print("ok")
 
     #plot coherence progression for each sequence
     for i, scores in enumerate(coherences_all):
@@ -138,6 +143,8 @@ def plotCoherenceProgression(studied_seeds):
             colors_count += 1
         else:
             plt.plot(thresh, scores, linestyle='-', color="lightgray", alpha=0.4, label='_nolegend_')
+
+    print("ok")
 
     #plot mean coherence progression
     scores_merge = []
@@ -153,6 +160,8 @@ def plotCoherenceProgression(studied_seeds):
     thresh_merge = [thresholds[i] for i in range(len(scores_merge)) if scores_merge[i] != "NA"]
     scores_merge = [i for i in scores_merge if i != "NA"]
     plt.plot(thresh_merge, scores_merge, linestyle='-', color="red", alpha=1)
+
+    print("ok")
 
     plt.xlabel('Threshold')
     plt.ylabel('Intra Cluster Score')

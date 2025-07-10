@@ -1,5 +1,5 @@
 # RUN ASMR ON <NAMEPATH> #
-NAMEPATH = "baybars"            # corpus we work on (must have a folder and a json file with this name)
+NAMEPATH = "catchphrase"                  # corpus we work on (must have a folder and a json file with this name)
 
 
 # PARAMETERS #
@@ -11,9 +11,9 @@ debug = False                       # if True, return error messages when needed
 # VECTORS #
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
-#vectorizer = TfidfVectorizer(ngram_range=(1,2),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")                     # for catchphrase
+vectorizer = TfidfVectorizer(ngram_range=(1,2),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")                     # for catchphrase
 #vectorizer = TfidfVectorizer(ngram_range=(3,4),encoding="utf-8",lowercase=True,stop_words=None,analyzer="char")                    # for FrUIT
-vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" "))    # for Baybars
+#vectorizer = CountVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer=lambda x: x.split(" "))    # for Baybars
 POS_vectorizer = TfidfVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")
 
 
@@ -30,14 +30,14 @@ layers = {                          # main_layer + other layers we take into acc
         "min":0,                    # minimum TOK similarity required to be in the ranking
         "max":2                     # maximum TOK similarity requited to be in the ranking
     },
-    "POS" : {
-        "min":0,                    # minimum POS similarity required to be in the ranking
-        "max":2                     # maximum POS similarity requited to be in the ranking
-    },
-    "LEM" : {
-        "min":0,                    # minimum LEM similarity required to be in the ranking
-        "max":2                     # maximum LEM similarity requited to be in the ranking
-    }
+#    "POS" : {
+#        "min":0,                    # minimum POS similarity required to be in the ranking
+#        "max":2                     # maximum POS similarity requited to be in the ranking
+#    },
+#    "LEM" : {
+#        "min":0,                    # minimum LEM similarity required to be in the ranking
+#        "max":2                     # maximum LEM similarity requited to be in the ranking
+#    }
 }
 
 
@@ -51,7 +51,7 @@ latex = True                        # create ranking in the form of a simple lat
 
 # RESULTS #
 RtoL = False                        # for languages written from right to left, only used by results.py and rank.py
-studied_sequences = [] 
+studied_sequences = []
 unwanted = ""
 
 # studied_sequences list examples:

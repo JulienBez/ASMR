@@ -3,7 +3,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from . import parameters
 from .utils import *
 
-def sortByDistances(similarity_threshold = 0.9):
+def sortByDistances(similarity_threshold = 0.1):
     """for each seed, find the closest sentences to this seed (a.k.a remove the furthest ones)"""
 
     ids = []

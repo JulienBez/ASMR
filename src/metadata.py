@@ -1,6 +1,36 @@
 from . import parameters
 from .utils import *
 
+
+def statsTable():
+    """"""
+    total_cand = 0
+    table = []
+    for path in glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json"):
+        data = openJson(path)
+        tokens = 0
+        sup_5 = 0
+        sup_9 = 0
+        for entry in data:
+            tokens += len(entry["parsing"]["TOK"])
+            maxi = max(entry["similarities"]["meanLayer"])
+            if maxi > 0.5 and maxi <= 0.9:
+                sup_5 += 1
+                total_cand += 1
+            elif maxi > 0.9:
+                sup_9 += 1
+                total_cand += 1
+        tab = [data[0]["paired_with"]["seed"],len(data),tokens,sup_5,sup_9]
+        table.append(tab)
+    table = sorted(table,reverse=True,key=lambda x: x[1])
+    for i in range(len(table)):
+        table[i] = [str(j) for j in table[i]]
+    table = [" & ".join(["MWE","\\# tweets","\\# tokens","> 0.5","> 0.9 \\\\"])] + [" & ".join(t) + " \\\\" for t in table]
+    createFolders(f"logs/{parameters.NAMEPATH}")
+    writeFile(f"logs/{parameters.NAMEPATH}/table_stats.tex","\n".join(table))
+    #print(total_cand)
+
+
 def statsInput():
     """retrieve various stats for the corpus before ASMR run"""
     num_sentences = 0
@@ -56,5 +86,6 @@ def metadata():
         debug("metadata.py : no file in data/NAMEPATH")
     try:
         statsOutput()
+        statsTable()
     except:
         debug("metadata.py : no file in output/NAMEPATH/sorted")

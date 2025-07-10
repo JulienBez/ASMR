@@ -73,7 +73,7 @@ def measureLEVEN(path):
         sents_ids,sents = handleMultiplesAlignments(data,layer)
         pairwise_sim = []
         for s in sents:
-            p = ratio(" ".join(seed)," ".join(s))
+            p = ratio(" ".join(seed[layer])," ".join(s))
             pairwise_sim.append(p)
         for i,ids in enumerate(sents_ids):
             data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
