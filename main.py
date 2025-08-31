@@ -17,64 +17,6 @@ from src.parseme_metadata import *
 
 from src import parameters
 
-for path in glob.glob("output/*/dev_combined_best_runs.json"):
-    lang = path.split("/")[-2]
-    paramStudy("exact",thresholds=["1","0.7","0.4","0.1"],langu=lang)
-paramStudy("exact")
-1/0
-
-a = False
-if a:
-    test = []
-    mwes = openJson("data/FR.json").keys()
-    for path in tqdm(glob.glob("output/FR/sorted/*.json")):
-        p = openJson(path)
-        test = test + p
-    nb_test = 1297
-    nb_good = 0
-    for i in tqdm(test):
-        i_mwes = i["metadata"]["mwes"]
-        seed = i["paired_with"]["seed"]
-        if seed in i_mwes:
-            nb_good += 1
-    print(nb_test,nb_good,nb_good/nb_test)
-    1/0
-
-#parsemeHistogram()
-#paramStudy("exact")
-#getTable(category="MWE-based",measure="F",n=10)
-#allMeans("combined")
-#bestParamExtraction()
-#exampleRankingParseme()
-#1/0
-
-#Arabic,Bulgarian,Czech,German,Greek,English,Spanish,Basque,Persian,French,Irish,Hebrew,Hindi,Croatian,Hungarian,Italian,Lithuanian,Maltese,Polish,Portuguese,Romanian,Slovenian,Serbian,Swedish,Turkish,Chinese
-#languages = set()
-#for path in glob.glob("data/*.json"):
-#    lang = path.split("/")[-1].replace(".json","")
-#    languages.add(lang)
-#print(",".join(sorted(list(languages))))
-#1/0
-    
-
-"""
-V = parameters.vectorizer
-def vectorizer(V,seed,sents,metric="cosine"):
-    "vectorize in unigrams and bigrams the seed and the sent"
-    X = V.fit_transform([" ".join(sent) for sent in sents]) #to ensure there odds items don't ruin the process
-    Y = V.transform([" ".join(seed)])
-    return pairwise_kernels(Y,X,metric=metric)[0]
-
-a = "some men just want to watch the world burn".split(" ")
-b_exact = "some really just want to want to watch the world".split(" ")
-b_fuzzy = "some people really do just want to watch the world freeze".split(" ")
-b_combi = "some people just want to watch the world freeze".split(" ")
-
-sent = [b_exact,b_fuzzy,b_combi]
-
-print(vectorizer(V,a,sent))"""
-#1/0
-
 #python main.py -L HI -S exact -FpasmTE
 def proceed(args):
     
