@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=180/791=0.2276 R=180/303=0.5941 F=0.3291
+* Tok-based: P=450/1150=0.3913 R=450/652=0.6902 F=0.4994
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=302/303=100% pred=0/791=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/302=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/649=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/303=0% pred=791/791=100%
+* <unlabeled>: MWE-based: P=0/791=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1150=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=1/303=0% pred=0/791=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/3=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=257/303=85% pred=690/791=87%
+* Continuous: MWE-based: P=162/690=0.2348 R=162/257=0.6304 F=0.3421
+* Discontinuous: MWE-proportion: gold=46/303=15% pred=101/791=13%
+* Discontinuous: MWE-based: P=18/101=0.1782 R=18/46=0.3913 F=0.2449
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=303/303=100% pred=332/791=42%
+* Multi-token: MWE-based: P=180/332=0.5422 R=180/303=0.5941 F=0.5669
+* Single-token: MWE-proportion: gold=0/303=0% pred=459/791=58%
+* Single-token: MWE-based: P=0/459=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=203/303=67% pred=225/791=28%
+* Seen-in-train: MWE-based: P=179/225=0.7956 R=179/203=0.8818 F=0.8364
+* Unseen-in-train: MWE-proportion: gold=100/303=33% pred=566/791=72%
+* Unseen-in-train: MWE-based: P=1/566=0.0018 R=1/100=0.0100 F=0.0030
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=92/203=45% pred=111/225=49%
+* Variant-of-train: MWE-based: P=74/111=0.6667 R=74/92=0.8043 F=0.7291
+* Identical-to-train: MWE-proportion: gold=111/203=55% pred=114/225=51%
+* Identical-to-train: MWE-based: P=105/114=0.9211 R=105/111=0.9459 F=0.9333
+

@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=260/2234=0.1164 R=260/466=0.5579 F=0.1926
+* Tok-based: P=668/2795=0.2390 R=668/970=0.6887 F=0.3548
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=216/466=46% pred=0/2234=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/216=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/440=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/466=0% pred=2234/2234=100%
+* <unlabeled>: MWE-based: P=0/2234=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/2795=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=250/466=54% pred=0/2234=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/250=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/530=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=441/466=95% pred=2148/2234=96%
+* Continuous: MWE-based: P=254/2148=0.1182 R=254/441=0.5760 F=0.1962
+* Discontinuous: MWE-proportion: gold=25/466=5% pred=86/2234=4%
+* Discontinuous: MWE-based: P=6/86=0.0698 R=6/25=0.2400 F=0.1081
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=466/466=100% pred=534/2234=24%
+* Multi-token: MWE-based: P=260/534=0.4869 R=260/466=0.5579 F=0.5200
+* Single-token: MWE-proportion: gold=0/466=0% pred=1700/2234=76%
+* Single-token: MWE-based: P=0/1700=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=369/466=79% pred=457/2234=20%
+* Seen-in-train: MWE-based: P=258/457=0.5646 R=258/369=0.6992 F=0.6247
+* Unseen-in-train: MWE-proportion: gold=97/466=21% pred=1777/2234=80%
+* Unseen-in-train: MWE-based: P=2/1777=0.0011 R=2/97=0.0206 F=0.0021
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=231/369=63% pred=322/457=70%
+* Variant-of-train: MWE-based: P=156/322=0.4845 R=156/231=0.6753 F=0.5642
+* Identical-to-train: MWE-proportion: gold=138/369=37% pred=135/457=30%
+* Identical-to-train: MWE-based: P=102/135=0.7556 R=102/138=0.7391 F=0.7473
+

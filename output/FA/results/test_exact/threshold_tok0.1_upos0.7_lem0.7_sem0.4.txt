@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=552/702=0.7863 R=552/901=0.6127 F=0.6887
+* Tok-based: P=1208/1475=0.8190 R=1208/1918=0.6298 F=0.7121
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/702=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=702/702=100%
+* <unlabeled>: MWE-based: P=0/702=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1475=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/702=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=561/702=80%
+* Continuous: MWE-based: P=494/561=0.8806 R=494/754=0.6552 F=0.7513
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=141/702=20%
+* Discontinuous: MWE-based: P=58/141=0.4113 R=58/147=0.3946 F=0.4028
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=702/702=100%
+* Multi-token: MWE-based: P=552/702=0.7863 R=552/901=0.6127 F=0.6887
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/702=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=699/702=100%
+* Seen-in-train: MWE-based: P=551/699=0.7883 R=551/602=0.9153 F=0.8470
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=3/702=0%
+* Unseen-in-train: MWE-based: P=1/3=0.3333 R=1/299=0.0033 F=0.0066
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=355/699=51%
+* Variant-of-train: MWE-based: P=245/355=0.6901 R=245/288=0.8507 F=0.7621
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=344/699=49%
+* Identical-to-train: MWE-based: P=306/344=0.8895 R=306/314=0.9745 F=0.9301
+

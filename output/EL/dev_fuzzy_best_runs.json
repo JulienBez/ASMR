@@ -1,0 +1,12 @@
+[
+    "threshold_tok0.1_upos0.7_lem0.7_sem0.7",
+    "threshold_tok0.1_upos0.7_lem0.7_sem0.1",
+    "threshold_tok0.1_upos0.7_lem0.7_sem0.4",
+    "threshold_tok0.1_upos1_lem0.4_sem0.1",
+    "threshold_tok0.4_upos0.7_lem0.7_sem0.7",
+    "threshold_tok0.1_upos0.7_lem0.4_sem0.7",
+    "threshold_tok0.1_upos1_lem0.4_sem0.4",
+    "threshold_tok0.4_upos0.7_lem0.7_sem0.1",
+    "threshold_tok0.4_upos0.7_lem0.7_sem0.4",
+    "threshold_tok0.4_upos0.7_lem0.4_sem0.7"
+]

@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=287/736=0.3899 R=287/466=0.6159 F=0.4775
+* Tok-based: P=620/1532=0.4047 R=620/970=0.6392 F=0.4956
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=216/466=46% pred=0/736=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/216=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/440=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/466=0% pred=736/736=100%
+* <unlabeled>: MWE-based: P=0/736=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1532=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=250/466=54% pred=0/736=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/250=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/530=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=441/466=95% pred=556/736=76%
+* Continuous: MWE-based: P=280/556=0.5036 R=280/441=0.6349 F=0.5617
+* Discontinuous: MWE-proportion: gold=25/466=5% pred=180/736=24%
+* Discontinuous: MWE-based: P=7/180=0.0389 R=7/25=0.2800 F=0.0683
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=466/466=100% pred=736/736=100%
+* Multi-token: MWE-based: P=287/736=0.3899 R=287/466=0.6159 F=0.4775
+* Single-token: MWE-proportion: gold=0/466=0% pred=0/736=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=369/466=79% pred=493/736=67%
+* Seen-in-train: MWE-based: P=277/493=0.5619 R=277/369=0.7507 F=0.6427
+* Unseen-in-train: MWE-proportion: gold=97/466=21% pred=243/736=33%
+* Unseen-in-train: MWE-based: P=10/243=0.0412 R=10/97=0.1031 F=0.0588
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=231/369=63% pred=349/493=71%
+* Variant-of-train: MWE-based: P=166/349=0.4756 R=166/231=0.7186 F=0.5724
+* Identical-to-train: MWE-proportion: gold=138/369=37% pred=144/493=29%
+* Identical-to-train: MWE-based: P=111/144=0.7708 R=111/138=0.8043 F=0.7872
+

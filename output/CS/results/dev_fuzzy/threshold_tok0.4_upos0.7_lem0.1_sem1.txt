@@ -1,0 +1,42 @@
+## Global evaluation
+* MWE-based: P=6/8=0.7500 R=6/523=0.0115 F=0.0226
+* Tok-based: P=17/17=1.0000 R=17/1192=0.0143 F=0.0281
+
+## Per-category evaluation (partition of Global)
+* IRV: MWE-proportion: gold=357/523=68% pred=0/8=0%
+* IRV: MWE-based: P=0/0=0.0000 R=0/357=0.0000 F=0.0000
+* IRV: Tok-based: P=0/0=0.0000 R=0/775=0.0000 F=0.0000
+* LVC.full: MWE-proportion: gold=98/523=19% pred=0/8=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/98=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/216=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/523=0% pred=8/8=100%
+* <unlabeled>: MWE-based: P=0/8=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/17=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=68/523=13% pred=0/8=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/68=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/201=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=269/523=51% pred=8/8=100%
+* Continuous: MWE-based: P=6/8=0.7500 R=6/269=0.0223 F=0.0433
+* Discontinuous: MWE-proportion: gold=254/523=49% pred=0/8=0%
+* Discontinuous: MWE-based: P=0/0=0.0000 R=0/254=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=523/523=100% pred=8/8=100%
+* Multi-token: MWE-based: P=6/8=0.7500 R=6/523=0.0115 F=0.0226
+* Single-token: MWE-proportion: gold=0/523=0% pred=0/8=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=426/523=81% pred=8/8=100%
+* Seen-in-train: MWE-based: P=6/8=0.7500 R=6/426=0.0141 F=0.0276
+* Unseen-in-train: MWE-proportion: gold=97/523=19% pred=0/8=0%
+* Unseen-in-train: MWE-based: P=0/0=0.0000 R=0/97=0.0000 F=0.0000
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=275/426=65% pred=5/8=62%
+* Variant-of-train: MWE-based: P=3/5=0.6000 R=3/275=0.0109 F=0.0214
+* Identical-to-train: MWE-proportion: gold=151/426=35% pred=3/8=38%
+* Identical-to-train: MWE-based: P=3/3=1.0000 R=3/151=0.0199 F=0.0390
+

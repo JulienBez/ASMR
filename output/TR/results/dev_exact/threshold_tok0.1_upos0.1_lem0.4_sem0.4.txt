@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=362/3477=0.1041 R=362/466=0.7768 F=0.1836
+* Tok-based: P=837/4262=0.1964 R=837/970=0.8629 F=0.3200
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=216/466=46% pred=0/3477=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/216=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/440=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/466=0% pred=3477/3477=100%
+* <unlabeled>: MWE-based: P=0/3477=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/4262=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=250/466=54% pred=0/3477=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/250=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/530=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=441/466=95% pred=3338/3477=96%
+* Continuous: MWE-based: P=350/3338=0.1049 R=350/441=0.7937 F=0.1852
+* Discontinuous: MWE-proportion: gold=25/466=5% pred=139/3477=4%
+* Discontinuous: MWE-based: P=12/139=0.0863 R=12/25=0.4800 F=0.1463
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=466/466=100% pred=749/3477=22%
+* Multi-token: MWE-based: P=362/749=0.4833 R=362/466=0.7768 F=0.5959
+* Single-token: MWE-proportion: gold=0/466=0% pred=2728/3477=78%
+* Single-token: MWE-based: P=0/2728=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=369/466=79% pred=642/3477=18%
+* Seen-in-train: MWE-based: P=360/642=0.5607 R=360/369=0.9756 F=0.7122
+* Unseen-in-train: MWE-proportion: gold=97/466=21% pred=2835/3477=82%
+* Unseen-in-train: MWE-based: P=2/2835=0.0007 R=2/97=0.0206 F=0.0014
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=231/369=63% pred=466/642=73%
+* Variant-of-train: MWE-based: P=224/466=0.4807 R=224/231=0.9697 F=0.6428
+* Identical-to-train: MWE-proportion: gold=138/369=37% pred=176/642=27%
+* Identical-to-train: MWE-based: P=136/176=0.7727 R=136/138=0.9855 F=0.8662
+

@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=1036/1955=0.5299 R=1036/1439=0.7199 F=0.6105
+* Tok-based: P=2125/4099=0.5184 R=2125/2964=0.7169 F=0.6017
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=688/1439=48% pred=0/1955=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/688=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1388=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/1439=0% pred=1955/1955=100%
+* <unlabeled>: MWE-based: P=0/1955=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/4099=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=751/1439=52% pred=0/1955=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/751=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/1576=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1375/1439=96% pred=1955/1955=100%
+* Continuous: MWE-based: P=1036/1955=0.5299 R=1036/1375=0.7535 F=0.6222
+* Discontinuous: MWE-proportion: gold=64/1439=4% pred=0/1955=0%
+* Discontinuous: MWE-based: P=0/0=0.0000 R=0/64=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1438/1439=100% pred=1955/1955=100%
+* Multi-token: MWE-based: P=1036/1955=0.5299 R=1036/1438=0.7204 F=0.6107
+* Single-token: MWE-proportion: gold=1/1439=0% pred=0/1955=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=1139/1439=79% pred=1526/1955=78%
+* Seen-in-train: MWE-based: P=996/1526=0.6527 R=996/1139=0.8745 F=0.7475
+* Unseen-in-train: MWE-proportion: gold=300/1439=21% pred=429/1955=22%
+* Unseen-in-train: MWE-based: P=40/429=0.0932 R=40/300=0.1333 F=0.1097
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=708/1139=62% pred=999/1526=65%
+* Variant-of-train: MWE-based: P=598/999=0.5986 R=598/708=0.8446 F=0.7006
+* Identical-to-train: MWE-proportion: gold=431/1139=38% pred=527/1526=35%
+* Identical-to-train: MWE-based: P=398/527=0.7552 R=398/431=0.9234 F=0.8309
+

@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=392/1869=0.2097 R=392/466=0.8412 F=0.3358
+* Tok-based: P=853/4058=0.2102 R=853/970=0.8794 F=0.3393
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=216/466=46% pred=0/1869=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/216=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/440=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/466=0% pred=1869/1869=100%
+* <unlabeled>: MWE-based: P=0/1869=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/4058=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=250/466=54% pred=0/1869=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/250=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/530=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=441/466=95% pred=1869/1869=100%
+* Continuous: MWE-based: P=392/1869=0.2097 R=392/441=0.8889 F=0.3394
+* Discontinuous: MWE-proportion: gold=25/466=5% pred=0/1869=0%
+* Discontinuous: MWE-based: P=0/0=0.0000 R=0/25=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=466/466=100% pred=1869/1869=100%
+* Multi-token: MWE-based: P=392/1869=0.2097 R=392/466=0.8412 F=0.3358
+* Single-token: MWE-proportion: gold=0/466=0% pred=0/1869=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=369/466=79% pred=518/1869=28%
+* Seen-in-train: MWE-based: P=341/518=0.6583 R=341/369=0.9241 F=0.7689
+* Unseen-in-train: MWE-proportion: gold=97/466=21% pred=1351/1869=72%
+* Unseen-in-train: MWE-based: P=51/1351=0.0377 R=51/97=0.5258 F=0.0704
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=231/369=63% pred=349/518=67%
+* Variant-of-train: MWE-based: P=209/349=0.5989 R=209/231=0.9048 F=0.7207
+* Identical-to-train: MWE-proportion: gold=138/369=37% pred=169/518=33%
+* Identical-to-train: MWE-based: P=132/169=0.7811 R=132/138=0.9565 F=0.8599
+

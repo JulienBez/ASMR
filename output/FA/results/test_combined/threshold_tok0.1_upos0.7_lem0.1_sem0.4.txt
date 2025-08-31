@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=553/704=0.7855 R=553/901=0.6138 F=0.6891
+* Tok-based: P=1211/1481=0.8177 R=1211/1918=0.6314 F=0.7126
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/704=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=704/704=100%
+* <unlabeled>: MWE-based: P=0/704=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1481=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/704=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=562/704=80%
+* Continuous: MWE-based: P=495/562=0.8808 R=495/754=0.6565 F=0.7523
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=142/704=20%
+* Discontinuous: MWE-based: P=58/142=0.4085 R=58/147=0.3946 F=0.4014
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=704/704=100%
+* Multi-token: MWE-based: P=553/704=0.7855 R=553/901=0.6138 F=0.6891
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/704=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=699/704=99%
+* Seen-in-train: MWE-based: P=551/699=0.7883 R=551/602=0.9153 F=0.8470
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=5/704=1%
+* Unseen-in-train: MWE-based: P=2/5=0.4000 R=2/299=0.0067 F=0.0132
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=355/699=51%
+* Variant-of-train: MWE-based: P=245/355=0.6901 R=245/288=0.8507 F=0.7621
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=344/699=49%
+* Identical-to-train: MWE-based: P=306/344=0.8895 R=306/314=0.9745 F=0.9301
+

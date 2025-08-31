@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=862/1367=0.6306 R=862/1439=0.5990 F=0.6144
+* Tok-based: P=1767/2805=0.6299 R=1767/2964=0.5962 F=0.6126
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=688/1439=48% pred=0/1367=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/688=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1388=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/1439=0% pred=1367/1367=100%
+* <unlabeled>: MWE-based: P=0/1367=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/2805=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=751/1439=52% pred=0/1367=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/751=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/1576=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1375/1439=96% pred=1367/1367=100%
+* Continuous: MWE-based: P=862/1367=0.6306 R=862/1375=0.6269 F=0.6287
+* Discontinuous: MWE-proportion: gold=64/1439=4% pred=0/1367=0%
+* Discontinuous: MWE-based: P=0/0=0.0000 R=0/64=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1438/1439=100% pred=1367/1367=100%
+* Multi-token: MWE-based: P=862/1367=0.6306 R=862/1438=0.5994 F=0.6146
+* Single-token: MWE-proportion: gold=1/1439=0% pred=0/1367=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=1139/1439=79% pred=1212/1367=89%
+* Seen-in-train: MWE-based: P=829/1212=0.6840 R=829/1139=0.7278 F=0.7052
+* Unseen-in-train: MWE-proportion: gold=300/1439=21% pred=155/1367=11%
+* Unseen-in-train: MWE-based: P=33/155=0.2129 R=33/300=0.1100 F=0.1451
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=708/1139=62% pred=754/1212=62%
+* Variant-of-train: MWE-based: P=481/754=0.6379 R=481/708=0.6794 F=0.6580
+* Identical-to-train: MWE-proportion: gold=431/1139=38% pred=458/1212=38%
+* Identical-to-train: MWE-based: P=348/458=0.7598 R=348/431=0.8074 F=0.7829
+

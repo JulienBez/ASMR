@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=273/893=0.3057 R=273/466=0.5858 F=0.4018
+* Tok-based: P=603/1854=0.3252 R=603/970=0.6216 F=0.4271
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=216/466=46% pred=0/893=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/216=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/440=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/466=0% pred=893/893=100%
+* <unlabeled>: MWE-based: P=0/893=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1854=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=250/466=54% pred=0/893=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/250=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/530=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=441/466=95% pred=620/893=69%
+* Continuous: MWE-based: P=266/620=0.4290 R=266/441=0.6032 F=0.5014
+* Discontinuous: MWE-proportion: gold=25/466=5% pred=273/893=31%
+* Discontinuous: MWE-based: P=7/273=0.0256 R=7/25=0.2800 F=0.0470
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=466/466=100% pred=893/893=100%
+* Multi-token: MWE-based: P=273/893=0.3057 R=273/466=0.5858 F=0.4018
+* Single-token: MWE-proportion: gold=0/466=0% pred=0/893=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=369/466=79% pred=413/893=46%
+* Seen-in-train: MWE-based: P=253/413=0.6126 R=253/369=0.6856 F=0.6471
+* Unseen-in-train: MWE-proportion: gold=97/466=21% pred=480/893=54%
+* Unseen-in-train: MWE-based: P=20/480=0.0417 R=20/97=0.2062 F=0.0693
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=231/369=63% pred=277/413=67%
+* Variant-of-train: MWE-based: P=148/277=0.5343 R=148/231=0.6407 F=0.5827
+* Identical-to-train: MWE-proportion: gold=138/369=37% pred=136/413=33%
+* Identical-to-train: MWE-based: P=105/136=0.7721 R=105/138=0.7609 F=0.7664
+

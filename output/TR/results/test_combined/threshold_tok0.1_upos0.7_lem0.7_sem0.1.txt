@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=1023/2082=0.4914 R=1023/1439=0.7109 F=0.5811
+* Tok-based: P=2131/4259=0.5004 R=2131/2964=0.7190 F=0.5901
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=688/1439=48% pred=0/2082=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/688=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1388=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/1439=0% pred=2082/2082=100%
+* <unlabeled>: MWE-based: P=0/2082=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/4259=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=751/1439=52% pred=0/2082=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/751=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/1576=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1375/1439=96% pred=1650/2082=79%
+* Continuous: MWE-based: P=1004/1650=0.6085 R=1004/1375=0.7302 F=0.6638
+* Discontinuous: MWE-proportion: gold=64/1439=4% pred=432/2082=21%
+* Discontinuous: MWE-based: P=19/432=0.0440 R=19/64=0.2969 F=0.0766
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1438/1439=100% pred=2082/2082=100%
+* Multi-token: MWE-based: P=1023/2082=0.4914 R=1023/1438=0.7114 F=0.5813
+* Single-token: MWE-proportion: gold=1/1439=0% pred=0/2082=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=1139/1439=79% pred=1732/2082=83%
+* Seen-in-train: MWE-based: P=992/1732=0.5727 R=992/1139=0.8709 F=0.6910
+* Unseen-in-train: MWE-proportion: gold=300/1439=21% pred=350/2082=17%
+* Unseen-in-train: MWE-based: P=31/350=0.0886 R=31/300=0.1033 F=0.0954
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=708/1139=62% pred=1207/1732=70%
+* Variant-of-train: MWE-based: P=597/1207=0.4946 R=597/708=0.8432 F=0.6235
+* Identical-to-train: MWE-proportion: gold=431/1139=38% pred=525/1732=30%
+* Identical-to-train: MWE-based: P=395/525=0.7524 R=395/431=0.9165 F=0.8264
+

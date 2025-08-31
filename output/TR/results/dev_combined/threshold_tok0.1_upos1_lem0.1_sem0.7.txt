@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=184/754=0.2440 R=184/466=0.3948 F=0.3016
+* Tok-based: P=436/1529=0.2852 R=436/970=0.4495 F=0.3489
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=216/466=46% pred=0/754=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/216=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/440=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/466=0% pred=754/754=100%
+* <unlabeled>: MWE-based: P=0/754=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1529=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=250/466=54% pred=0/754=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/250=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/530=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=441/466=95% pred=437/754=58%
+* Continuous: MWE-based: P=181/437=0.4142 R=181/441=0.4104 F=0.4123
+* Discontinuous: MWE-proportion: gold=25/466=5% pred=317/754=42%
+* Discontinuous: MWE-based: P=3/317=0.0095 R=3/25=0.1200 F=0.0175
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=466/466=100% pred=754/754=100%
+* Multi-token: MWE-based: P=184/754=0.2440 R=184/466=0.3948 F=0.3016
+* Single-token: MWE-proportion: gold=0/466=0% pred=0/754=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=369/466=79% pred=305/754=40%
+* Seen-in-train: MWE-based: P=168/305=0.5508 R=168/369=0.4553 F=0.4985
+* Unseen-in-train: MWE-proportion: gold=97/466=21% pred=449/754=60%
+* Unseen-in-train: MWE-based: P=16/449=0.0356 R=16/97=0.1649 F=0.0586
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=231/369=63% pred=216/305=71%
+* Variant-of-train: MWE-based: P=102/216=0.4722 R=102/231=0.4416 F=0.4564
+* Identical-to-train: MWE-proportion: gold=138/369=37% pred=89/305=29%
+* Identical-to-train: MWE-based: P=66/89=0.7416 R=66/138=0.4783 F=0.5815
+

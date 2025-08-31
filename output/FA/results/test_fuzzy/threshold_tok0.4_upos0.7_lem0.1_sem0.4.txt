@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=606/833=0.7275 R=606/901=0.6726 F=0.6990
+* Tok-based: P=1347/1802=0.7475 R=1347/1918=0.7023 F=0.7242
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/833=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=833/833=100%
+* <unlabeled>: MWE-based: P=0/833=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1802=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/833=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=833/833=100%
+* Continuous: MWE-based: P=606/833=0.7275 R=606/754=0.8037 F=0.7637
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=0/833=0%
+* Discontinuous: MWE-based: P=0/0=0.0000 R=0/147=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=833/833=100%
+* Multi-token: MWE-based: P=606/833=0.7275 R=606/901=0.6726 F=0.6990
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/833=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=546/833=66%
+* Seen-in-train: MWE-based: P=481/546=0.8810 R=481/602=0.7990 F=0.8380
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=287/833=34%
+* Unseen-in-train: MWE-based: P=125/287=0.4355 R=125/299=0.4181 F=0.4266
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=218/546=40%
+* Variant-of-train: MWE-based: P=187/218=0.8578 R=187/288=0.6493 F=0.7391
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=328/546=60%
+* Identical-to-train: MWE-based: P=294/328=0.8963 R=294/314=0.9363 F=0.9159
+

@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=190/1015=0.1872 R=190/303=0.6271 F=0.2883
+* Tok-based: P=505/1388=0.3638 R=505/652=0.7745 F=0.4951
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=302/303=100% pred=0/1015=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/302=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/649=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/303=0% pred=1015/1015=100%
+* <unlabeled>: MWE-based: P=0/1015=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1388=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=1/303=0% pred=0/1015=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/3=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=257/303=85% pred=908/1015=89%
+* Continuous: MWE-based: P=170/908=0.1872 R=170/257=0.6615 F=0.2918
+* Discontinuous: MWE-proportion: gold=46/303=15% pred=107/1015=11%
+* Discontinuous: MWE-based: P=20/107=0.1869 R=20/46=0.4348 F=0.2614
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=303/303=100% pred=346/1015=34%
+* Multi-token: MWE-based: P=190/346=0.5491 R=190/303=0.6271 F=0.5855
+* Single-token: MWE-proportion: gold=0/303=0% pred=669/1015=66%
+* Single-token: MWE-based: P=0/669=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=203/303=67% pred=236/1015=23%
+* Seen-in-train: MWE-based: P=189/236=0.8008 R=189/203=0.9310 F=0.8610
+* Unseen-in-train: MWE-proportion: gold=100/303=33% pred=779/1015=77%
+* Unseen-in-train: MWE-based: P=1/779=0.0013 R=1/100=0.0100 F=0.0023
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=92/203=45% pred=117/236=50%
+* Variant-of-train: MWE-based: P=79/117=0.6752 R=79/92=0.8587 F=0.7560
+* Identical-to-train: MWE-proportion: gold=111/203=55% pred=119/236=50%
+* Identical-to-train: MWE-based: P=110/119=0.9244 R=110/111=0.9910 F=0.9565
+
