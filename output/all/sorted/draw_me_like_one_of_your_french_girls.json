@@ -1,0 +1,6299 @@
+[
+    {
+        "sent": "crochet me like one of your french girls.",
+        "metadata": {
+            "id": 30,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "crochet",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "crochet",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "."
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french girls jerry.",
+        "metadata": {
+            "id": 37,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "jerry",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "jerry",
+                    "."
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "i want you to draw me like one of your french girls",
+        "metadata": {
+            "id": 118,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "want",
+                "you",
+                "to",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "want",
+                    "you",
+                    "to",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your french boys jack.\"",
+        "metadata": {
+            "id": 161,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "boys",
+                "jack",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "boys",
+                    "jack",
+                    ".",
+                    "\"",
+                    "-"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french forwards ",
+        "metadata": {
+            "id": 270,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "forwards"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "forwards",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "\"film me like one of your french girls\"",
+        "metadata": {
+            "id": 314,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "film",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "film",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your spanish boys ",
+        "metadata": {
+            "id": 359,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "spanish",
+                "boys"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "spanish",
+                    "boys",
+                    "-",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5333476765032534
+            ],
+            "meanLayer": [
+                0.5333476765032534
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french girls kylo.",
+        "metadata": {
+            "id": 399,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "kylo",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "kylo",
+                    "."
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your lentils\"",
+        "metadata": {
+            "id": 400,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "lentils",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "lentils",
+                    "\"",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5333476765032534
+            ],
+            "meanLayer": [
+                0.5333476765032534
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your israeli boys ",
+        "metadata": {
+            "id": 412,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "israeli",
+                "boys"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "israeli",
+                    "boys",
+                    "-",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5333476765032534
+            ],
+            "meanLayer": [
+                0.5333476765032534
+            ]
+        }
+    },
+    {
+        "sent": "can you paint me like one of your french girls ",
+        "metadata": {
+            "id": 437,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "can",
+                "you",
+                "paint",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "can",
+                    "you",
+                    "paint",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "sticky me like one of your french girls",
+        "metadata": {
+            "id": 600,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "sticky",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "sticky",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your french girls.\"",
+        "metadata": {
+            "id": 699,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your navi girls",
+        "metadata": {
+            "id": 700,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "navi",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "navi",
+                    "-",
+                    "girls"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.4090414962393236
+            ],
+            "meanLayer": [
+                0.4090414962393236
+            ]
+        }
+    },
+    {
+        "sent": "the instruction is unclear draw wol like one of my french girls.",
+        "metadata": {
+            "id": 701,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "the",
+                "instruction",
+                "is",
+                "unclear",
+                "draw",
+                "wol",
+                "like",
+                "one",
+                "of",
+                "my",
+                "french",
+                "girls",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "the",
+                    "instruction",
+                    "is",
+                    "unclear",
+                    "draw",
+                    "wol",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "my",
+                    "-",
+                    "french",
+                    "girls",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "-",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "like",
+                    "one",
+                    "of",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                4,
+                6,
+                7,
+                8,
+                10,
+                11
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.021128968167383612
+            ],
+            "meanLayer": [
+                0.021128968167383612
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french operators.",
+        "metadata": {
+            "id": 702,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "operators",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "operators",
+                    ".",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french smurfs",
+        "metadata": {
+            "id": 703,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "smurfs"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "smurfs",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "*draw me like one of your french na'vis*",
+        "metadata": {
+            "id": 704,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "*",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "na",
+                "vis",
+                "*"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "*",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "na",
+                    "vis",
+                    "*",
+                    "-"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french women",
+        "metadata": {
+            "id": 705,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "women"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "women",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your earth girls jake.\"",
+        "metadata": {
+            "id": 706,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "earth",
+                "girls",
+                "jake",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "earth",
+                    "-",
+                    "girls",
+                    "jake",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.4090414962393236
+            ],
+            "meanLayer": [
+                0.4090414962393236
+            ]
+        }
+    },
+    {
+        "sent": " gt draw me like one of your french cats",
+        "metadata": {
+            "id": 707,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "gt",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "cats"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "gt",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "cats",
+                    "-"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "paint me like one of your french girls.",
+        "metadata": {
+            "id": 708,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "paint",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "paint",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "."
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "roast me like one of your french girls...seriously i need the criticism to get better",
+        "metadata": {
+            "id": 709,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "roast",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                ".",
+                ".",
+                ".",
+                "seriously",
+                "i",
+                "need",
+                "the",
+                "criticism",
+                "to",
+                "get",
+                "better"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "roast",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    ".",
+                    ".",
+                    ".",
+                    "seriously",
+                    "i",
+                    "need",
+                    "the",
+                    "criticism",
+                    "to",
+                    "get",
+                    "better"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your blue girls\"",
+        "metadata": {
+            "id": 710,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "blue",
+                "girls",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "blue",
+                    "-",
+                    "girls",
+                    "\""
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.4090414962393236
+            ],
+            "meanLayer": [
+                0.4090414962393236
+            ]
+        }
+    },
+    {
+        "sent": "\"i want you to paint me like one of your blue girls jack.....wearing this......and only this..........\"",
+        "metadata": {
+            "id": 711,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "i",
+                "want",
+                "you",
+                "to",
+                "paint",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "blue",
+                "girls",
+                "jack",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                "wearing",
+                "this",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                "and",
+                "only",
+                "this",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "i",
+                    "want",
+                    "you",
+                    "to",
+                    "paint",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "blue",
+                    "-",
+                    "girls",
+                    "jack",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    "wearing",
+                    "this",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    "and",
+                    "only",
+                    "this",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                6,
+                7,
+                8,
+                9,
+                10,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.23138258034404685
+            ],
+            "meanLayer": [
+                0.23138258034404685
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your french ghauls.\"",
+        "metadata": {
+            "id": 712,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "ghauls",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "ghauls",
+                    ".",
+                    "\"",
+                    "-"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "will you paint me like one of your venetian girls ",
+        "metadata": {
+            "id": 713,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "will",
+                "you",
+                "paint",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "venetian",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "will",
+                    "you",
+                    "paint",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "venetian",
+                    "-",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                3,
+                4,
+                5,
+                6,
+                7,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.23138258034404685
+            ],
+            "meanLayer": [
+                0.23138258034404685
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of you alien girls",
+        "metadata": {
+            "id": 714,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "you",
+                "alien",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "you",
+                    "alien",
+                    "-",
+                    "-",
+                    "girls"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "-",
+                    "-",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.22568928978979985
+            ],
+            "meanLayer": [
+                0.22568928978979985
+            ]
+        }
+    },
+    {
+        "sent": "henv me like one of your french girls....",
+        "metadata": {
+            "id": 715,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "henv",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                ".",
+                ".",
+                ".",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "henv",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    ".",
+                    ".",
+                    ".",
+                    "."
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french ratties hooman",
+        "metadata": {
+            "id": 716,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "ratties",
+                "hooman"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "ratties",
+                    "hooman",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "you could arguably have called it a draw just like one of the judges did.",
+        "metadata": {
+            "id": 725,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "could",
+                "arguably",
+                "have",
+                "called",
+                "it",
+                "a",
+                "draw",
+                "just",
+                "like",
+                "one",
+                "of",
+                "the",
+                "judges",
+                "did",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "could",
+                    "arguably",
+                    "have",
+                    "called",
+                    "it",
+                    "a",
+                    "draw",
+                    "just",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "the",
+                    "judges",
+                    "did",
+                    ".",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "like",
+                    "one",
+                    "of"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                9,
+                10,
+                11
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.026501144667805416
+            ],
+            "meanLayer": [
+                0.026501144667805416
+            ]
+        }
+    },
+    {
+        "sent": "you could arguably have called it a draw just like one of the judges did.",
+        "metadata": {
+            "id": 876,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "could",
+                "arguably",
+                "have",
+                "called",
+                "it",
+                "a",
+                "draw",
+                "just",
+                "like",
+                "one",
+                "of",
+                "the",
+                "judges",
+                "did",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "could",
+                    "arguably",
+                    "have",
+                    "called",
+                    "it",
+                    "a",
+                    "draw",
+                    "just",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "the",
+                    "judges",
+                    "did",
+                    ".",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "like",
+                    "one",
+                    "of"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                9,
+                10,
+                11
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.026501144667805416
+            ],
+            "meanLayer": [
+                0.026501144667805416
+            ]
+        }
+    },
+    {
+        "sent": " you should draw me like right now",
+        "metadata": {
+            "id": 908,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "should",
+                "draw",
+                "me",
+                "like",
+                "right",
+                "now"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "should",
+                    "draw",
+                    "me",
+                    "like",
+                    "right",
+                    "now",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "-",
+                    "-",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.11412157262702502
+            ],
+            "meanLayer": [
+                0.11412157262702502
+            ]
+        }
+    },
+    {
+        "sent": " can you draw like on of these french artists",
+        "metadata": {
+            "id": 909,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "can",
+                "you",
+                "draw",
+                "like",
+                "on",
+                "of",
+                "these",
+                "french",
+                "artists"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "can",
+                    "you",
+                    "draw",
+                    "-",
+                    "like",
+                    "on",
+                    "-",
+                    "of",
+                    "these",
+                    "-",
+                    "french",
+                    "artists",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "-",
+                    "one",
+                    "of",
+                    "-",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "like",
+                    "of",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                5,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0
+            ],
+            "meanLayer": [
+                0.0
+            ]
+        }
+    },
+    {
+        "sent": "i'm sure no matter what the draw will be like french girls",
+        "metadata": {
+            "id": 910,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "m",
+                "sure",
+                "no",
+                "matter",
+                "what",
+                "the",
+                "draw",
+                "will",
+                "be",
+                "like",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "m",
+                    "sure",
+                    "no",
+                    "matter",
+                    "what",
+                    "the",
+                    "draw",
+                    "will",
+                    "be",
+                    "-",
+                    "like",
+                    "-",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "like",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                10,
+                11,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0
+            ],
+            "meanLayer": [
+                0.0
+            ]
+        }
+    },
+    {
+        "sent": "he can draw me but it's unlikely to be french style",
+        "metadata": {
+            "id": 911,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "he",
+                "can",
+                "draw",
+                "me",
+                "but",
+                "it",
+                "s",
+                "unlikely",
+                "to",
+                "be",
+                "french",
+                "style"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "he",
+                    "can",
+                    "draw",
+                    "me",
+                    "but",
+                    "it",
+                    "s",
+                    "unlikely",
+                    "to",
+                    "be",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "french",
+                    "style",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                10
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0
+            ],
+            "meanLayer": [
+                0.0
+            ]
+        }
+    },
+    {
+        "sent": "i'm sure you are a nice drawer like one of these girls",
+        "metadata": {
+            "id": 912,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "m",
+                "sure",
+                "you",
+                "are",
+                "a",
+                "nice",
+                "drawer",
+                "like",
+                "one",
+                "of",
+                "these",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "m",
+                    "sure",
+                    "you",
+                    "are",
+                    "a",
+                    "nice",
+                    "drawer",
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "these",
+                    "-",
+                    "-",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "-",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "like",
+                    "one",
+                    "of",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                8,
+                9,
+                10,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.02226560680054212
+            ],
+            "meanLayer": [
+                0.02226560680054212
+            ]
+        }
+    },
+    {
+        "sent": "couldn't he just draw me like one time?",
+        "metadata": {
+            "id": 913,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "couldn",
+                "t",
+                "he",
+                "just",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "time",
+                "?"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "couldn",
+                    "t",
+                    "he",
+                    "just",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "time",
+                    "?",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "-",
+                    "-",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.25782940504721297
+            ],
+            "meanLayer": [
+                0.25782940504721297
+            ]
+        }
+    },
+    {
+        "sent": "i am not gonna wear this outfit like one of your french girls",
+        "metadata": {
+            "id": 914,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "am",
+                "not",
+                "gon",
+                "na",
+                "wear",
+                "this",
+                "outfit",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "am",
+                    "not",
+                    "gon",
+                    "na",
+                    "wear",
+                    "this",
+                    "outfit",
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.6131719136278282
+            ],
+            "meanLayer": [
+                0.6131719136278282
+            ]
+        }
+    },
+    {
+        "sent": "he is gonna draw some food like one of those french fries",
+        "metadata": {
+            "id": 915,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "he",
+                "is",
+                "gon",
+                "na",
+                "draw",
+                "some",
+                "food",
+                "like",
+                "one",
+                "of",
+                "those",
+                "french",
+                "fries"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "he",
+                    "is",
+                    "gon",
+                    "na",
+                    "draw",
+                    "some",
+                    "food",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "those",
+                    "-",
+                    "french",
+                    "fries",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "-",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "like",
+                    "one",
+                    "of",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                4,
+                7,
+                8,
+                9,
+                11
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.02244256581872789
+            ],
+            "meanLayer": [
+                0.02244256581872789
+            ]
+        }
+    },
+    {
+        "sent": "there can't be a draw here like one of the french girls",
+        "metadata": {
+            "id": 916,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "there",
+                "can",
+                "t",
+                "be",
+                "a",
+                "draw",
+                "here",
+                "like",
+                "one",
+                "of",
+                "the",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "there",
+                    "can",
+                    "t",
+                    "be",
+                    "a",
+                    "draw",
+                    "here",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "the",
+                    "-",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "-",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "like",
+                    "one",
+                    "of",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                5,
+                7,
+                8,
+                9,
+                11,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.021128968167383612
+            ],
+            "meanLayer": [
+                0.021128968167383612
+            ]
+        }
+    },
+    {
+        "sent": "you could draw me but i'm not like your other girls",
+        "metadata": {
+            "id": 917,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "could",
+                "draw",
+                "me",
+                "but",
+                "i",
+                "m",
+                "not",
+                "like",
+                "your",
+                "other",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "could",
+                    "draw",
+                    "me",
+                    "but",
+                    "i",
+                    "m",
+                    "not",
+                    "like",
+                    "-",
+                    "-",
+                    "your",
+                    "other",
+                    "-",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                8,
+                9,
+                11
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0356348864174505
+            ],
+            "meanLayer": [
+                0.0356348864174505
+            ]
+        }
+    },
+    {
+        "sent": "he can draw but not me and the french girls ",
+        "metadata": {
+            "id": 918,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "he",
+                "can",
+                "draw",
+                "but",
+                "not",
+                "me",
+                "and",
+                "the",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "he",
+                    "can",
+                    "draw",
+                    "but",
+                    "not",
+                    "me",
+                    "and",
+                    "the",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "-",
+                    "me",
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                5,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0
+            ],
+            "meanLayer": [
+                0.0
+            ]
+        }
+    },
+    {
+        "sent": "in this reality there isn't really anything he can draw and not annoy me like he is one of your french girls ",
+        "metadata": {
+            "id": 919,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "in",
+                "this",
+                "reality",
+                "there",
+                "isn",
+                "t",
+                "really",
+                "anything",
+                "he",
+                "can",
+                "draw",
+                "and",
+                "not",
+                "annoy",
+                "me",
+                "like",
+                "he",
+                "is",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "in",
+                    "this",
+                    "reality",
+                    "there",
+                    "isn",
+                    "t",
+                    "really",
+                    "anything",
+                    "he",
+                    "can",
+                    "draw",
+                    "and",
+                    "not",
+                    "annoy",
+                    "me",
+                    "like",
+                    "he",
+                    "is",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "-",
+                    "-",
+                    "me",
+                    "like",
+                    "-",
+                    "-",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                10,
+                14,
+                15,
+                18,
+                19,
+                20,
+                21,
+                22
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you can draw me like in your studio",
+        "metadata": {
+            "id": 920,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "can",
+                "draw",
+                "me",
+                "like",
+                "in",
+                "your",
+                "studio"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "can",
+                    "draw",
+                    "me",
+                    "like",
+                    "in",
+                    "-",
+                    "-",
+                    "your",
+                    "studio",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "-",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "your"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.043044331098071986
+            ],
+            "meanLayer": [
+                0.043044331098071986
+            ]
+        }
+    },
+    {
+        "sent": "you are annoying me like on of your french friends",
+        "metadata": {
+            "id": 921,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "are",
+                "annoying",
+                "me",
+                "like",
+                "on",
+                "of",
+                "your",
+                "french",
+                "friends"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "are",
+                    "annoying",
+                    "-",
+                    "me",
+                    "like",
+                    "on",
+                    "-",
+                    "of",
+                    "your",
+                    "french",
+                    "friends",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "-",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                3,
+                4,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.033821660704397155
+            ],
+            "meanLayer": [
+                0.033821660704397155
+            ]
+        }
+    },
+    {
+        "sent": "you shouldn't be smiling at the drawing of me like how french are you?",
+        "metadata": {
+            "id": 922,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "shouldn",
+                "t",
+                "be",
+                "smiling",
+                "at",
+                "the",
+                "drawing",
+                "of",
+                "me",
+                "like",
+                "how",
+                "french",
+                "are",
+                "you",
+                "?"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "shouldn",
+                    "t",
+                    "be",
+                    "smiling",
+                    "at",
+                    "the",
+                    "drawing",
+                    "of",
+                    "-",
+                    "me",
+                    "like",
+                    "how",
+                    "-",
+                    "-",
+                    "-",
+                    "french",
+                    "are",
+                    "you",
+                    "?",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "-",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                9,
+                10,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0
+            ],
+            "meanLayer": [
+                0.0
+            ]
+        }
+    },
+    {
+        "sent": "he can draw his gun at me like some kind of girl",
+        "metadata": {
+            "id": 923,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "he",
+                "can",
+                "draw",
+                "his",
+                "gun",
+                "at",
+                "me",
+                "like",
+                "some",
+                "kind",
+                "of",
+                "girl"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "he",
+                    "can",
+                    "draw",
+                    "his",
+                    "gun",
+                    "at",
+                    "me",
+                    "like",
+                    "some",
+                    "kind",
+                    "-",
+                    "of",
+                    "girl",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "-",
+                    "-",
+                    "me",
+                    "like",
+                    "-",
+                    "-",
+                    "one",
+                    "of",
+                    "-",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "of"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                6,
+                7,
+                10
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.03848460559599964
+            ],
+            "meanLayer": [
+                0.03848460559599964
+            ]
+        }
+    },
+    {
+        "sent": "this is not a draw for me and i don't like your french tone",
+        "metadata": {
+            "id": 924,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "this",
+                "is",
+                "not",
+                "a",
+                "draw",
+                "for",
+                "me",
+                "and",
+                "i",
+                "don",
+                "t",
+                "like",
+                "your",
+                "french",
+                "tone"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "this",
+                    "is",
+                    "not",
+                    "a",
+                    "draw",
+                    "for",
+                    "me",
+                    "and",
+                    "i",
+                    "don",
+                    "t",
+                    "like",
+                    "-",
+                    "-",
+                    "your",
+                    "french",
+                    "tone",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "-",
+                    "me",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                4,
+                6,
+                11,
+                12,
+                13
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0356348864174505
+            ],
+            "meanLayer": [
+                0.0356348864174505
+            ]
+        }
+    },
+    {
+        "sent": "\"paint me like one of your french girls.\"",
+        "metadata": {
+            "id": 3762,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "paint",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "paint",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "\"spin me around like one of your french girls\"",
+        "metadata": {
+            "id": 3763,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "spin",
+                "me",
+                "around",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "spin",
+                    "-",
+                    "me",
+                    "around",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "\"flank me like one of your french girls.\"",
+        "metadata": {
+            "id": 3764,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "flank",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "flank",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french kitties.",
+        "metadata": {
+            "id": 3765,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "kitties",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "kitties",
+                    ".",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "\"paint me like one of your french girls\"",
+        "metadata": {
+            "id": 3766,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "paint",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "paint",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your french presses\"",
+        "metadata": {
+            "id": 3767,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "presses",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "presses",
+                    "\"",
+                    "-"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "\"film me like one of your french girls.\"",
+        "metadata": {
+            "id": 3768,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "film",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "film",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "*draw me like one of your southern girls*",
+        "metadata": {
+            "id": 3769,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "*",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "southern",
+                "girls",
+                "*"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "*",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "southern",
+                    "-",
+                    "girls",
+                    "*"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.4090414962393236
+            ],
+            "meanLayer": [
+                0.4090414962393236
+            ]
+        }
+    },
+    {
+        "sent": "paint me like one of your french girls.",
+        "metadata": {
+            "id": 3770,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "paint",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "paint",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "."
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "like one of your french girls ",
+        "metadata": {
+            "id": 3771,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.6131719136278282
+            ],
+            "meanLayer": [
+                0.6131719136278282
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french poodles.",
+        "metadata": {
+            "id": 3772,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "poodles",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "poodles",
+                    ".",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your french goals.",
+        "metadata": {
+            "id": 3773,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "goals",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "goals",
+                    ".",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "-",
+                    "-",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7289461131012089
+            ],
+            "meanLayer": [
+                0.7289461131012089
+            ]
+        }
+    },
+    {
+        "sent": "\"draw me like one of your ps1 controllers.\"",
+        "metadata": {
+            "id": 3774,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "ps1",
+                "controllers",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "ps1",
+                    "controllers",
+                    ".",
+                    "\"",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5333476765032534
+            ],
+            "meanLayer": [
+                0.5333476765032534
+            ]
+        }
+    },
+    {
+        "sent": "after a plaintiff proves that there is a discriminatory impact the state could respond by proving that the challenged districts are drawn to serve a purpose like one of your hypotheticals.",
+        "metadata": {
+            "id": 3775,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "after",
+                "a",
+                "plaintiff",
+                "proves",
+                "that",
+                "there",
+                "is",
+                "a",
+                "discriminatory",
+                "impact",
+                "the",
+                "state",
+                "could",
+                "respond",
+                "by",
+                "proving",
+                "that",
+                "the",
+                "challenged",
+                "districts",
+                "are",
+                "drawn",
+                "to",
+                "serve",
+                "a",
+                "purpose",
+                "like",
+                "one",
+                "of",
+                "your",
+                "hypotheticals",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "after",
+                    "a",
+                    "plaintiff",
+                    "proves",
+                    "that",
+                    "there",
+                    "is",
+                    "a",
+                    "discriminatory",
+                    "impact",
+                    "the",
+                    "state",
+                    "could",
+                    "respond",
+                    "by",
+                    "proving",
+                    "that",
+                    "the",
+                    "challenged",
+                    "districts",
+                    "are",
+                    "drawn",
+                    "to",
+                    "serve",
+                    "a",
+                    "purpose",
+                    "-",
+                    "-",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "hypotheticals",
+                    ".",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "like",
+                    "one",
+                    "of",
+                    "your"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                26,
+                27,
+                28,
+                29
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.20863529017927876
+            ],
+            "meanLayer": [
+                0.20863529017927876
+            ]
+        }
+    },
+    {
+        "sent": "rose draw me like one of your french girls.",
+        "metadata": {
+            "id": 3776,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "rose",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "rose",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "."
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "pressure me like one of your french girls",
+        "metadata": {
+            "id": 3777,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "pressure",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "pressure",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "“draw me like one of your na’vi girls”",
+        "metadata": {
+            "id": 3778,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "“",
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "na",
+                "vi",
+                "girls",
+                "”"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "“",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "na",
+                    "vi",
+                    "-",
+                    "girls",
+                    "”"
+                ],
+                [
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "-",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.4090414962393236
+            ],
+            "meanLayer": [
+                0.4090414962393236
+            ]
+        }
+    },
+    {
+        "sent": "\"plate me like one of your french girls\"",
+        "metadata": {
+            "id": 3779,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "plate",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "french",
+                "girls",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "plate",
+                    "-",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "french",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.7815673563528086
+            ],
+            "meanLayer": [
+                0.7815673563528086
+            ]
+        }
+    },
+    {
+        "sent": "draw me like one of your na'vi girls",
+        "metadata": {
+            "id": 3780,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "na",
+                "vi",
+                "girls"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "na",
+                    "vi",
+                    "-",
+                    "girls"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "girls"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.4090414962393236
+            ],
+            "meanLayer": [
+                0.4090414962393236
+            ]
+        }
+    },
+    {
+        "sent": " draw me like one of your nightsisters",
+        "metadata": {
+            "id": 3781,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "draw me like one of your french girls",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "draw",
+                "me",
+                "like",
+                "one",
+                "of",
+                "your",
+                "nightsisters"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "nightsisters",
+                    "-",
+                    "-"
+                ],
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your",
+                    "-",
+                    "french",
+                    "girls"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "draw",
+                    "me",
+                    "like",
+                    "one",
+                    "of",
+                    "your"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5333476765032534
+            ],
+            "meanLayer": [
+                0.5333476765032534
+            ]
+        }
+    }
+]

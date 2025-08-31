@@ -1,0 +1,5382 @@
+[
+    {
+        "sent": "but come on sometimes its best to realize",
+        "metadata": {
+            "id": 46,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "but",
+                "come",
+                "on",
+                "sometimes",
+                "its",
+                "best",
+                "to",
+                "realize"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "but",
+                    "-",
+                    "come",
+                    "on",
+                    "sometimes",
+                    "its",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "to",
+                    "realize",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "best"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0
+            ],
+            "meanLayer": [
+                0.0
+            ]
+        }
+    },
+    {
+        "sent": "\"you come at the king you best not miss\" ",
+        "metadata": {
+            "id": 54,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "\""
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "\"you come at the king you best not miss.\"",
+        "metadata": {
+            "id": 103,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "too often i come across posted linked twitter translations that are b grade at best",
+        "metadata": {
+            "id": 194,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "too",
+                "often",
+                "i",
+                "come",
+                "across",
+                "posted",
+                "linked",
+                "twitter",
+                "translations",
+                "that",
+                "are",
+                "b",
+                "grade",
+                "at",
+                "best"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "too",
+                    "often",
+                    "i",
+                    "-",
+                    "come",
+                    "across",
+                    "posted",
+                    "linked",
+                    "twitter",
+                    "translations",
+                    "that",
+                    "are",
+                    "b",
+                    "grade",
+                    "at",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "at",
+                    "best"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                3,
+                13,
+                14
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.016192663109017298
+            ],
+            "meanLayer": [
+                0.016192663109017298
+            ]
+        }
+    },
+    {
+        "sent": "\"you come at the king you best not miss\"  mcnulty",
+        "metadata": {
+            "id": 348,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "\"",
+                "mcnulty"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "\"",
+                    "mcnulty"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "i love you so naturally i want you to come to church as i believe that is best for you but i appreciate you might not want to go.",
+        "metadata": {
+            "id": 513,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "love",
+                "you",
+                "so",
+                "naturally",
+                "i",
+                "want",
+                "you",
+                "to",
+                "come",
+                "to",
+                "church",
+                "as",
+                "i",
+                "believe",
+                "that",
+                "is",
+                "best",
+                "for",
+                "you",
+                "but",
+                "i",
+                "appreciate",
+                "you",
+                "might",
+                "not",
+                "want",
+                "to",
+                "go",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "love",
+                    "you",
+                    "so",
+                    "naturally",
+                    "i",
+                    "want",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "to",
+                    "come",
+                    "to",
+                    "church",
+                    "as",
+                    "i",
+                    "believe",
+                    "that",
+                    "is",
+                    "best",
+                    "for",
+                    "you",
+                    "but",
+                    "i",
+                    "appreciate",
+                    "you",
+                    "might",
+                    "not",
+                    "want",
+                    "to",
+                    "go",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ],
+            [
+                [
+                    "i",
+                    "love",
+                    "you",
+                    "so",
+                    "naturally",
+                    "i",
+                    "want",
+                    "you",
+                    "to",
+                    "come",
+                    "to",
+                    "church",
+                    "as",
+                    "i",
+                    "believe",
+                    "that",
+                    "is",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "for",
+                    "you",
+                    "but",
+                    "i",
+                    "appreciate",
+                    "you",
+                    "might",
+                    "not",
+                    "want",
+                    "to",
+                    "go",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "-",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ],
+            [
+                [
+                    "i",
+                    "love",
+                    "you",
+                    "so",
+                    "naturally",
+                    "i",
+                    "want",
+                    "you",
+                    "to",
+                    "come",
+                    "to",
+                    "church",
+                    "as",
+                    "i",
+                    "believe",
+                    "that",
+                    "is",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "for",
+                    "you",
+                    "but",
+                    "i",
+                    "appreciate",
+                    "you",
+                    "might",
+                    "not",
+                    "want",
+                    "to",
+                    "go",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "you",
+                    "best",
+                    "not"
+                ],
+                [
+                    "you",
+                    "come",
+                    "best",
+                    "not"
+                ],
+                [
+                    "you",
+                    "come",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                7,
+                17,
+                25
+            ],
+            [
+                7,
+                9,
+                17,
+                25
+            ],
+            [
+                2,
+                9,
+                17,
+                25
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.04748736876141829,
+                0.03181636826668661,
+                0.03181636826668661
+            ],
+            "meanLayer": [
+                0.04748736876141829,
+                0.03181636826668661,
+                0.03181636826668661
+            ]
+        }
+    },
+    {
+        "sent": "what a long way of saying \"you come at the king you best not miss.\"",
+        "metadata": {
+            "id": 736,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "what",
+                "a",
+                "long",
+                "way",
+                "of",
+                "saying",
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "what",
+                    "a",
+                    "long",
+                    "way",
+                    "of",
+                    "saying",
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king you best not miss",
+        "metadata": {
+            "id": 737,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "if it’s going to happen it won’t be until there is an airtight case you come at the king you best not miss as they say.",
+        "metadata": {
+            "id": 738,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "if",
+                "it",
+                "s",
+                "going",
+                "to",
+                "happen",
+                "it",
+                "won",
+                "t",
+                "be",
+                "until",
+                "there",
+                "is",
+                "an",
+                "airtight",
+                "case",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "as",
+                "they",
+                "say",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "if",
+                    "it",
+                    "s",
+                    "going",
+                    "to",
+                    "happen",
+                    "it",
+                    "won",
+                    "t",
+                    "be",
+                    "until",
+                    "there",
+                    "is",
+                    "an",
+                    "airtight",
+                    "case",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "as",
+                    "they",
+                    "say",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "i have come to realize though that what works best for me is to actually not shield.",
+        "metadata": {
+            "id": 3597,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "have",
+                "come",
+                "to",
+                "realize",
+                "though",
+                "that",
+                "what",
+                "works",
+                "best",
+                "for",
+                "me",
+                "is",
+                "to",
+                "actually",
+                "not",
+                "shield",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "have",
+                    "-",
+                    "come",
+                    "to",
+                    "realize",
+                    "though",
+                    "that",
+                    "what",
+                    "works",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "for",
+                    "me",
+                    "is",
+                    "to",
+                    "actually",
+                    "not",
+                    "shield",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                9,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.014259060532884778
+            ],
+            "meanLayer": [
+                0.014259060532884778
+            ]
+        }
+    },
+    {
+        "sent": "the words usually used here are \"you come at the king you best not miss.\"",
+        "metadata": {
+            "id": 3598,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "the",
+                "words",
+                "usually",
+                "used",
+                "here",
+                "are",
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "the",
+                    "words",
+                    "usually",
+                    "used",
+                    "here",
+                    "are",
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "when you come at the king you best not miss.",
+        "metadata": {
+            "id": 3599,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "when",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "when",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "i have come to see that a lot of her bad behavior was a lack of insecurity and self control but the best therapy has been having my own child and consciously not being like that.",
+        "metadata": {
+            "id": 3600,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "have",
+                "come",
+                "to",
+                "see",
+                "that",
+                "a",
+                "lot",
+                "of",
+                "her",
+                "bad",
+                "behavior",
+                "was",
+                "a",
+                "lack",
+                "of",
+                "insecurity",
+                "and",
+                "self",
+                "control",
+                "but",
+                "the",
+                "best",
+                "therapy",
+                "has",
+                "been",
+                "having",
+                "my",
+                "own",
+                "child",
+                "and",
+                "consciously",
+                "not",
+                "being",
+                "like",
+                "that",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "have",
+                    "-",
+                    "come",
+                    "to",
+                    "see",
+                    "that",
+                    "a",
+                    "lot",
+                    "of",
+                    "her",
+                    "bad",
+                    "behavior",
+                    "was",
+                    "a",
+                    "lack",
+                    "of",
+                    "insecurity",
+                    "and",
+                    "self",
+                    "control",
+                    "but",
+                    "-",
+                    "the",
+                    "-",
+                    "-",
+                    "best",
+                    "therapy",
+                    "has",
+                    "been",
+                    "having",
+                    "my",
+                    "own",
+                    "child",
+                    "and",
+                    "consciously",
+                    "not",
+                    "being",
+                    "like",
+                    "that",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "the",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                21,
+                22,
+                32
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.009952212847131898
+            ],
+            "meanLayer": [
+                0.009952212847131898
+            ]
+        }
+    },
+    {
+        "sent": "i come here because i like debate and i think one of the best ways to expand knowledge is to learn from another's perspective even if that means i'm wrong.",
+        "metadata": {
+            "id": 3601,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "come",
+                "here",
+                "because",
+                "i",
+                "like",
+                "debate",
+                "and",
+                "i",
+                "think",
+                "one",
+                "of",
+                "the",
+                "best",
+                "ways",
+                "to",
+                "expand",
+                "knowledge",
+                "is",
+                "to",
+                "learn",
+                "from",
+                "another",
+                "s",
+                "perspective",
+                "even",
+                "if",
+                "that",
+                "means",
+                "i",
+                "m",
+                "wrong",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "-",
+                    "come",
+                    "here",
+                    "because",
+                    "i",
+                    "like",
+                    "debate",
+                    "and",
+                    "i",
+                    "think",
+                    "one",
+                    "of",
+                    "-",
+                    "the",
+                    "-",
+                    "-",
+                    "best",
+                    "ways",
+                    "to",
+                    "expand",
+                    "knowledge",
+                    "is",
+                    "to",
+                    "learn",
+                    "from",
+                    "another",
+                    "s",
+                    "perspective",
+                    "even",
+                    "if",
+                    "that",
+                    "means",
+                    "i",
+                    "m",
+                    "wrong",
+                    ".",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "the",
+                    "best"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                12,
+                13
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.0
+            ],
+            "meanLayer": [
+                0.0
+            ]
+        }
+    },
+    {
+        "sent": " gt \"you come at the king you best not twist.\"",
+        "metadata": {
+            "id": 3602,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "gt",
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "twist",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "gt",
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "twist",
+                    ".",
+                    "\"",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.8203180237828026
+            ],
+            "meanLayer": [
+                0.8203180237828026
+            ]
+        }
+    },
+    {
+        "sent": " gt when you come at the king you best not miss.",
+        "metadata": {
+            "id": 3603,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "gt",
+                "when",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "gt",
+                    "when",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king you best not flinch.",
+        "metadata": {
+            "id": 3604,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "flinch",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "flinch",
+                    ".",
+                    "-"
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.8203180237828026
+            ],
+            "meanLayer": [
+                0.8203180237828026
+            ]
+        }
+    },
+    {
+        "sent": "come at the bob you best not miss.",
+        "metadata": {
+            "id": 3605,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "come",
+                "at",
+                "the",
+                "bob",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "come",
+                    "at",
+                    "the",
+                    "bob",
+                    "-",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "-",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "at",
+                    "the",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.20875179917261352
+            ],
+            "meanLayer": [
+                0.20875179917261352
+            ]
+        }
+    },
+    {
+        "sent": "when it comes to bathroom breaks changing products diarrhea i take them as needed and try my best not to let it cut into my schedule too much.",
+        "metadata": {
+            "id": 3606,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "when",
+                "it",
+                "comes",
+                "to",
+                "bathroom",
+                "breaks",
+                "changing",
+                "products",
+                "diarrhea",
+                "i",
+                "take",
+                "them",
+                "as",
+                "needed",
+                "and",
+                "try",
+                "my",
+                "best",
+                "not",
+                "to",
+                "let",
+                "it",
+                "cut",
+                "into",
+                "my",
+                "schedule",
+                "too",
+                "much",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "when",
+                    "it",
+                    "comes",
+                    "to",
+                    "bathroom",
+                    "breaks",
+                    "changing",
+                    "products",
+                    "diarrhea",
+                    "i",
+                    "take",
+                    "them",
+                    "as",
+                    "needed",
+                    "and",
+                    "try",
+                    "my",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "not",
+                    "to",
+                    "let",
+                    "it",
+                    "cut",
+                    "into",
+                    "my",
+                    "schedule",
+                    "too",
+                    "much",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                17,
+                18
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.03712468076130167
+            ],
+            "meanLayer": [
+                0.03712468076130167
+            ]
+        }
+    },
+    {
+        "sent": "\"hey yo lesson here bey you come at the king you best not miss \"",
+        "metadata": {
+            "id": 3607,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "hey",
+                "yo",
+                "lesson",
+                "here",
+                "bey",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "hey",
+                    "yo",
+                    "lesson",
+                    "here",
+                    "bey",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "*come at the king you best not miss*",
+        "metadata": {
+            "id": 3608,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "*",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "*"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "*",
+                    "-",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "*"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.8199737618785803
+            ],
+            "meanLayer": [
+                0.8199737618785803
+            ]
+        }
+    },
+    {
+        "sent": "trunks isn't exactly a decisive person when it comes to standing up to his father but he did his best at screaming at vegeta not to do it  and kuririn could do nothing.",
+        "metadata": {
+            "id": 3609,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "trunks",
+                "isn",
+                "t",
+                "exactly",
+                "a",
+                "decisive",
+                "person",
+                "when",
+                "it",
+                "comes",
+                "to",
+                "standing",
+                "up",
+                "to",
+                "his",
+                "father",
+                "but",
+                "he",
+                "did",
+                "his",
+                "best",
+                "at",
+                "screaming",
+                "at",
+                "vegeta",
+                "not",
+                "to",
+                "do",
+                "it",
+                "and",
+                "kuririn",
+                "could",
+                "do",
+                "nothing",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "trunks",
+                    "isn",
+                    "t",
+                    "exactly",
+                    "a",
+                    "decisive",
+                    "person",
+                    "when",
+                    "it",
+                    "comes",
+                    "to",
+                    "standing",
+                    "up",
+                    "to",
+                    "his",
+                    "father",
+                    "but",
+                    "he",
+                    "did",
+                    "his",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "at",
+                    "screaming",
+                    "at",
+                    "vegeta",
+                    "not",
+                    "to",
+                    "do",
+                    "it",
+                    "and",
+                    "kuririn",
+                    "could",
+                    "do",
+                    "nothing",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                20,
+                25
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.03712468076130167
+            ],
+            "meanLayer": [
+                0.03712468076130167
+            ]
+        }
+    },
+    {
+        "sent": "\"you come at the king you best not miss\"  omar little",
+        "metadata": {
+            "id": 3610,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "\"",
+                "omar",
+                "little"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "\"",
+                    "omar",
+                    "little"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king you best not miss.",
+        "metadata": {
+            "id": 3611,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king you best not miss.",
+        "metadata": {
+            "id": 3612,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king you best not miss.",
+        "metadata": {
+            "id": 3613,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king you best not miss.",
+        "metadata": {
+            "id": 3614,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "when you come at the king you better not miss.",
+        "metadata": {
+            "id": 3615,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "when",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "better",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "when",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "better",
+                    "-",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "-",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.3638894163127876
+            ],
+            "meanLayer": [
+                0.3638894163127876
+            ]
+        }
+    },
+    {
+        "sent": "if you come at the king you best not miss.",
+        "metadata": {
+            "id": 3616,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "if",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "if",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "when you come for the king you best not miss",
+        "metadata": {
+            "id": 3617,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "when",
+                "you",
+                "come",
+                "for",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "when",
+                    "you",
+                    "come",
+                    "for",
+                    "-",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.34072161297382814
+            ],
+            "meanLayer": [
+                0.34072161297382814
+            ]
+        }
+    },
+    {
+        "sent": "o people are so jealous well when you come at the king you best not miss so in that spirit",
+        "metadata": {
+            "id": 3618,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "o",
+                "people",
+                "are",
+                "so",
+                "jealous",
+                "well",
+                "when",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "so",
+                "in",
+                "that",
+                "spirit"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "o",
+                    "people",
+                    "are",
+                    "so",
+                    "jealous",
+                    "well",
+                    "when",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "so",
+                    "in",
+                    "that",
+                    "spirit"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "if you come at the king you bet not miss.",
+        "metadata": {
+            "id": 3619,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "if",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "bet",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "if",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "bet",
+                    "-",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "-",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.3638894163127876
+            ],
+            "meanLayer": [
+                0.3638894163127876
+            ]
+        }
+    },
+    {
+        "sent": "come at the king you best not miss",
+        "metadata": {
+            "id": 3620,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.8199737618785803
+            ],
+            "meanLayer": [
+                0.8199737618785803
+            ]
+        }
+    },
+    {
+        "sent": "you come at the queen you best not miss",
+        "metadata": {
+            "id": 3621,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "queen",
+                "you",
+                "best",
+                "not",
+                "miss"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "queen",
+                    "-",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "-",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.31810741357737665
+            ],
+            "meanLayer": [
+                0.31810741357737665
+            ]
+        }
+    },
+    {
+        "sent": "you come at the sweed you best not miss",
+        "metadata": {
+            "id": 3622,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "sweed",
+                "you",
+                "best",
+                "not",
+                "miss"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "sweed",
+                    "-",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "-",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.31810741357737665
+            ],
+            "meanLayer": [
+                0.31810741357737665
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king bootum you best not miss.",
+        "metadata": {
+            "id": 3623,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "bootum",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "bootum",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "-",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "you come at the king you best try and not miss.\"",
+        "metadata": {
+            "id": 3624,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "try",
+                "and",
+                "not",
+                "miss",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "try",
+                    "and",
+                    "not",
+                    "miss",
+                    ".",
+                    "\""
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "not",
+                    "miss",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                9,
+                10
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "come at the king you best not miss.",
+        "metadata": {
+            "id": 3625,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.8199737618785803
+            ],
+            "meanLayer": [
+                0.8199737618785803
+            ]
+        }
+    },
+    {
+        "sent": "this is one of those \"if you come at the king you best not miss\" tactics.",
+        "metadata": {
+            "id": 3626,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "this",
+                "is",
+                "one",
+                "of",
+                "those",
+                "\"",
+                "if",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "\"",
+                "tactics",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "this",
+                    "is",
+                    "one",
+                    "of",
+                    "those",
+                    "\"",
+                    "if",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "\"",
+                    "tactics",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "eyo lesson here bae...you come at the king you best not miss.",
+        "metadata": {
+            "id": 3627,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "eyo",
+                "lesson",
+                "here",
+                "bae",
+                ".",
+                ".",
+                ".",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "eyo",
+                    "lesson",
+                    "here",
+                    "bae",
+                    ".",
+                    ".",
+                    ".",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "*\"you come at the king you best not miss.",
+        "metadata": {
+            "id": 3628,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "*",
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "*",
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "but come on sometimes its best to realize that a decision is actually the best one regardless of whether you personally like it or not.\"",
+        "metadata": {
+            "id": 3629,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "but",
+                "come",
+                "on",
+                "sometimes",
+                "its",
+                "best",
+                "to",
+                "realize",
+                "that",
+                "a",
+                "decision",
+                "is",
+                "actually",
+                "the",
+                "best",
+                "one",
+                "regardless",
+                "of",
+                "whether",
+                "you",
+                "personally",
+                "like",
+                "it",
+                "or",
+                "not",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "but",
+                    "-",
+                    "come",
+                    "on",
+                    "sometimes",
+                    "its",
+                    "best",
+                    "to",
+                    "realize",
+                    "that",
+                    "a",
+                    "decision",
+                    "is",
+                    "actually",
+                    "-",
+                    "the",
+                    "-",
+                    "-",
+                    "best",
+                    "one",
+                    "regardless",
+                    "of",
+                    "whether",
+                    "you",
+                    "personally",
+                    "like",
+                    "it",
+                    "or",
+                    "not",
+                    ".",
+                    "\"",
+                    "-"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "the",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                13,
+                14,
+                24
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.009952212847131898
+            ],
+            "meanLayer": [
+                0.009952212847131898
+            ]
+        }
+    },
+    {
+        "sent": "too often i come across posted linked twitter translations that are b grade at best and more often than not little better than google translate.",
+        "metadata": {
+            "id": 3630,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "too",
+                "often",
+                "i",
+                "come",
+                "across",
+                "posted",
+                "linked",
+                "twitter",
+                "translations",
+                "that",
+                "are",
+                "b",
+                "grade",
+                "at",
+                "best",
+                "and",
+                "more",
+                "often",
+                "than",
+                "not",
+                "little",
+                "better",
+                "than",
+                "google",
+                "translate",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "too",
+                    "often",
+                    "i",
+                    "-",
+                    "come",
+                    "across",
+                    "posted",
+                    "linked",
+                    "twitter",
+                    "translations",
+                    "that",
+                    "are",
+                    "b",
+                    "grade",
+                    "at",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "and",
+                    "more",
+                    "often",
+                    "than",
+                    "not",
+                    "little",
+                    "better",
+                    "than",
+                    "google",
+                    "translate",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "at",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                3,
+                13,
+                14,
+                19
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.024433372620123517
+            ],
+            "meanLayer": [
+                0.024433372620123517
+            ]
+        }
+    },
+    {
+        "sent": "\"you come at the king you best not miss\"  mcnulty",
+        "metadata": {
+            "id": 3631,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                "\"",
+                "mcnulty"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "\"",
+                    "mcnulty"
+                ],
+                [
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    },
+    {
+        "sent": "i love you so naturally i want you to come to church as i believe that is best for you but i appreciate you might not want to go.",
+        "metadata": {
+            "id": 3632,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "love",
+                "you",
+                "so",
+                "naturally",
+                "i",
+                "want",
+                "you",
+                "to",
+                "come",
+                "to",
+                "church",
+                "as",
+                "i",
+                "believe",
+                "that",
+                "is",
+                "best",
+                "for",
+                "you",
+                "but",
+                "i",
+                "appreciate",
+                "you",
+                "might",
+                "not",
+                "want",
+                "to",
+                "go",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "love",
+                    "you",
+                    "so",
+                    "naturally",
+                    "i",
+                    "want",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "to",
+                    "come",
+                    "to",
+                    "church",
+                    "as",
+                    "i",
+                    "believe",
+                    "that",
+                    "is",
+                    "best",
+                    "for",
+                    "you",
+                    "but",
+                    "i",
+                    "appreciate",
+                    "you",
+                    "might",
+                    "not",
+                    "want",
+                    "to",
+                    "go",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ],
+            [
+                [
+                    "i",
+                    "love",
+                    "you",
+                    "so",
+                    "naturally",
+                    "i",
+                    "want",
+                    "you",
+                    "to",
+                    "come",
+                    "to",
+                    "church",
+                    "as",
+                    "i",
+                    "believe",
+                    "that",
+                    "is",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "for",
+                    "you",
+                    "but",
+                    "i",
+                    "appreciate",
+                    "you",
+                    "might",
+                    "not",
+                    "want",
+                    "to",
+                    "go",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "-",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ],
+            [
+                [
+                    "i",
+                    "love",
+                    "you",
+                    "so",
+                    "naturally",
+                    "i",
+                    "want",
+                    "you",
+                    "to",
+                    "come",
+                    "to",
+                    "church",
+                    "as",
+                    "i",
+                    "believe",
+                    "that",
+                    "is",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "for",
+                    "you",
+                    "but",
+                    "i",
+                    "appreciate",
+                    "you",
+                    "might",
+                    "not",
+                    "want",
+                    "to",
+                    "go",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "you",
+                    "best",
+                    "not"
+                ],
+                [
+                    "you",
+                    "come",
+                    "best",
+                    "not"
+                ],
+                [
+                    "you",
+                    "come",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                7,
+                17,
+                25
+            ],
+            [
+                7,
+                9,
+                17,
+                25
+            ],
+            [
+                2,
+                9,
+                17,
+                25
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.04748736876141829,
+                0.03181636826668661,
+                0.03181636826668661
+            ],
+            "meanLayer": [
+                0.04748736876141829,
+                0.03181636826668661,
+                0.03181636826668661
+            ]
+        }
+    },
+    {
+        "sent": "i have come to realize though that what works best for me is to actually not shield.",
+        "metadata": {
+            "id": 3633,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "have",
+                "come",
+                "to",
+                "realize",
+                "though",
+                "that",
+                "what",
+                "works",
+                "best",
+                "for",
+                "me",
+                "is",
+                "to",
+                "actually",
+                "not",
+                "shield",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "have",
+                    "-",
+                    "come",
+                    "to",
+                    "realize",
+                    "though",
+                    "that",
+                    "what",
+                    "works",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "best",
+                    "for",
+                    "me",
+                    "is",
+                    "to",
+                    "actually",
+                    "not",
+                    "shield",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "not",
+                    "-",
+                    "-",
+                    "miss"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "come",
+                    "best",
+                    "not"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                2,
+                9,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.014259060532884778
+            ],
+            "meanLayer": [
+                0.014259060532884778
+            ]
+        }
+    },
+    {
+        "sent": "the words usually used here are \"you come at the king you best not miss.\"",
+        "metadata": {
+            "id": 3634,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "you come at the king you best not miss",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "the",
+                "words",
+                "usually",
+                "used",
+                "here",
+                "are",
+                "\"",
+                "you",
+                "come",
+                "at",
+                "the",
+                "king",
+                "you",
+                "best",
+                "not",
+                "miss",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "the",
+                    "words",
+                    "usually",
+                    "used",
+                    "here",
+                    "are",
+                    "\"",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "you",
+                    "come",
+                    "at",
+                    "the",
+                    "king",
+                    "you",
+                    "best",
+                    "not",
+                    "miss"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0
+            ],
+            "meanLayer": [
+                1.0
+            ]
+        }
+    }
+]

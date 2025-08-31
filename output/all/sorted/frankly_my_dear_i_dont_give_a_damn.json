@@ -1,0 +1,4038 @@
+[
+    {
+        "sent": "\"i don't give a damn what excuses they're making ",
+        "metadata": {
+            "id": 71,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "\"",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "what",
+                "excuses",
+                "they",
+                "re",
+                "making"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "\"",
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "what",
+                    "excuses",
+                    "they",
+                    "re",
+                    "making"
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "honestly i don't give a damn to ppl who have hurt me no matter how close we were.",
+        "metadata": {
+            "id": 143,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "honestly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "to",
+                "ppl",
+                "who",
+                "have",
+                "hurt",
+                "me",
+                "no",
+                "matter",
+                "how",
+                "close",
+                "we",
+                "were",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "honestly",
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "to",
+                    "ppl",
+                    "who",
+                    "have",
+                    "hurt",
+                    "me",
+                    "no",
+                    "matter",
+                    "how",
+                    "close",
+                    "we",
+                    "were",
+                    "."
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn shit about the game gets bulbasaur",
+        "metadata": {
+            "id": 153,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "shit",
+                "about",
+                "the",
+                "game",
+                "gets",
+                "bulbasaur"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "shit",
+                    "about",
+                    "the",
+                    "game",
+                    "gets",
+                    "bulbasaur"
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn if he praised som or not.",
+        "metadata": {
+            "id": 166,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "if",
+                "he",
+                "praised",
+                "som",
+                "or",
+                "not",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "if",
+                    "he",
+                    "praised",
+                    "som",
+                    "or",
+                    "not",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "perosnally i don't give a damn about the canon and just enjoy the gameplay.",
+        "metadata": {
+            "id": 214,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "perosnally",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "about",
+                "the",
+                "canon",
+                "and",
+                "just",
+                "enjoy",
+                "the",
+                "gameplay",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "perosnally",
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "about",
+                    "the",
+                    "canon",
+                    "and",
+                    "just",
+                    "enjoy",
+                    "the",
+                    "gameplay",
+                    "."
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn about progression",
+        "metadata": {
+            "id": 218,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "about",
+                "progression"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "about",
+                    "progression"
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "until it's january 2018 i don't give a damn.",
+        "metadata": {
+            "id": 251,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "until",
+                "it",
+                "s",
+                "january",
+                "2018",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "until",
+                    "it",
+                    "s",
+                    "january",
+                    "2018",
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn but they can do it on their personal time not when they are on the clock.",
+        "metadata": {
+            "id": 321,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "but",
+                "they",
+                "can",
+                "do",
+                "it",
+                "on",
+                "their",
+                "personal",
+                "time",
+                "not",
+                "when",
+                "they",
+                "are",
+                "on",
+                "the",
+                "clock",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "but",
+                    "they",
+                    "can",
+                    "do",
+                    "it",
+                    "on",
+                    "their",
+                    "personal",
+                    "time",
+                    "not",
+                    "when",
+                    "they",
+                    "are",
+                    "on",
+                    "the",
+                    "clock",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "it is definitely not the same and i don't give a damn about tyler but in a company as big as this pr is a thing.",
+        "metadata": {
+            "id": 338,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "it",
+                "is",
+                "definitely",
+                "not",
+                "the",
+                "same",
+                "and",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "about",
+                "tyler",
+                "but",
+                "in",
+                "a",
+                "company",
+                "as",
+                "big",
+                "as",
+                "this",
+                "pr",
+                "is",
+                "a",
+                "thing",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "it",
+                    "is",
+                    "definitely",
+                    "not",
+                    "the",
+                    "same",
+                    "and",
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "about",
+                    "tyler",
+                    "but",
+                    "in",
+                    "a",
+                    "company",
+                    "as",
+                    "big",
+                    "as",
+                    "this",
+                    "pr",
+                    "is",
+                    "a",
+                    "thing",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn what the score is as long as we get the 3 points",
+        "metadata": {
+            "id": 350,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "what",
+                "the",
+                "score",
+                "is",
+                "as",
+                "long",
+                "as",
+                "we",
+                "get",
+                "the",
+                "3",
+                "points"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "what",
+                    "the",
+                    "score",
+                    "is",
+                    "as",
+                    "long",
+                    "as",
+                    "we",
+                    "get",
+                    "the",
+                    "3",
+                    "points"
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn about your life or your authentic stories i just wanna be entertained ",
+        "metadata": {
+            "id": 370,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "about",
+                "your",
+                "life",
+                "or",
+                "your",
+                "authentic",
+                "stories",
+                "i",
+                "just",
+                "wanna",
+                "be",
+                "entertained"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "about",
+                    "your",
+                    "life",
+                    "or",
+                    "your",
+                    "authentic",
+                    "stories",
+                    "i",
+                    "just",
+                    "wanna",
+                    "be",
+                    "entertained"
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn if a website loads in 2 seconds or 3 seconds.",
+        "metadata": {
+            "id": 377,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "if",
+                "a",
+                "website",
+                "loads",
+                "in",
+                "2",
+                "seconds",
+                "or",
+                "3",
+                "seconds",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "if",
+                    "a",
+                    "website",
+                    "loads",
+                    "in",
+                    "2",
+                    "seconds",
+                    "or",
+                    "3",
+                    "seconds",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i'm just saying i don't give a damn.",
+        "metadata": {
+            "id": 384,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "m",
+                "just",
+                "saying",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "m",
+                    "just",
+                    "saying",
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-"
+                ]
+            ],
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "m",
+                    "just",
+                    "saying",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ],
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ],
+            [
+                0,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984,
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984,
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn bitch i don't give a fuck.",
+        "metadata": {
+            "id": 447,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "bitch",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "fuck",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "bitch",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "fuck",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn if she's going to games as well.",
+        "metadata": {
+            "id": 505,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "if",
+                "she",
+                "s",
+                "going",
+                "to",
+                "games",
+                "as",
+                "well",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "if",
+                    "she",
+                    "s",
+                    "going",
+                    "to",
+                    "games",
+                    "as",
+                    "well",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn about such complaints.",
+        "metadata": {
+            "id": 508,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "about",
+                "such",
+                "complaints",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "about",
+                    "such",
+                    "complaints",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn whether the packers win or lose not in my division or conference.",
+        "metadata": {
+            "id": 509,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "whether",
+                "the",
+                "packers",
+                "win",
+                "or",
+                "lose",
+                "not",
+                "in",
+                "my",
+                "division",
+                "or",
+                "conference",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "whether",
+                    "the",
+                    "packers",
+                    "win",
+                    "or",
+                    "lose",
+                    "not",
+                    "in",
+                    "my",
+                    "division",
+                    "or",
+                    "conference",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn about that noise.",
+        "metadata": {
+            "id": 510,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "about",
+                "that",
+                "noise",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "about",
+                    "that",
+                    "noise",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "me i don't give a damn you do you.",
+        "metadata": {
+            "id": 534,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "me",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "you",
+                "do",
+                "you",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "me",
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "you",
+                    "do",
+                    "you",
+                    "."
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "i don't give a damn if it was just a bribe or rape either one is inexcusable.",
+        "metadata": {
+            "id": 560,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "if",
+                "it",
+                "was",
+                "just",
+                "a",
+                "bribe",
+                "or",
+                "rape",
+                "either",
+                "one",
+                "is",
+                "inexcusable",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "if",
+                    "it",
+                    "was",
+                    "just",
+                    "a",
+                    "bribe",
+                    "or",
+                    "rape",
+                    "either",
+                    "one",
+                    "is",
+                    "inexcusable",
+                    "."
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12100680725226984
+            ],
+            "meanLayer": [
+                0.12100680725226984
+            ]
+        }
+    },
+    {
+        "sent": "cranks and bumpfire stocks aren't for hunting they make the gun unwieldy and difficult to use frankly i don't give two damns about them",
+        "metadata": {
+            "id": 718,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "cranks",
+                "and",
+                "bumpfire",
+                "stocks",
+                "aren",
+                "t",
+                "for",
+                "hunting",
+                "they",
+                "make",
+                "the",
+                "gun",
+                "unwieldy",
+                "and",
+                "difficult",
+                "to",
+                "use",
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "two",
+                "damns",
+                "about",
+                "them"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "cranks",
+                    "and",
+                    "bumpfire",
+                    "stocks",
+                    "aren",
+                    "t",
+                    "for",
+                    "hunting",
+                    "they",
+                    "make",
+                    "the",
+                    "gun",
+                    "unwieldy",
+                    "and",
+                    "difficult",
+                    "to",
+                    "use",
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "two",
+                    "damns",
+                    "about",
+                    "them",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "a",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                17,
+                18,
+                19,
+                20,
+                21
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.015681404008309557
+            ],
+            "meanLayer": [
+                0.015681404008309557
+            ]
+        }
+    },
+    {
+        "sent": "it may be our version of the fourth but we frankly don't give a damn.",
+        "metadata": {
+            "id": 719,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "it",
+                "may",
+                "be",
+                "our",
+                "version",
+                "of",
+                "the",
+                "fourth",
+                "but",
+                "we",
+                "frankly",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "it",
+                    "may",
+                    "be",
+                    "our",
+                    "version",
+                    "of",
+                    "the",
+                    "fourth",
+                    "but",
+                    "we",
+                    "frankly",
+                    "-",
+                    "-",
+                    "-",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "."
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.05179234578686618
+            ],
+            "meanLayer": [
+                0.05179234578686618
+            ]
+        }
+    },
+    {
+        "sent": "frankly i don't give a crap.",
+        "metadata": {
+            "id": 720,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "crap",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "crap",
+                    ".",
+                    "-"
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": "and frankly i don't give a fuck.",
+        "metadata": {
+            "id": 739,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "and",
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "fuck",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "and",
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "fuck",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": "its not about amac's contract and frankly i don't give a shit how nice he is or how well liked in the locker room he is.",
+        "metadata": {
+            "id": 740,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "its",
+                "not",
+                "about",
+                "amac",
+                "s",
+                "contract",
+                "and",
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "shit",
+                "how",
+                "nice",
+                "he",
+                "is",
+                "or",
+                "how",
+                "well",
+                "liked",
+                "in",
+                "the",
+                "locker",
+                "room",
+                "he",
+                "is",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "its",
+                    "not",
+                    "about",
+                    "amac",
+                    "s",
+                    "contract",
+                    "and",
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "shit",
+                    "how",
+                    "nice",
+                    "he",
+                    "is",
+                    "or",
+                    "how",
+                    "well",
+                    "liked",
+                    "in",
+                    "the",
+                    "locker",
+                    "room",
+                    "he",
+                    "is",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": "[] queenpoker the upvote text for your post was \"frankly my pony i don't give a damn.\"",
+        "metadata": {
+            "id": 741,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "[",
+                "]",
+                "queenpoker",
+                "the",
+                "upvote",
+                "text",
+                "for",
+                "your",
+                "post",
+                "was",
+                "\"",
+                "frankly",
+                "my",
+                "pony",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "[",
+                    "]",
+                    "queenpoker",
+                    "the",
+                    "upvote",
+                    "text",
+                    "for",
+                    "your",
+                    "post",
+                    "was",
+                    "\"",
+                    "frankly",
+                    "my",
+                    "pony",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "-",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "my",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                11,
+                12,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12938960725121265
+            ],
+            "meanLayer": [
+                0.12938960725121265
+            ]
+        }
+    },
+    {
+        "sent": "they way you talk about it makes it seem like i personally have the ability to enact gun control i frankly don't give a shit.",
+        "metadata": {
+            "id": 742,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "they",
+                "way",
+                "you",
+                "talk",
+                "about",
+                "it",
+                "makes",
+                "it",
+                "seem",
+                "like",
+                "i",
+                "personally",
+                "have",
+                "the",
+                "ability",
+                "to",
+                "enact",
+                "gun",
+                "control",
+                "i",
+                "frankly",
+                "don",
+                "t",
+                "give",
+                "a",
+                "shit",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "they",
+                    "way",
+                    "you",
+                    "talk",
+                    "about",
+                    "it",
+                    "makes",
+                    "it",
+                    "seem",
+                    "like",
+                    "i",
+                    "personally",
+                    "have",
+                    "the",
+                    "ability",
+                    "to",
+                    "enact",
+                    "gun",
+                    "control",
+                    "i",
+                    "frankly",
+                    "-",
+                    "-",
+                    "-",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "shit",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                20,
+                21,
+                22,
+                23,
+                24
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.015681404008309557
+            ],
+            "meanLayer": [
+                0.015681404008309557
+            ]
+        }
+    },
+    {
+        "sent": "its not about amac's contract and frankly i don't give a shit how nice he is or how well liked in the locker room he is.",
+        "metadata": {
+            "id": 893,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "its",
+                "not",
+                "about",
+                "amac",
+                "s",
+                "contract",
+                "and",
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "shit",
+                "how",
+                "nice",
+                "he",
+                "is",
+                "or",
+                "how",
+                "well",
+                "liked",
+                "in",
+                "the",
+                "locker",
+                "room",
+                "he",
+                "is",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "its",
+                    "not",
+                    "about",
+                    "amac",
+                    "s",
+                    "contract",
+                    "and",
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "shit",
+                    "how",
+                    "nice",
+                    "he",
+                    "is",
+                    "or",
+                    "how",
+                    "well",
+                    "liked",
+                    "in",
+                    "the",
+                    "locker",
+                    "room",
+                    "he",
+                    "is",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": "[] queenpoker the upvote text for your post was \"frankly my pony i don't give a damn.\"",
+        "metadata": {
+            "id": 894,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "[",
+                "]",
+                "queenpoker",
+                "the",
+                "upvote",
+                "text",
+                "for",
+                "your",
+                "post",
+                "was",
+                "\"",
+                "frankly",
+                "my",
+                "pony",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                ".",
+                "\""
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "[",
+                    "]",
+                    "queenpoker",
+                    "the",
+                    "upvote",
+                    "text",
+                    "for",
+                    "your",
+                    "post",
+                    "was",
+                    "\"",
+                    "frankly",
+                    "my",
+                    "pony",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    ".",
+                    "\""
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "-",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "my",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                11,
+                12,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.12938960725121265
+            ],
+            "meanLayer": [
+                0.12938960725121265
+            ]
+        }
+    },
+    {
+        "sent": "frankly i don't give a shit whether you believe me or not but kindly fuck off now.",
+        "metadata": {
+            "id": 895,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "shit",
+                "whether",
+                "you",
+                "believe",
+                "me",
+                "or",
+                "not",
+                "but",
+                "kindly",
+                "fuck",
+                "off",
+                "now",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "shit",
+                    "whether",
+                    "you",
+                    "believe",
+                    "me",
+                    "or",
+                    "not",
+                    "but",
+                    "kindly",
+                    "fuck",
+                    "off",
+                    "now",
+                    ".",
+                    "-"
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": " uite frankly my dear i don't give a damn.",
+        "metadata": {
+            "id": 896,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "uite",
+                "frankly",
+                "my",
+                "dear",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "uite",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "."
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                1.0000000000000004
+            ],
+            "meanLayer": [
+                1.0000000000000004
+            ]
+        }
+    },
+    {
+        "sent": "i wasn't insisting loyalists have a duty to do anything about it because frankly i don't give a fuck what loyalists do or don't do on this issue.",
+        "metadata": {
+            "id": 897,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "i",
+                "wasn",
+                "t",
+                "insisting",
+                "loyalists",
+                "have",
+                "a",
+                "duty",
+                "to",
+                "do",
+                "anything",
+                "about",
+                "it",
+                "because",
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "fuck",
+                "what",
+                "loyalists",
+                "do",
+                "or",
+                "don",
+                "t",
+                "do",
+                "on",
+                "this",
+                "issue",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "i",
+                    "wasn",
+                    "t",
+                    "insisting",
+                    "loyalists",
+                    "have",
+                    "a",
+                    "duty",
+                    "to",
+                    "do",
+                    "anything",
+                    "about",
+                    "it",
+                    "because",
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "fuck",
+                    "what",
+                    "loyalists",
+                    "do",
+                    "or",
+                    "don",
+                    "t",
+                    "do",
+                    "on",
+                    "this",
+                    "issue",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": "quite frankly i don't give a fuck if you believe this or not and i don't have the time to educate you for free.",
+        "metadata": {
+            "id": 898,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "quite",
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "fuck",
+                "if",
+                "you",
+                "believe",
+                "this",
+                "or",
+                "not",
+                "and",
+                "i",
+                "don",
+                "t",
+                "have",
+                "the",
+                "time",
+                "to",
+                "educate",
+                "you",
+                "for",
+                "free",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "quite",
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "fuck",
+                    "if",
+                    "you",
+                    "believe",
+                    "this",
+                    "or",
+                    "not",
+                    "and",
+                    "i",
+                    "don",
+                    "t",
+                    "have",
+                    "the",
+                    "time",
+                    "to",
+                    "educate",
+                    "you",
+                    "for",
+                    "free",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": "frankly seaman stains i just don't give a damn",
+        "metadata": {
+            "id": 899,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "frankly",
+                "seaman",
+                "stains",
+                "i",
+                "just",
+                "don",
+                "t",
+                "give",
+                "a",
+                "damn"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "frankly",
+                    "seaman",
+                    "stains",
+                    "-",
+                    "-",
+                    "i",
+                    "just",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ],
+                [
+                    "frankly",
+                    "-",
+                    "-",
+                    "my",
+                    "dear",
+                    "i",
+                    "-",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "damn"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.06042440341801055
+            ],
+            "meanLayer": [
+                0.06042440341801055
+            ]
+        }
+    },
+    {
+        "sent": "quite frankly i don't give a shit whether everyone is appeased.",
+        "metadata": {
+            "id": 900,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "quite",
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "shit",
+                "whether",
+                "everyone",
+                "is",
+                "appeased",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "quite",
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "shit",
+                    "whether",
+                    "everyone",
+                    "is",
+                    "appeased",
+                    ".",
+                    "-"
+                ],
+                [
+                    "-",
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    },
+    {
+        "sent": "frankly i don't give a rip what we do with molly.",
+        "metadata": {
+            "id": 901,
+            "snowclone_label": 1
+        },
+        "paired_with": {
+            "seed": "frankly my dear i don't give a damn",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "frankly",
+                "i",
+                "don",
+                "t",
+                "give",
+                "a",
+                "rip",
+                "what",
+                "we",
+                "do",
+                "with",
+                "molly",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "frankly",
+                    "-",
+                    "-",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "rip",
+                    "what",
+                    "we",
+                    "do",
+                    "with",
+                    "molly",
+                    ".",
+                    "-"
+                ],
+                [
+                    "frankly",
+                    "my",
+                    "dear",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "damn"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "frankly",
+                    "i",
+                    "don",
+                    "t",
+                    "give",
+                    "a"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.018817684809971466
+            ],
+            "meanLayer": [
+                0.018817684809971466
+            ]
+        }
+    }
+]

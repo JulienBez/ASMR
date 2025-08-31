@@ -1,0 +1,120 @@
+[
+    {
+        "sent": "we're not a dominant running team anymore no matter how much we want to be.",
+        "metadata": {
+            "id": 3635,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "Line 45: i've a feeling we're not in kansas anymore",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "we",
+                "re",
+                "not",
+                "a",
+                "dominant",
+                "running",
+                "team",
+                "anymore",
+                "no",
+                "matter",
+                "how",
+                "much",
+                "we",
+                "want",
+                "to",
+                "be",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "we",
+                    "re",
+                    "not",
+                    "a",
+                    "dominant",
+                    "running",
+                    "team",
+                    "-",
+                    "-",
+                    "anymore",
+                    "no",
+                    "matter",
+                    "how",
+                    "much",
+                    "we",
+                    "want",
+                    "to",
+                    "be",
+                    "."
+                ],
+                [
+                    "line",
+                    "45",
+                    ":",
+                    "i",
+                    "ve",
+                    "a",
+                    "feeling",
+                    "we",
+                    "re",
+                    "not",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "in",
+                    "kansas",
+                    "anymore",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "we",
+                    "re",
+                    "not",
+                    "anymore"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                0,
+                1,
+                2,
+                7
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.21757131728816853
+            ],
+            "meanLayer": [
+                0.21757131728816853
+            ]
+        }
+    }
+]

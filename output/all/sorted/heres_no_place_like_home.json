@@ -1,0 +1,322 @@
+[
+    {
+        "sent": "there's no place to draw the line .",
+        "metadata": {
+            "id": 3783,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "here's no place like home",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "there",
+                "s",
+                "no",
+                "place",
+                "to",
+                "draw",
+                "the",
+                "line",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "there",
+                    "-",
+                    "s",
+                    "no",
+                    "place",
+                    "to",
+                    "draw",
+                    "the",
+                    "line",
+                    ".",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "here",
+                    "s",
+                    "no",
+                    "place",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "like",
+                    "home"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "s",
+                    "no",
+                    "place"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5
+            ],
+            "meanLayer": [
+                0.5
+            ]
+        }
+    },
+    {
+        "sent": "there's no place in this world for them.",
+        "metadata": {
+            "id": 3784,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "here's no place like home",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "there",
+                "s",
+                "no",
+                "place",
+                "in",
+                "this",
+                "world",
+                "for",
+                "them",
+                "."
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "there",
+                    "-",
+                    "s",
+                    "no",
+                    "place",
+                    "in",
+                    "this",
+                    "world",
+                    "for",
+                    "them",
+                    ".",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "here",
+                    "s",
+                    "no",
+                    "place",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "like",
+                    "home"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "s",
+                    "no",
+                    "place"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5
+            ],
+            "meanLayer": [
+                0.5
+            ]
+        }
+    },
+    {
+        "sent": "there's no place to look up ",
+        "metadata": {
+            "id": 3785,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "here's no place like home",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "there",
+                "s",
+                "no",
+                "place",
+                "to",
+                "look",
+                "up"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "there",
+                    "-",
+                    "s",
+                    "no",
+                    "place",
+                    "to",
+                    "look",
+                    "up",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "here",
+                    "s",
+                    "no",
+                    "place",
+                    "-",
+                    "-",
+                    "-",
+                    "like",
+                    "home"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "s",
+                    "no",
+                    "place"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5
+            ],
+            "meanLayer": [
+                0.5
+            ]
+        }
+    },
+    {
+        "sent": " there's no place to look up all the human",
+        "metadata": {
+            "id": 3786,
+            "snowclone_label": 0
+        },
+        "paired_with": {
+            "seed": "here's no place like home",
+            "distance": null
+        },
+        "parsing": {
+            "TOK": [
+                "there",
+                "s",
+                "no",
+                "place",
+                "to",
+                "look",
+                "up",
+                "all",
+                "the",
+                "human"
+            ]
+        },
+        "alignments": [
+            [
+                [
+                    "there",
+                    "-",
+                    "s",
+                    "no",
+                    "place",
+                    "to",
+                    "look",
+                    "up",
+                    "all",
+                    "the",
+                    "human",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "here",
+                    "s",
+                    "no",
+                    "place",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "like",
+                    "home"
+                ]
+            ]
+        ],
+        "commonSegments": {
+            "TOK": [
+                [
+                    "s",
+                    "no",
+                    "place"
+                ]
+            ]
+        },
+        "commonSegmentsIndexes": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "similarities": {
+            "TOK": [
+                0.5
+            ],
+            "meanLayer": [
+                0.5
+            ]
+        }
+    }
+]
