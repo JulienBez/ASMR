@@ -123,14 +123,11 @@ def plotCoherenceProgression(studied_seeds):
         coherences_all.append(coherences)
         seeds.append(seed)
 
-
-    print("ok")
     # FIGURE #
     plt.figure(figsize=(12, 4)) #figsize=(12, 4)
     
     colors = plt.colormaps['Dark2'].colors
     colors_count = 0
-    print("ok")
 
     #plot coherence progression for each sequence
     for i, scores in enumerate(coherences_all):
@@ -143,8 +140,6 @@ def plotCoherenceProgression(studied_seeds):
             colors_count += 1
         else:
             plt.plot(thresh, scores, linestyle='-', color="lightgray", alpha=0.4, label='_nolegend_')
-
-    print("ok")
 
     #plot mean coherence progression
     scores_merge = []
@@ -160,8 +155,6 @@ def plotCoherenceProgression(studied_seeds):
     thresh_merge = [thresholds[i] for i in range(len(scores_merge)) if scores_merge[i] != "NA"]
     scores_merge = [i for i in scores_merge if i != "NA"]
     plt.plot(thresh_merge, scores_merge, linestyle='-', color="red", alpha=1)
-
-    print("ok")
 
     plt.xlabel('Threshold')
     plt.ylabel('Intra Cluster Score')

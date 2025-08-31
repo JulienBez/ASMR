@@ -9,6 +9,7 @@ from src.rank import *
 from src.metadata import *
 from src.results import *
 
+
 def proceed(args):
     
     start = time.time()
