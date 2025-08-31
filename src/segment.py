@@ -1,7 +1,7 @@
-from Levenshtein import ratio
-
 from . import parameters
 from .utils import *
+
+from Levenshtein import ratio
 
 def exactSegment(seed_align):
     """we ignore misalignment lists"""
@@ -19,7 +19,7 @@ def fuzzySegment(seed_align,sent_align):
     return [i for i in range(seed_align[0],seed_align[-1]+1)]
 
 
-def combinedSegment(seed_align,sent_align,entry,seeds,discont=parameters.discont):
+def combinedSegment(seed_align,sent_align,entry,seeds):
     """for each misalignment list, we try to find a substitue for each missing words using rules"""
     """rule 1: we take the first word in misalignment list with the same POS tag (takes distance and POS sim into account)"""
     """rule 2: if no common POS tag, we look for the word with the biggest number of similarities for each misaligned word"""
@@ -43,23 +43,28 @@ def combinedSegment(seed_align,sent_align,entry,seeds,discont=parameters.discont
                     candidates_pos = []
                     candidates_sim = {}
 
+                    #replace with lem_not_found ? for parseme, we use lemmas in "tok" ("form") key for seeds
                     tok_not_found = seeds[entry["paired_with"]["seed"]][parameters.TOK_layer][not_found]
-                    if parameters.POS_layer in parameters.layers.keys():
-                        pos_not_found = seeds[entry["paired_with"]["seed"]][parameters.POS_layer][not_found]
+                    pos_not_found = seeds[entry["paired_with"]["seed"]][parameters.POS_layer][not_found]
 
-                    for candidate in sent_align[i][:discont]: #for each word in the misalignment list (i.e. for each substitute candidate)
+                    for candidate in sent_align[i]: #for each word in the misalignment list (i.e. for each substitute candidate)
 
-                        tok_candidate = entry["parsing"][parameters.TOK_layer][candidate]
-                        if parameters.POS_layer in parameters.layers.keys():
+                        try: #for Hindi, sometime the alignments do strange things, i need to investigate. In any case, we ignore erroned alignments this way
+                        #Hindi is the only language with this error
+
+                            tok_candidate = entry["parsing"][parameters.TOK_layer][candidate]
                             pos_candidate = entry["parsing"][parameters.POS_layer][candidate]
 
-                        if parameters.POS_layer in parameters.layers.keys() and pos_candidate == pos_not_found: #if they have the same pos tags
-                            candidates_pos.append(candidate)
+                            if parameters.POS_layer in parameters.layers.keys() and pos_candidate == pos_not_found: #if they have the same pos tags
+                                candidates_pos.append(candidate)
 
-                        else: #else we estimate how close are each word with the not_found token
-                            sim_score = ratio(" ".join(tok_candidate)," ".join(tok_not_found))
-                            #sim_score = len(tok_not_found & tok_candidate)/max([len(tok_not_found),len(tok_candidate)])
-                            candidates_sim[candidate] = sim_score
+                            else: #else we estimate how close are each word with the not_found token
+                                sim_score = ratio(tok_candidate,tok_not_found)
+                                #sim_score = len(tok_not_found & tok_candidate)/max([len(tok_not_found),len(tok_candidate)])
+                                candidates_sim[candidate] = sim_score
+
+                        except:
+                            continue
 
                     if candidates_pos:
                         substitute = candidates_pos[0]
@@ -76,10 +81,10 @@ def combinedSegment(seed_align,sent_align,entry,seeds,discont=parameters.discont
     #    print(seeds[entry["paired_with"]["seed"]]["lemma"])
     #    print()
 
-    return combined          
+    return combined
 
-
-def commonSegment(seed,sent,entry,seeds):
+            
+def commonSegment(seed,sent,entry,seeds,SEG=parameters.SEGMENT_VERSION):
     """common segment isolation between a seed and a sent using list comprehension"""
 
     #to vizualise multiple tokens substitution (example with "Max a cassé sa pipe" and "Max a bien dégommé sa pipe")
@@ -133,13 +138,13 @@ def commonSegment(seed,sent,entry,seeds):
 
     if len(sent_align) > 1 and len(seed_align) > 1:
 
-        if parameters.SEGMENT_VERSION == "exact":
+        if SEG == "exact":
             commonSeg = exactSegment(seed_align)
 
-        elif parameters.SEGMENT_VERSION == "fuzzy":
+        elif SEG == "fuzzy":
             commonSeg = fuzzySegment(seed_align,sent_align)
 
-        elif parameters.SEGMENT_VERSION == "combined":
+        elif SEG == "combined":
             commonSeg = combinedSegment(seed_align,sent_align,entry,seeds)
 
         else:
@@ -152,12 +157,12 @@ def commonSegment(seed,sent,entry,seeds):
     return commonSeg
 
 
-def segment(path):
+def segment(path,LANG=parameters.NAMEPATH,SEG=parameters.SEGMENT_VERSION):
     """for each sent of a json file (path), get its common segments with its seed"""
     
     data = openJson(path)
     new_data = []
-    seeds = openJson(f"data/{parameters.NAMEPATH}.json")
+    seeds = openJson(f"data/{LANG}.json")
 
     for entry in data:
         
@@ -168,21 +173,21 @@ def segment(path):
                 
         for alignment in entry["alignments"]:
 
-            commonSeg = commonSegment(alignment[1],alignment[0],entry,seeds)
+            commonSeg = commonSegment(alignment[1],alignment[0],entry,seeds,SEG=SEG)
 
             if len(commonSeg) > len(entry["parsing"][parameters.main_layer]):
                 commonSeg = [i for i in range(len(entry["parsing"][parameters.main_layer]))] #if the sentence is shorter than the seed
 
             entry["commonSegmentsIndexes"].append(commonSeg)
                     
-            for layer in parameters.layers.keys():
+            for layer in [i for i in parameters.layers.keys() if i!='SEM']:
                 if layer not in entry["commonSegments"]:
                     entry["commonSegments"][layer] = []
-
+                    
                 try:
                     seg = [entry["parsing"][layer][i] for i in commonSeg]
-                except:
-                    seg = entry["parsing"][layer]
+                except IndexError:
+                    seg = [] #error with PT only for 1 sentence, we ignore it
                 entry["commonSegments"][layer].append(seg)
 
         new_data.append(entry)
@@ -193,8 +198,8 @@ def segment(path):
     writeJson(path,new_data)
 
 
-def segmentAll():
+def segmentAll(LANG=parameters.NAMEPATH,SEG=parameters.SEGMENT_VERSION):
     """process segment function on every file in 'sorted/' folder"""
-    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
-        segment(path)
+    for path in tqdm(glob.glob(f"output/{LANG}/sorted/*.json")):
+        segment(path,LANG=LANG,SEG=SEG)
     print("")

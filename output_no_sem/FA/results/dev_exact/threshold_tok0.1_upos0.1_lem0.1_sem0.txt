@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=194/1356=0.1431 R=194/303=0.6403 F=0.2339
+* Tok-based: P=520/1810=0.2873 R=520/652=0.7975 F=0.4224
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=302/303=100% pred=0/1356=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/302=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/649=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/303=0% pred=1356/1356=100%
+* <unlabeled>: MWE-based: P=0/1356=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1810=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=1/303=0% pred=0/1356=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/3=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=257/303=85% pred=1193/1356=88%
+* Continuous: MWE-based: P=173/1193=0.1450 R=173/257=0.6732 F=0.2386
+* Discontinuous: MWE-proportion: gold=46/303=15% pred=163/1356=12%
+* Discontinuous: MWE-based: P=21/163=0.1288 R=21/46=0.4565 F=0.2010
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=303/303=100% pred=425/1356=31%
+* Multi-token: MWE-based: P=194/425=0.4565 R=194/303=0.6403 F=0.5330
+* Single-token: MWE-proportion: gold=0/303=0% pred=931/1356=69%
+* Single-token: MWE-based: P=0/931=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=203/303=67% pred=243/1356=18%
+* Seen-in-train: MWE-based: P=193/243=0.7942 R=193/203=0.9507 F=0.8655
+* Unseen-in-train: MWE-proportion: gold=100/303=33% pred=1113/1356=82%
+* Unseen-in-train: MWE-based: P=1/1113=0.0009 R=1/100=0.0100 F=0.0016
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=92/203=45% pred=123/243=51%
+* Variant-of-train: MWE-based: P=82/123=0.6667 R=82/92=0.8913 F=0.7628
+* Identical-to-train: MWE-proportion: gold=111/203=55% pred=120/243=49%
+* Identical-to-train: MWE-based: P=111/120=0.9250 R=111/111=1.0000 F=0.9610
+

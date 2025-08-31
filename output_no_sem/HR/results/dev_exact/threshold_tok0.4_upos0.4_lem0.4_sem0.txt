@@ -1,0 +1,48 @@
+## Global evaluation
+* MWE-based: P=265/1108=0.2392 R=265/435=0.6092 F=0.3435
+* Tok-based: P=660/1553=0.4250 R=660/976=0.6762 F=0.5219
+
+## Per-category evaluation (partition of Global)
+* IAV: MWE-proportion: gold=162/435=37% pred=0/1108=0%
+* IAV: MWE-based: P=0/0=0.0000 R=0/162=0.0000 F=0.0000
+* IAV: Tok-based: P=0/0=0.0000 R=0/385=0.0000 F=0.0000
+* IRV: MWE-proportion: gold=132/435=30% pred=0/1108=0%
+* IRV: MWE-based: P=0/0=0.0000 R=0/132=0.0000 F=0.0000
+* IRV: Tok-based: P=0/0=0.0000 R=0/264=0.0000 F=0.0000
+* LVC.cause: MWE-proportion: gold=20/435=5% pred=0/1108=0%
+* LVC.cause: MWE-based: P=0/0=0.0000 R=0/20=0.0000 F=0.0000
+* LVC.cause: Tok-based: P=0/0=0.0000 R=0/40=0.0000 F=0.0000
+* LVC.full: MWE-proportion: gold=90/435=21% pred=0/1108=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/90=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/198=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/435=0% pred=1108/1108=100%
+* <unlabeled>: MWE-based: P=0/1108=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1553=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=35/435=8% pred=0/1108=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/35=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/101=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=260/435=60% pred=946/1108=85%
+* Continuous: MWE-based: P=172/946=0.1818 R=172/260=0.6615 F=0.2852
+* Discontinuous: MWE-proportion: gold=175/435=40% pred=162/1108=15%
+* Discontinuous: MWE-based: P=93/162=0.5741 R=93/175=0.5314 F=0.5519
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=435/435=100% pred=388/1108=35%
+* Multi-token: MWE-based: P=265/388=0.6830 R=265/435=0.6092 F=0.6440
+* Single-token: MWE-proportion: gold=0/435=0% pred=720/1108=65%
+* Single-token: MWE-based: P=0/720=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=337/435=77% pred=299/1108=27%
+* Seen-in-train: MWE-based: P=265/299=0.8863 R=265/337=0.7864 F=0.8333
+* Unseen-in-train: MWE-proportion: gold=98/435=23% pred=809/1108=73%
+* Unseen-in-train: MWE-based: P=0/809=0.0000 R=0/98=0.0000 F=0.0000
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=109/337=32% pred=98/299=33%
+* Variant-of-train: MWE-based: P=73/98=0.7449 R=73/109=0.6697 F=0.7053
+* Identical-to-train: MWE-proportion: gold=228/337=68% pred=201/299=67%
+* Identical-to-train: MWE-based: P=192/201=0.9552 R=192/228=0.8421 F=0.8951
+

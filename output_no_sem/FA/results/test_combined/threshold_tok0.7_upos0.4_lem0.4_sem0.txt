@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=443/559=0.7925 R=443/901=0.4917 F=0.6068
+* Tok-based: P=960/1170=0.8205 R=960/1918=0.5005 F=0.6218
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/559=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=559/559=100%
+* <unlabeled>: MWE-based: P=0/559=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1170=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/559=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=472/559=84%
+* Continuous: MWE-based: P=403/472=0.8538 R=403/754=0.5345 F=0.6574
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=87/559=16%
+* Discontinuous: MWE-based: P=40/87=0.4598 R=40/147=0.2721 F=0.3419
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=559/559=100%
+* Multi-token: MWE-based: P=443/559=0.7925 R=443/901=0.4917 F=0.6068
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/559=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=499/559=89%
+* Seen-in-train: MWE-based: P=409/499=0.8196 R=409/602=0.6794 F=0.7430
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=60/559=11%
+* Unseen-in-train: MWE-based: P=34/60=0.5667 R=34/299=0.1137 F=0.1894
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=235/499=47%
+* Variant-of-train: MWE-based: P=175/235=0.7447 R=175/288=0.6076 F=0.6692
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=264/499=53%
+* Identical-to-train: MWE-based: P=234/264=0.8864 R=234/314=0.7452 F=0.8097
+

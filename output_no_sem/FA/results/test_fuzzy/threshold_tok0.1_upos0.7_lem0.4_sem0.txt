@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=638/943=0.6766 R=638/901=0.7081 F=0.6920
+* Tok-based: P=1430/2079=0.6878 R=1430/1918=0.7456 F=0.7155
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/943=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=943/943=100%
+* <unlabeled>: MWE-based: P=0/943=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/2079=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/943=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=943/943=100%
+* Continuous: MWE-based: P=638/943=0.6766 R=638/754=0.8462 F=0.7519
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=0/943=0%
+* Discontinuous: MWE-based: P=0/0=0.0000 R=0/147=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=943/943=100%
+* Multi-token: MWE-based: P=638/943=0.6766 R=638/901=0.7081 F=0.6920
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/943=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=567/943=60%
+* Seen-in-train: MWE-based: P=501/567=0.8836 R=501/602=0.8322 F=0.8571
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=376/943=40%
+* Unseen-in-train: MWE-based: P=137/376=0.3644 R=137/299=0.4582 F=0.4059
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=230/567=41%
+* Variant-of-train: MWE-based: P=198/230=0.8609 R=198/288=0.6875 F=0.7645
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=337/567=59%
+* Identical-to-train: MWE-based: P=303/337=0.8991 R=303/314=0.9650 F=0.9309
+

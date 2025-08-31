@@ -1,0 +1,27 @@
+#!/bin/bash 
+sbatch bash_scripts/GA_format.sh
+sbatch bash_scripts/PT_format.sh
+sbatch bash_scripts/HU_format.sh
+sbatch bash_scripts/HR_format.sh
+sbatch bash_scripts/EL_format.sh
+sbatch bash_scripts/FR_format.sh
+sbatch bash_scripts/CS_format.sh
+sbatch bash_scripts/EN_format.sh
+sbatch bash_scripts/EU_format.sh
+sbatch bash_scripts/DE_format.sh
+sbatch bash_scripts/HE_format.sh
+sbatch bash_scripts/IT_format.sh
+sbatch bash_scripts/SV_format.sh
+sbatch bash_scripts/AR_format.sh
+sbatch bash_scripts/PL_format.sh
+sbatch bash_scripts/ES_format.sh
+sbatch bash_scripts/FA_format.sh
+sbatch bash_scripts/RO_format.sh
+sbatch bash_scripts/BG_format.sh
+sbatch bash_scripts/SR_format.sh
+sbatch bash_scripts/MT_format.sh
+sbatch bash_scripts/LT_format.sh
+sbatch bash_scripts/TR_format.sh
+sbatch bash_scripts/HI_format.sh
+sbatch bash_scripts/ZH_format.sh
+sbatch bash_scripts/SL_format.sh

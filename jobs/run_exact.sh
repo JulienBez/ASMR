@@ -1,0 +1,27 @@
+#!/bin/bash 
+sbatch bash_scripts/HE_exact.sh
+sbatch bash_scripts/AR_exact.sh
+sbatch bash_scripts/PL_exact.sh
+sbatch bash_scripts/ES_exact.sh
+sbatch bash_scripts/HI_exact.sh
+sbatch bash_scripts/MT_exact.sh
+sbatch bash_scripts/BG_exact.sh
+sbatch bash_scripts/FR_exact.sh
+sbatch bash_scripts/LT_exact.sh
+sbatch bash_scripts/ZH_exact.sh
+sbatch bash_scripts/EL_exact.sh
+sbatch bash_scripts/SR_exact.sh
+sbatch bash_scripts/HU_exact.sh
+sbatch bash_scripts/PT_exact.sh
+sbatch bash_scripts/DE_exact.sh
+sbatch bash_scripts/GA_exact.sh
+sbatch bash_scripts/EN_exact.sh
+sbatch bash_scripts/EU_exact.sh
+sbatch bash_scripts/RO_exact.sh
+sbatch bash_scripts/FA_exact.sh
+sbatch bash_scripts/SV_exact.sh
+sbatch bash_scripts/IT_exact.sh
+sbatch bash_scripts/CS_exact.sh
+sbatch bash_scripts/HR_exact.sh
+sbatch bash_scripts/TR_exact.sh
+sbatch bash_scripts/SL_exact.sh

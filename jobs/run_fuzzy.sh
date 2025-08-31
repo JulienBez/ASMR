@@ -1,0 +1,27 @@
+#!/bin/bash 
+sbatch bash_scripts/HE_fuzzy.sh
+sbatch bash_scripts/AR_fuzzy.sh
+sbatch bash_scripts/PL_fuzzy.sh
+sbatch bash_scripts/ES_fuzzy.sh
+sbatch bash_scripts/HI_fuzzy.sh
+sbatch bash_scripts/MT_fuzzy.sh
+sbatch bash_scripts/BG_fuzzy.sh
+sbatch bash_scripts/FR_fuzzy.sh
+sbatch bash_scripts/LT_fuzzy.sh
+sbatch bash_scripts/ZH_fuzzy.sh
+sbatch bash_scripts/EL_fuzzy.sh
+sbatch bash_scripts/SR_fuzzy.sh
+sbatch bash_scripts/HU_fuzzy.sh
+sbatch bash_scripts/PT_fuzzy.sh
+sbatch bash_scripts/DE_fuzzy.sh
+sbatch bash_scripts/GA_fuzzy.sh
+sbatch bash_scripts/EN_fuzzy.sh
+sbatch bash_scripts/EU_fuzzy.sh
+sbatch bash_scripts/RO_fuzzy.sh
+sbatch bash_scripts/FA_fuzzy.sh
+sbatch bash_scripts/SV_fuzzy.sh
+sbatch bash_scripts/IT_fuzzy.sh
+sbatch bash_scripts/CS_fuzzy.sh
+sbatch bash_scripts/HR_fuzzy.sh
+sbatch bash_scripts/TR_fuzzy.sh
+sbatch bash_scripts/SL_fuzzy.sh

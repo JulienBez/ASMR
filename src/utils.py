@@ -8,19 +8,6 @@ from tqdm import tqdm
 
 from . import parameters
 
-def openJson(path):
-    "open a json file"
-    with open(path,'r',encoding='utf-8') as f:
-        data = json.load(f)
-    return data
-
-  
-def writeJson(path,data):
-    "create a json file"
-    with open(path,"w",encoding='utf-8') as f:
-        json.dump(data,f,indent=4,ensure_ascii=False)
-
-
 def openFile(path):
     "open a file and read it"
     with open(path,'r',encoding='utf-8') as f:
@@ -32,6 +19,19 @@ def writeFile(path,data):
     "write data in file"
     with open(path,'w',encoding='utf-8') as f:
         data = f.write(data)
+
+
+def openJson(path):
+    "open a json file"
+    with open(path,'r',encoding='utf-8') as f:
+        data = json.load(f)
+    return data
+
+  
+def writeJson(path,data):
+    "create a json file"
+    with open(path,"w",encoding='utf-8') as f:
+        json.dump(data,f,indent=4,ensure_ascii=False)
 
 
 def createFolders(path):

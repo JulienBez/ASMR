@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=949/1543=0.6150 R=949/1439=0.6595 F=0.6365
+* Tok-based: P=1952/3145=0.6207 R=1952/2964=0.6586 F=0.6391
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=688/1439=48% pred=0/1543=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/688=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1388=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/1439=0% pred=1543/1543=100%
+* <unlabeled>: MWE-based: P=0/1543=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/3145=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=751/1439=52% pred=0/1543=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/751=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/1576=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1375/1439=96% pred=1381/1543=90%
+* Continuous: MWE-based: P=933/1381=0.6756 R=933/1375=0.6785 F=0.6771
+* Discontinuous: MWE-proportion: gold=64/1439=4% pred=162/1543=10%
+* Discontinuous: MWE-based: P=16/162=0.0988 R=16/64=0.2500 F=0.1416
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1438/1439=100% pred=1543/1543=100%
+* Multi-token: MWE-based: P=949/1543=0.6150 R=949/1438=0.6599 F=0.6367
+* Single-token: MWE-proportion: gold=1/1439=0% pred=0/1543=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=1139/1439=79% pred=1538/1543=100%
+* Seen-in-train: MWE-based: P=948/1538=0.6164 R=948/1139=0.8323 F=0.7083
+* Unseen-in-train: MWE-proportion: gold=300/1439=21% pred=5/1543=0%
+* Unseen-in-train: MWE-based: P=1/5=0.2000 R=1/300=0.0033 F=0.0066
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=708/1139=62% pred=1022/1538=66%
+* Variant-of-train: MWE-based: P=556/1022=0.5440 R=556/708=0.7853 F=0.6428
+* Identical-to-train: MWE-proportion: gold=431/1139=38% pred=516/1538=34%
+* Identical-to-train: MWE-based: P=392/516=0.7597 R=392/431=0.9095 F=0.8279
+

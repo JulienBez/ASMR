@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=640/902=0.7095 R=640/901=0.7103 F=0.7099
+* Tok-based: P=1403/1897=0.7396 R=1403/1918=0.7315 F=0.7355
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/902=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=902/902=100%
+* <unlabeled>: MWE-based: P=0/902=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1897=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/902=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=682/902=76%
+* Continuous: MWE-based: P=576/682=0.8446 R=576/754=0.7639 F=0.8022
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=220/902=24%
+* Discontinuous: MWE-based: P=64/220=0.2909 R=64/147=0.4354 F=0.3488
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=902/902=100%
+* Multi-token: MWE-based: P=640/902=0.7095 R=640/901=0.7103 F=0.7099
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/902=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=735/902=81%
+* Seen-in-train: MWE-based: P=564/735=0.7673 R=564/602=0.9369 F=0.8437
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=167/902=19%
+* Unseen-in-train: MWE-based: P=76/167=0.4551 R=76/299=0.2542 F=0.3262
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=387/735=53%
+* Variant-of-train: MWE-based: P=254/387=0.6563 R=254/288=0.8819 F=0.7526
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=348/735=47%
+* Identical-to-train: MWE-based: P=310/348=0.8908 R=310/314=0.9873 F=0.9366
+

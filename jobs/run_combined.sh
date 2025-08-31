@@ -1,0 +1,27 @@
+#!/bin/bash 
+sbatch bash_scripts/HE_combined.sh
+sbatch bash_scripts/AR_combined.sh
+sbatch bash_scripts/PL_combined.sh
+sbatch bash_scripts/ES_combined.sh
+sbatch bash_scripts/HI_combined.sh
+sbatch bash_scripts/MT_combined.sh
+sbatch bash_scripts/BG_combined.sh
+sbatch bash_scripts/FR_combined.sh
+sbatch bash_scripts/LT_combined.sh
+sbatch bash_scripts/ZH_combined.sh
+sbatch bash_scripts/EL_combined.sh
+sbatch bash_scripts/SR_combined.sh
+sbatch bash_scripts/HU_combined.sh
+sbatch bash_scripts/PT_combined.sh
+sbatch bash_scripts/DE_combined.sh
+sbatch bash_scripts/GA_combined.sh
+sbatch bash_scripts/EN_combined.sh
+sbatch bash_scripts/EU_combined.sh
+sbatch bash_scripts/RO_combined.sh
+sbatch bash_scripts/FA_combined.sh
+sbatch bash_scripts/SV_combined.sh
+sbatch bash_scripts/IT_combined.sh
+sbatch bash_scripts/CS_combined.sh
+sbatch bash_scripts/HR_combined.sh
+sbatch bash_scripts/TR_combined.sh
+sbatch bash_scripts/SL_combined.sh

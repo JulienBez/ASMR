@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=531/675=0.7867 R=531/901=0.5893 F=0.6739
+* Tok-based: P=1164/1423=0.8180 R=1164/1918=0.6069 F=0.6968
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/675=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=675/675=100%
+* <unlabeled>: MWE-based: P=0/675=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1423=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/675=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=541/675=80%
+* Continuous: MWE-based: P=475/541=0.8780 R=475/754=0.6300 F=0.7336
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=134/675=20%
+* Discontinuous: MWE-based: P=56/134=0.4179 R=56/147=0.3810 F=0.3986
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=675/675=100%
+* Multi-token: MWE-based: P=531/675=0.7867 R=531/901=0.5893 F=0.6739
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/675=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=672/675=100%
+* Seen-in-train: MWE-based: P=530/672=0.7887 R=530/602=0.8804 F=0.8320
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=3/675=0%
+* Unseen-in-train: MWE-based: P=1/3=0.3333 R=1/299=0.0033 F=0.0066
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=340/672=51%
+* Variant-of-train: MWE-based: P=235/340=0.6912 R=235/288=0.8160 F=0.7484
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=332/672=49%
+* Identical-to-train: MWE-based: P=295/332=0.8886 R=295/314=0.9395 F=0.9133
+

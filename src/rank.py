@@ -2,38 +2,35 @@ from . import parameters
 from .utils import *
 
 def filterByRules(data):
-    """apply filters according to the parameters specified in parameters.py for each layer"""
+    """using the rule set in parameters.py, helps us sort revelant candidates as we wish"""
     new_data = []
     for entry in data:
-        try:
-            filtered = False
-            for layer, rules in parameters.layers.items():
-                if max(entry["similarities"][layer]) >= rules["min"] and max(entry["similarities"][layer]) <= rules["max"]:
-                    pass
-                else:
-                    filtered = True
-            if filtered == False:
-                new_data.append(entry)
-        except:
-            continue
+        filtered = False
+        for layer, rules in parameters.layers.items():
+            if max(entry["similarities"][layer]) >= rules["min"] and max(entry["similarities"][layer]) <= rules["max"]:
+                pass
+            else:
+                filtered = True
+        if filtered == False:
+            new_data.append(entry)
     return new_data
 
 
 def filterLines(lines):
-    """apply filters according to the parameters specified in parameters.py for mean score and freq"""
+    """additionnal set of conditions to sort candidates lists (by max meanLayer similarity and candidate frequency)"""
     new_lines = [line for line in lines if line["meanLayer"] >= parameters.minSim and line["meanLayer"] <= parameters.maxSim and line["frequence"] >= parameters.minFreq]
     if parameters.nrow != 0:
         new_lines = new_lines[:parameters.nrow]
     return new_lines
 
 
-def createTexTable(lines,path,kept=["candidate","meanLayer","frequence"],RtoL=parameters.RtoL):
+def createTexTable(lines,path,kept=["shown","meanLayer","frequence"],RtoL=parameters.RtoL):
     """write a latex table from a dict of lines"""
     tex_lines = []
     for line in lines:
         line["meanLayer"] = round(line["meanLayer"],2)
         if RtoL:
-            line["candidate"] = f"\\<{line['candidate']}>"
+            line["shown"] = f"\\<{line['shown']}>"
         tex_lines.append([str(v) for k,v in line.items() if k in kept])
     tex_lines.insert(0,kept)
     tex_lines_write = "\n".join([" & ".join(tl)+"\\\\" for tl in tex_lines])
@@ -41,13 +38,13 @@ def createTexTable(lines,path,kept=["candidate","meanLayer","frequence"],RtoL=pa
         f.write(tex_lines_write)
 
    
-def rank(path):
+def rank(path,LANG=parameters.NAMEPATH,shown="form"):#shown=parameters.main_layer):
     """rank sents of a json (path) and create csv files containing our ranking"""
     
     data = filterByRules(openJson(path))
     
     if len(data) > 0:
-        new_data_path = f"output/{parameters.NAMEPATH}/ranking/" + "".join(x for x in data[0]["paired_with"]["seed"].replace(" ","_") if x.isalnum() or x == "_") #seed
+        new_data_path = f"output/{LANG}/ranking/" + "".join(x for x in data[0]["paired_with"]["seed"].replace(" ","_") if x.isalnum() or x == "_") #seed
         createFolders(new_data_path)
         
     lines = []
@@ -56,7 +53,7 @@ def rank(path):
             
             line = {
 				"compare":{
-					"candidate":" ".join(entry["commonSegments"]["TOK"][i]),#[parameters.main_layer][i]),
+					"shown":" ".join(entry["commonSegments"][shown][i]),
 					"meanLayer":entry["similarities"]["meanLayer"][i], 
 				},
 				"add":{
@@ -66,7 +63,8 @@ def rank(path):
 			}
             
             for layer,_ in parameters.layers.items():
-                line["compare"][layer] = " ".join(entry["commonSegments"][layer][i])
+                if layer != 'SEM':
+                    line["compare"][layer] = " ".join(entry["commonSegments"][layer][i])
                 line["compare"][f"{layer}_cos"] = entry["similarities"][layer][i]
         
         lines.append(line)
@@ -99,9 +97,9 @@ def rank(path):
             createTexTable(sorted_lines,f"{new_data_path}/{filenameTex}")
 
 
-def rankAll():
+def rankAll(LANG=parameters.NAMEPATH):
     """process rankSegments function on every file in 'sorted/' folder"""
-    createFolders(f"output/{parameters.NAMEPATH}/ranking")
-    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
-        rank(path)
+    createFolders(f"output/{LANG}/ranking")
+    for path in tqdm(glob.glob(f"output/{LANG}/sorted/*.json")):
+        rank(path,LANG=LANG)
     print("")

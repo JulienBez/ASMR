@@ -20,16 +20,14 @@ def silhouette(X, clusters):
     return score
 
 
-def plotScores(uniques=False):
+def plotScores(uniques=False,LANG=parameters.NAMEPATH):
     """plot the number of isolated segments for each decimal score between 0 and 1"""
-
-    createFolders(f"logs/{parameters.NAMEPATH}/images")
 
     ids = []
     scores = []
     seen = set()
 
-    for path in sorted(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
+    for path in sorted(glob.glob(f"output/{LANG}/sorted/*.json")):
         data = openJson(path)
         for entry in data:
 
@@ -48,20 +46,17 @@ def plotScores(uniques=False):
     fig, ax1 = plt.subplots()
 
     counts, edges, _ = ax1.hist(scores, bins=bins, edgecolor='black')
-    ax1.set_xlabel('Scores',fontsize=20)
-    ax1.set_ylabel('Number of sequences',fontsize=20)
+    ax1.set_xlabel('Scores')
+    ax1.set_ylabel('Number of sequences')
 
     ax2 = ax1.twinx()
     cumulative_counts = np.cumsum(counts)
     ax2.plot(edges[:-1] + 0.05, cumulative_counts, color='red', marker='o', linestyle='-', linewidth=2) #cumulative Number of sequences found
-    ax2.set_ylabel('Cumulative number of sequences',fontsize=20)
 
-    filename = f"logs/{parameters.NAMEPATH}/images/plotscores.png"
+    filename = f"logs/{LANG}/images/plotscores.png"
     if uniques:
         filename = filename.replace(".png","_uniques.png")
 
-
-    fig.set_size_inches(16,9)
     plt.savefig(filename)
     plt.close()
 
@@ -78,12 +73,12 @@ def intraCluster(cluster):
         return "NA" #if vectorization wasn't possible for some reason
 
 
-def plotCoherenceProgression(studied_seeds):
+def plotCoherenceProgression(studied_seeds,LANG=parameters.NAMEPATH):
     """for each seed, calculates the progression of its intra-cluster score the deeper in the ranking we go"""
     
     # GET DATA #
     results = {}
-    for path in glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json"):
+    for path in glob.glob(f"output/{LANG}/sorted/*.json"):
         data = openJson(path)
         seed = data[0]["paired_with"]["seed"]
         if seed not in results:
@@ -98,7 +93,7 @@ def plotCoherenceProgression(studied_seeds):
     coherences_all = []
     seeds = []
 
-    for seed,segments in tqdm(results.items()):
+    for seed,segments in results.items():
         coherences = []
         sequences_old = []
         coherence_old = "NA"
@@ -124,7 +119,7 @@ def plotCoherenceProgression(studied_seeds):
         seeds.append(seed)
 
     # FIGURE #
-    plt.figure(figsize=(12, 4)) #figsize=(12, 4)
+    plt.figure(figsize=(12, 4))
     
     colors = plt.colormaps['Dark2'].colors
     colors_count = 0
@@ -164,15 +159,15 @@ def plotCoherenceProgression(studied_seeds):
     plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)
 
     plt.tight_layout()
-    plt.savefig(f"logs/{parameters.NAMEPATH}/images/plotCoherenceProgression.png")
+    plt.savefig(f"logs/{LANG}/images/plotCoherenceProgression.png")
     plt.close()
 
 
-def clusterByThreshold(studied_seeds):
-    """cluster candidates around the seed"""
+def clusterByThreshold(studied_seeds,LANG=parameters.NAMEPATH):
+    """"""
 
     if len(studied_seeds) == 0:
-        studied_seeds = list(openJson(f"data/{parameters.NAMEPATH}.json").keys()) #if no specified studied_seeds, takes all
+        studied_seeds = list(openJson(f"data/{LANG}.json").keys()) #if no specified studied_seeds, takes all
 
     # FIGURE SIZE ESTIMATION #
     total = len(studied_seeds) 
@@ -189,7 +184,7 @@ def clusterByThreshold(studied_seeds):
 
         # GET DATA #
         filename = "".join(x for x in seed.replace(" ","_") if x.isalnum() or x == "_")
-        data = openJson(f"output/{parameters.NAMEPATH}/sorted/{filename}.json")
+        data = openJson(f"output/{LANG}/sorted/{filename}.json")
 
         entries = []
         scores = []
@@ -220,14 +215,14 @@ def clusterByThreshold(studied_seeds):
         ax.set_title(f'{seed}')
         ax.grid(True)
 
-    plt.savefig(f"logs/{parameters.NAMEPATH}/images/clusterByThreshold.png")
+    plt.savefig(f"logs/{LANG}/images/clusterByThreshold.png")
     plt.close()
 
 
-def results():
+def results(LANG=parameters.NAMEPATH):
     """"""
-    createFolders(f"logs/{parameters.NAMEPATH}/images")
-    plotScores()
-    plotScores(uniques=True)
-    clusterByThreshold(parameters.studied_sequences)
-    plotCoherenceProgression(parameters.studied_sequences)
+    createFolders(f"logs/{LANG}/images")
+    plotScores(LANG=LANG)
+    plotScores(uniques=True,LANG=LANG)
+    clusterByThreshold(parameters.studied_sequences,LANG=LANG)
+    plotCoherenceProgression(parameters.studied_sequences,LANG=LANG)

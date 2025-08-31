@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=559/703=0.7952 R=559/901=0.6204 F=0.6970
+* Tok-based: P=1229/1489=0.8254 R=1229/1918=0.6408 F=0.7215
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/703=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=703/703=100%
+* <unlabeled>: MWE-based: P=0/703=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1489=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/703=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=703/703=100%
+* Continuous: MWE-based: P=559/703=0.7952 R=559/754=0.7414 F=0.7673
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=0/703=0%
+* Discontinuous: MWE-based: P=0/0=0.0000 R=0/147=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=703/703=100%
+* Multi-token: MWE-based: P=559/703=0.7952 R=559/901=0.6204 F=0.6970
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/703=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=546/703=78%
+* Seen-in-train: MWE-based: P=482/546=0.8828 R=482/602=0.8007 F=0.8397
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=157/703=22%
+* Unseen-in-train: MWE-based: P=77/157=0.4904 R=77/299=0.2575 F=0.3377
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=218/546=40%
+* Variant-of-train: MWE-based: P=188/218=0.8624 R=188/288=0.6528 F=0.7431
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=328/546=60%
+* Identical-to-train: MWE-based: P=294/328=0.8963 R=294/314=0.9363 F=0.9159
+

@@ -26,18 +26,18 @@ def alignment(seed,sent):
     return [[align[0],align[1]] for align in alignments] #0 and 1 indexes are aligned list in returned biopython object
 
 
-def align(path,main_layer=parameters.main_layer):
+def align(path,main_layer=parameters.main_layer,LANG=parameters.NAMEPATH):
     """for each sent in json (path), tokenize this sent and align it with its seed"""
     data = openJson(path)
-    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
+    seed = openJson(f"data/{LANG}.json")[data[0]["paired_with"]["seed"]]
     for entry in data:
         entry["alignments"] = alignment(seed[main_layer],entry["parsing"][main_layer])
     writeJson(path,data)
   
 
-def alignAll():
+def alignAll(LANG=parameters.NAMEPATH):
     """process align function on every file in 'sorted/' folder"""
-    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
-        align(path)
+    for path in tqdm(glob.glob(f"output/{LANG}/sorted/*.json")):
+        align(path,LANG=LANG)
         deleteBadAlignments(path)
     print("")

@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=558/726=0.7686 R=558/901=0.6193 F=0.6859
+* Tok-based: P=1222/1524=0.8018 R=1222/1918=0.6371 F=0.7101
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=896/901=99% pred=0/726=0%
+* LVC.full: MWE-based: P=0/0=0.0000 R=0/896=0.0000 F=0.0000
+* LVC.full: Tok-based: P=0/0=0.0000 R=0/1903=0.0000 F=0.0000
+* <unlabeled>: MWE-proportion: gold=0/901=0% pred=726/726=100%
+* <unlabeled>: MWE-based: P=0/726=0.0000 R=0/0=0.0000 F=0.0000
+* <unlabeled>: Tok-based: P=0/1524=0.0000 R=0/0=0.0000 F=0.0000
+* VID: MWE-proportion: gold=5/901=1% pred=0/726=0%
+* VID: MWE-based: P=0/0=0.0000 R=0/5=0.0000 F=0.0000
+* VID: Tok-based: P=0/0=0.0000 R=0/15=0.0000 F=0.0000
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=754/901=84% pred=566/726=78%
+* Continuous: MWE-based: P=499/566=0.8816 R=499/754=0.6618 F=0.7561
+* Discontinuous: MWE-proportion: gold=147/901=16% pred=160/726=22%
+* Discontinuous: MWE-based: P=59/160=0.3688 R=59/147=0.4014 F=0.3844
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=901/901=100% pred=726/726=100%
+* Multi-token: MWE-based: P=558/726=0.7686 R=558/901=0.6193 F=0.6859
+* Single-token: MWE-proportion: gold=0/901=0% pred=0/726=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=602/901=67% pred=723/726=100%
+* Seen-in-train: MWE-based: P=557/723=0.7704 R=557/602=0.9252 F=0.8408
+* Unseen-in-train: MWE-proportion: gold=299/901=33% pred=3/726=0%
+* Unseen-in-train: MWE-based: P=1/3=0.3333 R=1/299=0.0033 F=0.0066
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=288/602=48% pred=377/723=52%
+* Variant-of-train: MWE-based: P=249/377=0.6605 R=249/288=0.8646 F=0.7489
+* Identical-to-train: MWE-proportion: gold=314/602=52% pred=346/723=48%
+* Identical-to-train: MWE-based: P=308/346=0.8902 R=308/314=0.9809 F=0.9333
+
