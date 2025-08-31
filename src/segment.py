@@ -1,7 +1,5 @@
-from Levenshtein import ratio
-
-from . import parameters
 from .utils import *
+from Levenshtein import ratio
 
 def exactSegment(seed_align):
     """we ignore misalignment lists"""
@@ -19,7 +17,7 @@ def fuzzySegment(seed_align,sent_align):
     return [i for i in range(seed_align[0],seed_align[-1]+1)]
 
 
-def combinedSegment(seed_align,sent_align,entry,seeds,discont=parameters.discont):
+def combinedSegment(seed_align,sent_align,entry,seeds,studied_layer):
     """for each misalignment list, we try to find a substitue for each missing words using rules"""
     """rule 1: we take the first word in misalignment list with the same POS tag (takes distance and POS sim into account)"""
     """rule 2: if no common POS tag, we look for the word with the biggest number of similarities for each misaligned word"""
@@ -37,29 +35,34 @@ def combinedSegment(seed_align,sent_align,entry,seeds,discont=parameters.discont
                     combined.append(j) #we add every elements from sent in our candidate
 
             else:
-
                 for not_found in seed_align[i]: #for each word we couldn't find in seed
                     
                     candidates_pos = []
                     candidates_sim = {}
 
-                    tok_not_found = seeds[entry["paired_with"]["seed"]][parameters.TOK_layer][not_found]
-                    if parameters.POS_layer in parameters.layers.keys():
-                        pos_not_found = seeds[entry["paired_with"]["seed"]][parameters.POS_layer][not_found]
+                    if "TOK" in studied_layer:
+                        tok_not_found = seeds[entry["paired_with"]["seed"]]["TOK"][not_found]
+                    elif "LEM" in studied_layer:
+                        tok_not_found = seeds[entry["paired_with"]["seed"]]["LEM"][not_found]
+                    if "POS" in studied_layer:
+                        pos_not_found = seeds[entry["paired_with"]["seed"]]["POS"][not_found]
 
-                    for candidate in sent_align[i][:discont]: #for each word in the misalignment list (i.e. for each substitute candidate)
+                    for candidate in sent_align[i]: #for each word in the misalignment list (i.e. for each substitute candidate)
 
-                        tok_candidate = entry["parsing"][parameters.TOK_layer][candidate]
-                        if parameters.POS_layer in parameters.layers.keys():
-                            pos_candidate = entry["parsing"][parameters.POS_layer][candidate]
+                        if "TOK" in studied_layer:
+                            tok_candidate = entry["parsing"]["TOK"][candidate]
+                        elif "LEM" in studied_layer:
+                            tok_candidate = entry["parsing"]["LEM"][candidate]
+                        if "POS" in studied_layer:
+                            pos_candidate = entry["parsing"]["POS"][candidate]
 
-                        if parameters.POS_layer in parameters.layers.keys() and pos_candidate == pos_not_found: #if they have the same pos tags
+                        if "POS" in studied_layer and pos_candidate == pos_not_found: #if they have the same pos tags
                             candidates_pos.append(candidate)
 
-                        else: #else we estimate how close are each word with the not_found token
-                            sim_score = ratio(" ".join(tok_candidate)," ".join(tok_not_found))
-                            #sim_score = len(tok_not_found & tok_candidate)/max([len(tok_not_found),len(tok_candidate)])
-                            candidates_sim[candidate] = sim_score
+                        elif "TOK" in studied_layer or "LEM" in studied_layer:
+                                sim_score = ratio(" ".join(tok_candidate)," ".join(tok_not_found))
+                                #sim_score = len(tok_not_found & tok_candidate)/max([len(tok_not_found),len(tok_candidate)])
+                                candidates_sim[candidate] = sim_score
 
                     if candidates_pos:
                         substitute = candidates_pos[0]
@@ -70,16 +73,16 @@ def combinedSegment(seed_align,sent_align,entry,seeds,discont=parameters.discont
                         substitute = sorted([[v,k] for k,v in candidates_sim.items()],reverse=True)[0][1]
                         combined.append(substitute)
                         sent_align[i].remove(substitute)
+
     
     #if len(seeds[entry["paired_with"]["seed"]]["lemma"]) != len([entry["parsing"]["lemma"][i] for i in combined]):
     #    print([entry["parsing"]["lemma"][i] for i in combined])
     #    print(seeds[entry["paired_with"]["seed"]]["lemma"])
     #    print()
 
-    return combined          
+    return combined   
 
-
-def commonSegment(seed,sent,entry,seeds):
+def commonSegment(seed,sent,entry,seeds,studied_layer,version):
     """common segment isolation between a seed and a sent using list comprehension"""
 
     #to vizualise multiple tokens substitution (example with "Max a cassé sa pipe" and "Max a bien dégommé sa pipe")
@@ -133,14 +136,14 @@ def commonSegment(seed,sent,entry,seeds):
 
     if len(sent_align) > 1 and len(seed_align) > 1:
 
-        if parameters.SEGMENT_VERSION == "exact":
+        if version == "exact":
             commonSeg = exactSegment(seed_align)
 
-        elif parameters.SEGMENT_VERSION == "fuzzy":
+        elif version == "fuzzy":
             commonSeg = fuzzySegment(seed_align,sent_align)
 
-        elif parameters.SEGMENT_VERSION == "combined":
-            commonSeg = combinedSegment(seed_align,sent_align,entry,seeds)
+        elif version == "combined":
+            commonSeg = combinedSegment(seed_align,sent_align,entry,seeds,studied_layer)
 
         else:
             print("parameters.py : VERSION does not match any know version, aborting...")
@@ -152,12 +155,12 @@ def commonSegment(seed,sent,entry,seeds):
     return commonSeg
 
 
-def segment(path):
+def segment(path,main_layer,data_type,studied_layer,version):
     """for each sent of a json file (path), get its common segments with its seed"""
     
     data = openJson(path)
     new_data = []
-    seeds = openJson(f"data/{parameters.NAMEPATH}.json")
+    seeds = openJson(f"output/{data_type}/seeds.json")
 
     for entry in data:
         
@@ -168,21 +171,18 @@ def segment(path):
                 
         for alignment in entry["alignments"]:
 
-            commonSeg = commonSegment(alignment[1],alignment[0],entry,seeds)
+            commonSeg = commonSegment(alignment[1],alignment[0],entry,seeds,studied_layer,version)
 
-            if len(commonSeg) > len(entry["parsing"][parameters.main_layer]):
-                commonSeg = [i for i in range(len(entry["parsing"][parameters.main_layer]))] #if the sentence is shorter than the seed
+            if len(commonSeg) > len(entry["parsing"][main_layer]):
+                commonSeg = [i for i in range(len(entry["parsing"][main_layer]))] #if the sentence is shorter than the seed
 
             entry["commonSegmentsIndexes"].append(commonSeg)
                     
-            for layer in parameters.layers.keys():
+            for layer in entry["parsing"].keys():
                 if layer not in entry["commonSegments"]:
                     entry["commonSegments"][layer] = []
-
-                try:
-                    seg = [entry["parsing"][layer][i] for i in commonSeg]
-                except:
-                    seg = entry["parsing"][layer]
+                    
+                seg = [entry["parsing"][layer][i] for i in commonSeg] 
                 entry["commonSegments"][layer].append(seg)
 
         new_data.append(entry)
@@ -192,9 +192,7 @@ def segment(path):
 
     writeJson(path,new_data)
 
-
-def segmentAll():
+def segmentAll(main_layer,data_type,studied_layer,version):
     """process segment function on every file in 'sorted/' folder"""
-    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
-        segment(path)
-    print("")
+    for path in glob.glob(f"output/{data_type}/sorted/*.json"):
+        segment(path,main_layer,data_type,studied_layer,version)

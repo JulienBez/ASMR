@@ -1,31 +1,31 @@
 from sklearn.metrics import pairwise_kernels
+from sklearn.feature_extraction.text import TfidfVectorizer
 from Levenshtein import ratio
 
-from . import parameters
 from .utils import *
 
 def vectorizer(V,seed,sents,metric="cosine"):
     """vectorize in unigrams and bigrams the seed and the sent"""
-    X = V.fit_transform([" ".join(sent) for sent in sents]) # to ensure there odds items don't ruin the process
+    X = V.fit_transform([" ".join(sent) for sent in sents]) #to ensure there odds items don't ruin the process
     Y = V.transform([" ".join(seed)])
     return pairwise_kernels(Y,X,metric=metric)[0]
 
 
-def meanLayers(data,ponderWithLength=True):
+def meanLayers(data,studied_layers,data_type,ponderWithLength=True):
     """return mean of a single similarity score on each layer"""
-    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
+    seed = openJson(f"output/{data_type}/seeds.json")[data[0]["paired_with"]["seed"]]
     for entry in data:
         meanLayer = []
         for i in range(len(entry["alignments"])):
             total_layers = 0
             nb_layers = 0
-            for layer in parameters.layers.keys():
-               if ponderWithLength:
+            for layer in studied_layers:
+                if ponderWithLength:
                     size_difference = len(seed[layer])-len(entry["commonSegments"][layer][i])
                     if size_difference > 0:
                         entry["similarities"][layer][i] = (entry["similarities"][layer][i]*(len(seed[layer])-size_difference))/len(seed[layer])
-               total_layers += entry["similarities"][layer][i]
-               nb_layers += 1
+                total_layers += entry["similarities"][layer][i]
+                nb_layers += 1
             meanLayer.append(total_layers/nb_layers)
         entry["similarities"]["meanLayer"] = meanLayer
     return data
@@ -46,30 +46,26 @@ def handleMultiplesAlignments(data,layer):
     return ids,sents
 
 
-def measure(path):
+def measure(path,ngram,analyzer,studied_layers,data_type):
     """get similarity of all entries with the seed for a file for each layer"""
     data = openJson(path)
-    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
-    for layer in parameters.layers.keys():
+    seed = openJson(f"output/{data_type}/seeds.json")[data[0]["paired_with"]["seed"]]
+    for layer in studied_layers:
         sents_ids,sents = handleMultiplesAlignments(data,layer)
-        try:
-            V = parameters.vectorizer
-            if layer == parameters.POS_layer:
-                V = parameters.POS_vectorizer # vectorizer with words, aka pos tags
-            pairwise_sim = vectorizer(V,seed[layer],sents)
-            for i,ids in enumerate(sents_ids):
-                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
-        except:
-            for ids in sents_ids:
-                data[ids["entry"]]["similarities"][layer][ids["alignment"]] = -1 # if empty vocabulary
-    writeJson(path,meanLayers(data))
+        V = TfidfVectorizer(ngram_range=(ngram),encoding="utf-8",lowercase=True,stop_words=None,analyzer=analyzer)
+        if layer == ["POS"]:
+            V = TfidfVectorizer(ngram_range=(1,1),encoding="utf-8",lowercase=True,stop_words=None,analyzer="word")
+        pairwise_sim = vectorizer(V,seed[layer],sents)
+        for i,ids in enumerate(sents_ids):
+            data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
+    writeJson(path,meanLayers(data,studied_layers,data_type))
 
 
-def measureLEVEN(path):
+def measureLEVEN(path,ngram,analyzer,studied_layers,data_type):
     """small test we made replacing cosine similarity with levenshtein distance"""
     data = openJson(path)
-    seed = openJson(f"data/{parameters.NAMEPATH}.json")[data[0]["paired_with"]["seed"]]
-    for layer in parameters.layers.keys():
+    seed = openJson(f"output/{data_type}/seeds.json")[data[0]["paired_with"]["seed"]]
+    for layer in studied_layers:
         sents_ids,sents = handleMultiplesAlignments(data,layer)
         pairwise_sim = []
         for s in sents:
@@ -77,11 +73,10 @@ def measureLEVEN(path):
             pairwise_sim.append(p)
         for i,ids in enumerate(sents_ids):
             data[ids["entry"]]["similarities"][layer][ids["alignment"]] = pairwise_sim[i]
-    writeJson(path,meanLayers(data))
+    writeJson(path,meanLayers(data,studied_layers,data_type))
 
 
-def measureAll():
+def measureAll(ngram,analyzer,studied_layers,data_type):
     """process similarities function on every file in 'sorted/' folder"""
-    for path in tqdm(glob.glob(f"output/{parameters.NAMEPATH}/sorted/*.json")):
-        measure(path)
-    print("")
+    for path in glob.glob(f"output/{data_type}/sorted/*.json"):
+        measureLEVEN(path,ngram,analyzer,studied_layers,data_type)
