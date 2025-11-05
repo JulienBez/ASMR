@@ -78,6 +78,22 @@ ASMR is distributed under the terms of the [AGPLv3](https://www.gnu.org/licenses
 If you use ASMR in your work, please cite it directly:
 
 ```
-to-be-published
+@inproceedings{bezancon-lejeune-2025-fistful,
+    title = "For a Fistful of Puns: Evaluating a Puns in Multiword Expressions Identification Algorithm Without Dedicated Dataset",
+    author = {Bezan{\c{c}}on, Julien  and
+      Lejeune, Ga{\"e}l},
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.443/",
+    pages = "8350--8370",
+    ISBN = "979-8-89176-335-7"
+}
 ```
 
